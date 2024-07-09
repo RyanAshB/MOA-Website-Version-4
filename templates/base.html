@@ -4,78 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web3 Remittance</title>
+    <title>MOA Website</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">
-                <a href="/">
-                    <img src="{{ url_for('static', filename='Logo2.jpeg') }}" alt="Jamaica">
-                </a>
-            </div>
-            <div class="nav-icon">
-                <ul>
-                    <li><a href="/about"><strong>About</strong></a></li>
-                    <li><a href="/hiw"><strong>How it Works</strong></a></li>
-                    <li><a href="/questions"><strong>Q&A</strong></a></li>
-                    <li><a href="#download"><strong>Download Wallet</strong></a></li>
-                    <li><a href="#debit-card"><strong>Crypto Debit Card</strong></a></li>
-                    <li><a href="#connect" class="button"><strong>Connect</strong></a></li>
-                </ul>
-                <div class="icon-container">
-                    <div class="icons">
-                        <img src="{{ url_for('static', filename='Mexico.png') }}" alt="Mexico">
-                        <img src="{{ url_for('static', filename='Philiphines.png') }}" alt="Philiphines">
-                        <img src="{{ url_for('static', filename='Vietnam.png') }}" alt="Vietnam">
-                        <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Jamaica">
-                        <img src="{{ url_for('static', filename='China.png') }}" alt="China">
-                        <img src="{{ url_for('static', filename='India.png') }}" alt="India">
-                        <img src="{{ url_for('static', filename='Germany.png') }}" alt="Germany">
-                        <img src="{{ url_for('static', filename='France.png') }}" alt="France">
-                        <img src="{{ url_for('static', filename='Egypt.png') }}" alt="Egypt">
-                        <img src="{{ url_for('static', filename='Bangladesh.png') }}" alt="Bangladesh">
+        <div class="nav-bar">
+            <div class="page-name-bg">
+                <div class="page-name">
+                    <img src="{{ url_for('static', filename='MOAF-Logo.png') }}" alt="Jamaica">
+                    <div class="heading-text">
+                        <h1 id="heading-1">Ministry of Agriculture,</h1>
+                        <h1 id="heading-2">Fisheries and Mining</h1>
                     </div>
                 </div>
             </div>
-        </nav>
+            <nav class="top-nav">
+                <h3>MOAF</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Trade In Goods</a></li>
+                    <li><a href="#">Market Access</a></li>
+                    <li><a href="#">Registration/Certification</a></li>
+                    <li><a href="#">rade Statistics</a></li>
+                    <li><a href="#">Guide to Import</a></li>
+                    <li><a href="#">Useful Pages</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner">
+            <img src="{{ url_for('static', filename='banner.png') }}" alt="Jamaica">
+        </div>
+        <!-- <nav class="bottom-nav">
+            <ul>
+                <li class="dropdown"><a href="#"><>Divisions</></a></li>
+                    <ul class="dropdown-items">
+                        <li><a href="#">Product 1</a></li>
+                        <li><a href="#">Product 2</a></li>
+                        <li><a href="#">Product 3</a></li>
+                    </ul>
+                <li class="dropdown"><a href="#"><>Documents</></a></li>
+                <li class="dropdown"><a href="#"><>Agencies</></a></li>
+                <li class="dropdown"><a href="#"><>Directorate</></a></li>
+                <li class="dropdown"><a href="#"><>Opportunities</></a></li>
+            </ul>
+        </nav> -->
     </header>
     <main>
-        <!-- <div class="main-module">
-            <div class="main-text">
-                <h1>Web3 Remittance</h1>
-                <hr>
-                <p>Fiat to Crypto, Crypto to Fiat transfer.</p>
-                <p>Send to family and friends, using Regional, Domestic, Utility Coins (RDUC): US$C, CB$C, JM$C, AS$C, EU$C, AF$C, or other Stablecoins such as USDT.</p>
-            </div>
-            <div class="main-image">
-                <img src="{{ url_for('static', filename='download.png') }}" alt="download">
-            </div>
-        </div> -->
         <div class="container">
+
             <div class="main-module">
                 {% block main %}{% endblock %}
             </div>
         </div>
     </main>
     <footer>
-        
-        <div class="footer-content">
-            <div class="social-media">
-                <a href="#facebook"><i class="fa-brands fa-facebook"></i>Facebook</a>
-                <a href="#twitter"><i class="fa-brands fa-twitter"></i>Twitter</a>
-                <a href="#instagram"><i class="fa-brands fa-instagram"></i>Instagram</a>
-            </div>
-            <div class="contact-info">
-                <p>Contact us: <a href="#email">info@example.com</a></p>
-            </div>
-            <div class="legal">
-                <a href="#privacy">Privacy Policy</a>
-                <a href="#terms">Terms of Service</a>
-            </div>
-        </div>
     </footer>
 </body>
 </html>
