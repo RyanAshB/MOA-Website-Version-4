@@ -1,3 +1,12 @@
+:root {
+    /* --bgcolor: #4f7ae2;
+    --ribbon-color: #223f81; */
+    /* --bgcolor: linear-gradient(rgb(231, 23, 231),purple); */
+    /* --bgcolor: rgb(231, 23, 231); */
+    --title-color: rgb(63, 63, 63);
+    --text-color: rgb(63, 63, 63);
+}
+
 body {
     margin: 0;
     /* font-family: Arial, sans-serif; */
@@ -13,6 +22,7 @@ body {
 
 .nav-bar h1 {
     color: black;
+    text-shadow: -1px 1px 5px greenyellow;
 }
 
 .nav-bar #heading-1{
@@ -20,10 +30,7 @@ body {
     margin-bottom:0;
 }
 
-.nav-bar #heading-2{
-    margin-top:0;
-    margin-bottom:0;
-}
+
 
 ul {
     display: flex;
@@ -53,7 +60,13 @@ header li{
     padding-right: 30px;
 }
 
-a {
+.nav-bar .top-nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.h-section-2-products a {
     text-decoration: none;
     color: white;
     font-size: 15px;
@@ -85,13 +98,12 @@ a {
     padding-left: 100px;
     font-size: 40px;
     color: rgb(255, 235, 51);
+    text-shadow: -1.2px 1.2px 2px black;
 }
 
 header {
-    position: relative;
 }
 .nav-bar{
-    position: absolute;
     width: 100%;
 }
 
@@ -141,6 +153,7 @@ header {
 .h-section-1 {
     display: inline-flex;
     padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 .h-section-1 img {
@@ -149,14 +162,23 @@ header {
     padding-top: 20px;
 }
 
-.h-section-1 h1 {
+.home-title {
     margin: 0;
     font-size: 40px;
+    color: var(--title-color)
+}
+
+.home-para {
+    color: var(--title-color)
+}
+
+#yellow {
+    color: yellow;
 }
 
 .h-section-1-text {
     padding-left: 3%;
-    color: rgb(63, 63, 63);
+    color: var(--title-color);
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
 }
 
@@ -166,9 +188,201 @@ header {
     height: 50px;
     border-color: black;
     border-width: 4px;
+
 }
 
 .h-section-1-text .button {
     padding-top: 40px;
 }
 
+.h-section-2-text {
+    color: var(--title-color);
+}
+
+
+
+.product img {
+    width: 200px;
+    height: 170px;
+}
+
+.h-section-2-products {
+    display: flex;
+    justify-content: space-between;
+}
+
+.h-section-2-products .product-text {
+    text-align: center;
+}
+
+.h-section-2-products .product {
+    border-top: 1px solid gray;
+    border-left: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.h-section-2-products .product:hover p{
+    color: rgb(255, 158, 67);
+}
+
+.product p {
+    margin: 0;
+}
+
+.h-section-2{
+    padding-bottom: 100px;
+}
+
+.h-section-3 {
+    background-image: linear-gradient(rgb(119, 228, 255), rgb(200, 248, 255), rgb(119, 228, 255));
+    border: 2px solid gray;
+    border-radius: 10px;
+}
+
+.h-section-3-cards-margin {
+    width: 90%;
+    padding-left: 5%
+}
+
+.h-section-3 .card img{
+    width: 80px
+}
+
+.h-section-3 .home-title {
+    padding-bottom: 80px;
+    padding-top: 20px;
+}
+
+.h-section-3-cards {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.h-section-3-cards h3{
+    color: var(--title-color)
+}
+
+.h-section-3-cards .card {
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    border-radius: 5px;
+}
+
+.h-section-3-cards .card:hover {
+    background-color: rgb(214, 214, 214);
+    
+}
+
+.h-section-3-cards .card:hover h3{
+    font-size: 19px;   
+    transition-duration: 50ms;  
+}
+
+.h-section-3-cards button {
+    background-color: white;
+    width: 80%;
+    height: 40px;
+    border-color: black;
+    border-width: 4px;
+}
+
+.h-section-3-cards button:hover {
+    background-color: gray;
+    transition-duration: 0.2s;
+}
+
+
+/* THESE ARE THE HTE-ACKEE PAGE SELECTORS */
+.hte-ackee-page {
+    width: 80%;
+    padding-left: 10%;
+}
+
+.ackee-page-top {
+    padding-top: 30px;
+}
+
+.ackee-page-top h1 {
+    font-size: 50px;
+}
+
+.ackee-page-top-text {
+    width: 90%;
+    padding-left: 5%;
+}
+
+.ackee-page-top-text .step-numbering {
+    display: flex;
+}
+
+.ackee-page-top-text .step-numbering h1 {
+    margin-left: 50px;
+    position: absolute;
+    width: 75px; 
+    height: 75px;
+    background-image: linear-gradient(rgb(199, 199, 199), rgb(238, 238, 238));
+    text-align: center;
+    border-radius: 100px;
+    box-shadow: -2px 2px 5px black;
+}
+
+.ackee-page-top-text .step-numbering h1:hover {
+    width: 80px;
+    height: 80px;
+}
+
+
+.ackee-page-top #number-2 {
+    margin-left: 160px;
+}
+
+.ackee-page-top #number-3 {
+    margin-left: 270px;
+}
+.ackee-page-top #number-4 {
+    margin-left: 380px;
+}
+.ackee-page-top #number-5 {
+    margin-left: 490px;
+}
+
+.hte-ackee-page .step-numbering a {
+    position: static;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.ackee-page-bottom {
+    margin-top: 170px;
+}
+
+
+.ackee-page-bottom .instruction {
+    margin-bottom: 30px;
+    border-top: 1px solid gray;
+}
+
+.ackee-page-bottom .instruction h1{
+    margin-bottom: 0px;
+    margin-top: 5px;
+}
+
+.ackee-page-bottom .instruction p {
+    color: rgb(0, 132, 255);
+}
+
+.ackee-page-bottom .shown ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-left: 100px;
+
+}
+
+.ackee-page-bottom .shown li {
+    padding-bottom: 15px;
+}

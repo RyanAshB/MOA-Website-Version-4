@@ -1,14 +1,108 @@
 {% extends "base.html" %}
 
+{% block image %}
+<div class="banner">
+    <img src="{{ url_for('static', filename='banner.png') }}" alt="Banner">
+</div>
+{% endblock %}
+
 {% block main %}
 <div class="home-page">
     <div class="h-section-1">
         <img src="{{ url_for('static', filename='jamaica-flag.png') }}" alt="Jamaica Flag">
         <div class="h-section-1-text">
-            <h1>Title Text</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, corrupti repudiandae porro quo accusamus aliquam eveniet, molestiae ipsam totam voluptas consequatur eos fugit itaque perspiciatis commodi saepe. Illo assumenda, aliquam placeat enim sequi, debitis aspernatur molestias a neque laborum numquam distinctio dolorem nihil in, dignissimos aut hic facere. Neque sit est odit. Dignissimos laboriosam omnis voluptates molestiae voluptate dicta pariatur consequuntur assumenda quisquam, possimus deleniti ab accusantium. Ex natus, distinctio ad illo, architecto perspiciatis praesentium quod optio, nostrum ipsam temporibus.</p>
+            <h1 class="home-title">Title Text<br><span style="color:yellow;">Text 2</span></h1>
+            <p class="home-para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, corrupti repudiandae porro quo accusamus aliquam eveniet, molestiae ipsam totam voluptas consequatur eos fugit itaque perspiciatis commodi saepe. Illo assumenda, aliquam placeat enim sequi, debitis aspernatur molestias a neque laborum numquam distinctio dolorem nihil in, dignissimos aut hic facere. Neque sit est odit. Dignissimos laboriosam omnis voluptates molestiae voluptate dicta pariatur consequuntur assumenda quisquam, possimus deleniti ab accusantium. Ex natus, distinctio ad illo, architecto perspiciatis praesentium quod optio, nostrum ipsam temporibus.</p>
             <div class="button">
                 <button type="button">Learn More</button>
+            </div>
+        </div>
+    </div>
+    <div class="h-section-2">
+        <div class="h-section-2-text">
+            <h1 class="home-title">Discover Our <span style="color:yellow;">Step-by-Step</span><br>Procedures</h1>
+            <p class="home-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, numquam officia! Magnam aliquam rem nihil at quia iste sed nobis optio quaerat eaque, dolor cupiditate placeat officia odit consectetur harum cum, explicabo consequatur impedit aliquid excepturi saepe unde delectus! Libero obcaecati nobis animi minus odit, quod laboriosam et, sunt consequatur ex nisi officiis tempora fuga dicta corporis asperiores ipsum aperiam autem aspernatur odio voluptatibus nam in perferendis. Architecto, temporibus? Maiores.</p>
+        </div>
+        <div class="h-section-2-products">
+            <a href="/hte-ackee">
+                <div class="product">
+                    <img src="{{ url_for('static', filename='ackee.png') }}" alt="Ackee">
+                    <div class="product-text">
+                        <p class="home-para">EXPORT<br>Ackee</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="{{ url_for('static', filename='yam.png') }}" alt="Yam">
+                    <div class="product-text">
+                        <p class="home-para">EXPORT<br>Yam</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="{{ url_for('static', filename='bauxite.png') }}" alt="Bauxite">
+                    <div class="product-text">
+                        <p class="home-para">EXPORT<br>Bauxite</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="{{ url_for('static', filename='limestone.png') }}" alt="Limestone">
+                    <div class="product-text">
+                        <p class="home-para">EXPORT<br>Limestone</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="product">
+                    <img src="{{ url_for('static', filename='dairy.png') }}" alt="Dairy">
+                    <div class="product-text">
+                        <p class="home-para">EXPORT<br>Dairy</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class="h-section-3">
+        <div class="h-section-3-cards-margin">
+            <h1 class="home-title">Get <span style="color: yellow;">Instant Access</span> To Trade<br>Information</h1>
+            <div class="h-section-3-cards">
+                
+                <div class="card">
+                    <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="x">
+                    <h3>Legal Document</h3>
+                    <p class="home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quis quidem facilis quo ratione impedit quibusdam! Voluptatem eligendi itaque dolorum. Illo exercitationem nulla alias? Repellendus excepturi repellat voluptates voluptatibus fuga!</p>
+                    <div class="button">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='Germany.png') }}" alt="x">
+                    <h3>Measure</h3>
+                    <p class="home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quis quidem facilis quo ratione impedit quibusdam! Voluptatem eligendi itaque dolorum. Illo exercitationem nulla alias? Repellendus excepturi repellat voluptates voluptatibus fuga!</p>
+                    <div class="button">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='Egypt.png') }}" alt="x">
+                    <h3>Procurement & Form</h3>
+                    <p class="home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quis quidem facilis quo ratione impedit quibusdam! Voluptatem eligendi itaque dolorum. Illo exercitationem nulla alias? Repellendus excepturi repellat voluptates voluptatibus fuga!</p>
+                    <div class="button">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="{{ url_for('static', filename='France.png') }}" alt="x">
+                    <h3>Trade Agreement</h3>
+                    <p class="home-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quis quidem facilis quo ratione impedit quibusdam! Voluptatem eligendi itaque dolorum. Illo exercitationem nulla alias? Repellendus excepturi repellat voluptates voluptatibus fuga!</p>
+                    <div class="button">
+                        <button type="button">Learn More</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
