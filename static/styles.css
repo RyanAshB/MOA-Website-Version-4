@@ -32,7 +32,7 @@ body {
 
 
 
-ul {
+.nav-bar .top-nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
@@ -319,8 +319,6 @@ header {
 }
 
 .ackee-page-top-text .step-numbering h1 {
-    margin-left: 50px;
-    position: absolute;
     width: 75px; 
     height: 75px;
     background-image: linear-gradient(rgb(199, 199, 199), rgb(238, 238, 238));
@@ -329,36 +327,32 @@ header {
     box-shadow: -2px 2px 5px black;
 }
 
-.ackee-page-top-text .step-numbering h1:hover {
-    width: 80px;
-    height: 80px;
-}
-
-
-.ackee-page-top #number-2 {
-    margin-left: 160px;
-}
-
-.ackee-page-top #number-3 {
-    margin-left: 270px;
-}
-.ackee-page-top #number-4 {
-    margin-left: 380px;
-}
-.ackee-page-top #number-5 {
-    margin-left: 490px;
+.ackee-page-top-text .step-numbering .not-1 {
+    margin-left: 50px;
 }
 
 .hte-ackee-page .step-numbering a {
-    position: static;
     text-decoration: none;
     color: black;
     font-size: 15px;
 }
 
-.ackee-page-bottom {
-    margin-top: 170px;
+.hte-ackee-page .step-title-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.hte-ackee-page .step-title-number h2 {
+    padding-left: 10px;
+}
+
+.ackee-page-bottom {
+    margin-top: 50px;
+    width: 90%;
+    padding-left: 5%;
+}
+
 
 
 .ackee-page-bottom .instruction {
@@ -366,23 +360,38 @@ header {
     border-top: 1px solid gray;
 }
 
-.ackee-page-bottom .instruction h1{
-    margin-bottom: 0px;
-    margin-top: 5px;
+.ackee-page-bottom .container {
+    border-top: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 40px;
 }
 
-.ackee-page-bottom .instruction p {
-    color: rgb(0, 132, 255);
+.ackee-page-bottom .container:hover {
+    background-color: rgb(199, 199, 199);
 }
 
-.ackee-page-bottom .shown ul {
-    display: flex;
-    flex-direction: column;
+.ackee-page-bottom .container button {
+    margin-bottom: 10px;
+}
+
+.ackee-page-bottom .read-more-container .container {
+    padding-left: 20px;
+}
+
+.read-more-text {
+    display: none;
     font-size: 20px;
-    padding-left: 100px;
-
+    background-color: rgb(238, 238, 238);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border: 2px solid black
 }
 
-.ackee-page-bottom .shown li {
-    padding-bottom: 15px;
+.read-more-text--show {
+    display: block;
 }
+
+
