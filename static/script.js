@@ -13,3 +13,4 @@ parentContainer.addEventListener('click', event => {
 
     current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
 });
+

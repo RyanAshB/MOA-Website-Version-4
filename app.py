@@ -1,4 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from flask_mail import Mail, Message
+import os
+
 
 app = Flask(__name__)
 
@@ -13,6 +16,11 @@ def home():
 @app.route('/hte-ackee')
 def ackee():
     return render_template('hte-ackee.html')
+
+@app.route('/queries')
+def queries():
+    return render_template('queries.html')
+
 
 
 if __name__ == '__main__':
