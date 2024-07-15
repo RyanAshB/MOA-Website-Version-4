@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOA Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        html, body {
+            height: 100%;
+        }
+
+        .slider-wrapper {
+            position: relative;
+            margin: 0 auto;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .slider {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            transition: opacity 1s ease-in-out; 
+        }
+
+        .slider img.active {
+            opacity: 1;
+        }
+
+        .slider-nav {
+            display: flex;
+            justify-content: center; 
+            position: absolute;
+            bottom: 1.25rem;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .slider .landing-page-text {
+            position: absolute;
+            top: 25%;
+            bottom: 0;
+            color: white;
+            font-size: 2rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .slider .landing-page-text p, h1 {
+            margin-bottom: 0;
+        }
+
+        .slider .landing-page-text p {
+            margin-top: 0;
+        }
+
+        .slider-nav a {
+            width: 1rem;
+            height: 1rem;
+            border-radius: 50%;
+            background-color: #fff;
+            opacity: 0.75;
+            margin: 0 0.5rem; 
+            transition: opacity ease 250ms;
+        }
+
+        .slider-nav a:hover {
+            opacity: 1;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-page">
+        <div class="container">
+            
+            <div class="slider-wrapper">
+                <div class="slider">
+                    
+                    <img id="slide-1" class="active" src="{{ url_for('static', filename='strawberry.jpg') }}" alt="Jamaica">
+                    <img id="slide-2" src="{{ url_for('static', filename='soil.jpg') }}" alt="Jamaica">
+                    <img id="slide-3" src="{{ url_for('static', filename='tractor.jpg') }}" alt="Jamaica">
+                    <div class="landing-page-text">
+                        <h1>hello World</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, eum.</p>
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slides = document.querySelectorAll('.slider img');
+            const navLinks = document.querySelectorAll('.slider-nav a');
+
+            // Function to show a specific slide based on index
+            function showSlide(index) {
+                slides.forEach((slide, idx) => {
+                    if (idx === index) {
+                        slide.classList.add('active');
+                    } else {
+                        slide.classList.remove('active');
+                    }
+                });
+            }
+
+            // Add click event listeners to navigation links
+            navLinks.forEach((link, index) => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default anchor behavior
+                    showSlide(index); // Show the slide corresponding to this index
+                });
+            });
+
+            // Automatic slideshow functionality
+            let currentSlide = 0;
+            const slideCount = slides.length;
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slideCount;
+                showSlide(currentSlide);
+            }
+
+            setInterval(nextSlide, 4000); // Change slide every 4 seconds
+        });
+    </script>
+</body>
+</html>

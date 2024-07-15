@@ -21,6 +21,10 @@ def ackee():
 def queries():
     return render_template('queries.html')
 
+@app.route('/landing-page')
+def landing():
+    return render_template('landing-page.html')
+
 
 
 if __name__ == '__main__':
