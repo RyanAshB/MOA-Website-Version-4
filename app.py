@@ -25,6 +25,10 @@ def queries():
 def landing():
     return render_template('landing-page.html')
 
+@app.route('/2025')
+def twenty_five():
+    return render_template('2025.html')
+
 
 
 if __name__ == '__main__':

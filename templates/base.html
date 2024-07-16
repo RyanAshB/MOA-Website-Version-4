@@ -23,14 +23,21 @@
             margin-left: 100px;
             margin-right: 100px;
             margin-bottom: 100px; 
-            background: rgba(255, 255, 255, 0.95); /* Optional: to make home-page content more readable */
+            background: rgba(255, 255, 255, 0.90); /* Optional: to make home-page content more readable */
             padding: 20px;
             border-left: 2px solid black;
             border-right: 2px solid black;
             box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
 
         }
+
+        .twenty-page-top-header {
+            background: url('{{ url_for('static', filename='2025-background.jpg') }}') no-repeat center center fixed;
+            background-size: cover;
+        }
+
     </style>
+    
 </head>
 <body>
     <header>
@@ -40,12 +47,11 @@
                     <img src="{{ url_for('static', filename='MOAF-Logo.png') }}" alt="Jamaica">
                     <div class="heading-text">
                         <h1 id="heading-1">Ministry of Agriculture,<br>Fisheries and Mining</h1>
-                        
                     </div>
                 </div>
             </div>
             <nav class="top-nav">
-                <h3>MOAFM</h3>
+                <a href="/home"><h3>MOAFM</h3></a>
                 <ul>
                     <li><a href="/home">Home</a></li>
                     <li><a href="#">About Us</a></li>

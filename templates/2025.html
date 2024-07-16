@@ -1,0 +1,191 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="twenty-page">
+    <div class="twenty-page-container">
+        <div class="twenty-page-top">
+            <div class="twenty-page-top-header">
+                <h1>What Is Project 25 By 2025?</h1>
+            </div>
+            <div class="twenty-page-top-para">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, saepe! Necessitatibus animi aspernatur, cumque obcaecati laboriosam placeat provident, ut reiciendis fugit enim impedit, quos ducimus odio quae veniam atque? Eveniet officiis aliquam ad at, nam quia dolorem officia neque praesentium nesciunt doloremque totam excepturi id exercitationem provident odit, necessitatibus ipsa sapiente ex rerum! Inventore necessitatibus numquam natus ipsum error sunt esse suscipit cupiditate. Aliquid quia hic et cumque temporibus ex provident iure voluptate labore obcaecati aperiam, atque nostrum nobis distinctio accusantium aspernatur officiis corrupti itaque explicabo quis quibusdam recusandae dicta? Vel labore ex voluptatibus fugit modi, sit nulla molestias excepturi? ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus libero quia labore quisquam debitis natus dolor iusto quam, cumque totam quae rerum cum a repudiandae dolores dolore molestiae modi veritatis sequi porro ullam sint ratione. Quod incidunt architecto tempore quas, accusantium, dicta ad voluptatibus maxime sit nam voluptatem enim vero? ipsum dolor sit amet consectetur adipisicing elit. Saepe, ea. Consectetur recusandae harum quia ea alias fugit nobis atque laudantium.</p>
+            </div>
+        </div>
+        <!--This Is The Card Area-->
+
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <h1>What<br> Products <br>Will <br>This <br>Affect?</h1>
+                </div>
+                <div class="back">
+                    <ul>
+                        <li>Item A</li>
+                        <li>Item B</li>
+                        <li>Item C</li>
+                        <li>Item D</li>
+                        <li>Item E</li>
+                    </ul>
+                    <button type="button">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <!--This Is The Card Area-->
+
+        <div class="country-container">
+            <div class="country" id="country-1">
+                <img src="{{ url_for('static', filename='jamaica-icon.png') }}" alt="Bauxite">
+                <h3>Jamaica</h3>
+
+                
+            </div>
+
+            <div class="country" id="country-2">
+                <img src="{{ url_for('static', filename='grenada-flag.png') }}" alt="Bauxite">
+                <h3>Grenada</h3>
+            </div>
+
+            <div class="country" id="country-3">
+                <img src="{{ url_for('static', filename='guyana-flag.png') }}" alt="Bauxite">
+                <h3>Guyana</h3>
+            </div>
+
+            <div class="country">
+                <img src="{{ url_for('static', filename='haiti-flag.png') }}" alt="Bauxite">
+                <h3>Haiti</h3>
+            </div>
+
+            <div class="country">
+                <img src="{{ url_for('static', filename='belize-flag.png') }}" alt="Bauxite">
+                <h3>Belize</h3>
+            </div>
+
+            <div class="country">
+                <img src="{{ url_for('static', filename='barbados-flag.png') }}" alt="Bauxite">
+                <h3>Barbados</h3>
+            </div>
+
+            <div class="country">
+                <img src="{{ url_for('static', filename='bahamas-flag.png') }}" alt="Bauxite">
+                <h3>Bahamas</h3>
+            </div>
+
+            <div class="country">
+                <img src="{{ url_for('static', filename='domonica-flag.png') }}" alt="Bauxite">
+                <h3>Domonica</h3>
+            </div>
+
+            <div class="country">
+                country 9
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-1">
+        <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Bauxite">
+        <h2>Jamaica Opportunities</h2>
+        <h3>Products In Demand</h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Value (USD)</th>
+            </tr>
+            <tr>
+                <td>Peas</td>
+                <td>$20</td>
+            </tr>
+            <tr>
+                <td>Rice</td>
+                <td>$40</td>
+            </tr>
+            </table>
+        <div class="button-container">
+            <button type="button" class="btn" id="btn" onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup-2">
+        <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Bauxite">
+        <h2>Grenada Opportunities</h2>
+        <h3>Products In Demand</h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Value (USD)</th>
+            </tr>
+            <tr>
+                <td>Soup</td>
+                <td>$60</td>
+            </tr>
+            <tr>
+                <td>Beans</td>
+                <td>$80</td>
+            </tr>
+            </table>
+        <button type="button" class="btn" id="btn" onclick="closePopup()">OK</button>
+    </div>
+
+    <div class="popup" id="popup-3">
+        <img src="{{ url_for('static', filename='Jamaica.png') }}" alt="Bauxite">
+        <h2>Guyana Opportunities</h2>
+        <h3>Products In Demand</h3>
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Value (USD)</th>
+            </tr>
+            <tr>
+                <td>Bag Juice</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>Peanut</td>
+                <td>$70</td>
+            </tr>
+            </table>
+        <button type="button" class="btn" id="btn">OK</button>
+    </div>
+
+</div>
+
+<script>
+    // My Function to close popups
+    function closePopup() {
+        let popups = document.getElementsByClassName("popup");
+        for (let i=0; i < popups.length; i++) {
+            popups[i].classList.remove("open-popup");
+        }
+        
+    }
+
+    // My Function to open popups
+    let countries = document.querySelectorAll('.country');
+    let allPopups = document.querySelectorAll('.popup');
+
+    for (let i = 0; i < countries.length; i++) {
+        countries[i].addEventListener('click', function (event) {
+            allPopups[i].classList.add("open-popup");
+        });
+    }
+
+    // let country1 = document.getElementById('country-1');
+    // country1.addEventListener('click', function (event) {
+    //     function openPopup() {
+    //         let popup = document.getElementById("popup-1");
+    //         popup.classList.add("open-popup");
+    //     }
+    //     openPopup();
+    // });
+
+    let okButtons = document.getElementsByClassName('btn');
+    for (let i=0; i < okButtons.length; i++){
+        
+        okButtons[i].addEventListener('click', function() {
+            closePopup();
+        });
+
+    }
+</script>
+
+{% endblock %}
