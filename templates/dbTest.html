@@ -4,50 +4,30 @@
 
 
 
-
 <h1>This is my form</h1>
 
 <form action="/submit_form" method="POST">
-    <label for="hs_code">HS Code:</label>
-    <input type="text" id="hs_code" name="hs_code">
+    <label for="chapter_code">Enter Chapter Code:</label>
+    <input type="text" id="chapter_code" name="chapter_code">
     <br>
 
-    <label for="placeholder">I/E:</label>
-    <select id="placeholder" name="placeholder" >
-        <option value=""></option>
-        <option value="Import">Import</option>
-        <option value="Export">Export</option>
-    </select>
+    <label for="chapter_heading">Enter Chapter Heading:</label>
+    <input type="text" id="chapter_heading" name="chapter_heading">
     <br>
 
-    <label for="year">YEAR:</label>
-    <select id="year" name="year" >
-        <option value=""></option>
-        <option value="2006">2006</option>
-        <option value="2007">2007</option>
-        <option value="2008">2008</option>
-        <option value="2009">2009</option>
-        <option value="2010">2010</option>
-        <option value="2011">2011</option>
-        <option value="2012">2012</option>
-        <option value="2013">2013</option>
-        <option value="2014">2014</option>
-        <option value="2015">2015</option>
-        <option value="2016">2016</option>
-        <option value="2017">2017</option>
-        <option value="2018">2018</option>
-        <option value="2019">2019</option>
-        <option value="2020">2020</option>
-        <option value="2021">2021</option>
-        <option value="2022">2022</option>
-        <option value="2023">2023</option>
-        <option value="2024">2024</option>
-    </select>
+    <label for="description">Enter Chapter Description:</label>
+    <input type="text" id="description" name="description">
     <br>
 
 
+    <label for="result">Select Your Result:</label>
+    <input type="checkbox" name="result" value="Country">Country</input>
+    <input type="checkbox" name="result" value="Kg">Volume</input>
+    <input type="checkbox" name="result" value="J$, US$">Value</input>
+    <br>
 
     <button type="submit">SUBMIT</button>
+
 </form>
 
 {% endblock %}

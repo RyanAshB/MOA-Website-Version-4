@@ -271,29 +271,108 @@ header {
 
 
 /* THESE ARE THE HTE-ACKEE PAGE SELECTORS */
-.hte-ackee-page {
+/* .hte-popup {
+    width: 50%;
+    height: 80%;
+    background: linear-gradient(rgb(0, 162, 255), rgb(0, 180, 255));
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 0 30px 30px;
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: -10px 10px 10px black;
+}
+
+
+.hte-open-popup {
+    visibility: visible;
+    top: 53%;
+    transform: translate(-50%, -50%) scale(1);
+
+} */
+
+.hte-popup {
+    width: 50%;
+    height: 90%;
+    background: linear-gradient(rgb(209, 255, 141), rgb(255, 255, 161));
+    border-radius: 6px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    padding: 0 30px 30px;
+    visibility: hidden; 
+    transition: transform 0.4s, top 0.4s;
+    align-items: center;
+    border: 2px solid black;
+    box-shadow: -10px 10px 10px black;
+    z-index: 1000;
+}
+
+.hte-popup li {
+    padding-bottom: 15px;
+}
+
+
+.hte-popup ol {
+    margin-bottom: 0;
+}
+
+.hte-open-popup {
+    visibility: visible;  
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.hte-body {
+    background-color: lightgray;
+}
+
+.hte-page {
     width: 80%;
-    padding-left: 10%;
+    margin-left: 10%;
+    background-color: white;
+    padding-top: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
-.ackee-page-top {
-    padding-top: 30px;
+.hte-page .overview {
+    font-size: large;
 }
 
-.ackee-page-top h1 {
+.hte-page #hte-page-title {
+    font-size: 50px;
+    margin-top: 0px;
+    margin-left: 10px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.hte-page h1 {
     font-size: 50px;
 }
 
-.ackee-page-top-text {
-    width: 90%;
-    padding-left: 5%;
+.plant-title {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: yellow;
+    text-shadow: -2px 2px 1px black;
+    text-align: center;
 }
 
-.ackee-page-top-text .step-numbering {
+.hte-plants-page-top-text .step-numbering {
     display: flex;
 }
 
-.ackee-page-top-text .step-numbering h1 {
+.hte-plants-page-top-text .step-numbering h1 {
     width: 75px; 
     height: 75px;
     background: linear-gradient(rgb(199, 199, 199), rgb(238, 238, 238));
@@ -302,54 +381,105 @@ header {
     box-shadow: -2px 2px 5px black;
 }
 
-.ackee-page-top-text .step-numbering .not-1 {
+.hte-plants-page-top-text .step-numbering .not-1 {
     margin-left: 50px;
 }
 
-.hte-ackee-page .step-numbering a {
+.hte-plants-page-top-text #plant-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hte-page .read-more-text li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.hte-page .container button {
+    margin-top: 10px
+}
+
+.hte-page .step-numbering a {
     text-decoration: none;
     color: black;
     font-size: 15px;
 }
 
-.hte-ackee-page .step-title-number {
+.hte-page .step-title-number {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hte-ackee-page .step-title-number h2 {
+.hte-page .step-title-number h2 {
     padding-left: 10px;
 }
 
-.ackee-page-bottom {
+.hte-plants-page-bottom {
     margin-top: 50px;
-    width: 90%;
-    padding-left: 5%;
+}
+
+.hte-page .plant-title-para {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px black;
+
+}
+
+.hte-page .plant-title-para p {
+    padding: 20px;
+    margin: 0;
+}
+
+.hte-page .other-services {
+    font-size: 24px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.hte-page .other-services .service {
+    text-align: center;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-image: var(--cover-gradient);
+
+}
+
+.hte-page .other-services .service h2 {
+    margin: 10px;
+    color: black;
+    text-shadow: -0.5px 0.5px white;
 }
 
 
-
-.ackee-page-bottom .instruction {
+.hte-plants-page-bottom .instruction {
     margin-bottom: 30px;
     border-top: 1px solid gray;
 }
 
-.ackee-page-bottom .container {
+.hte-plants-page-bottom .container {
     border-top: 2px solid black;
     border-radius: 20px;
     margin-bottom: 40px;
-}
-
-.ackee-page-bottom .container:hover {
     background: linear-gradient(rgb(199, 199, 199), white);
+
+
 }
 
-.ackee-page-bottom .container button {
+.hte-plants-page-bottom .container:hover {
+    background: linear-gradient(rgb(209, 255, 141), white);
+
+}
+
+.hte-plants-page-bottom .container button {
     margin-bottom: 10px;
 }
 
-.ackee-page-bottom .read-more-container .container {
+.hte-plants-page-bottom .read-more-container .container {
     padding-left: 20px;
 }
 
@@ -371,6 +501,76 @@ header {
     display: block;
 }
 
+.read-more-text img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+}
+
+.hte-plants {
+    background-image: linear-gradient(to right, rgb(109, 203, 235), rgb(190, 220, 230));
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.hte-page hr {
+    background-color: black;
+    height: 2px;
+}
+
+.hte-plants-page-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.hte-plants-page-bottom {
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.hte-animals {
+    background-image: linear-gradient(to right, rgb(109, 203, 235), rgb(190, 220, 230));
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 50px;
+}
+
+.hte-animals-page-top {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.animals-title {
+    margin-top: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: yellow;
+    text-shadow: -2px 2px 1px black;
+    text-align: center;
+}
+
+.hte-animals-page-top-text #animals-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hte-page .animals-title-para {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: -2px 2px 5px black;
+}
+
+.hte-page .animals-title-para p {
+    padding: 20px;
+    margin: 0;
+}
 
 .twenty-page-container {
     width: 80%;

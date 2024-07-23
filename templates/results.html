@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+{% if data %}
+<table border="1">
+    <thead>
+        <tr>
+            {% for heading in table_headings %}
+                <th>{{ heading }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    <tbody>
+        {% for row in data %}
+            <tr>
+                {% for cell in row %}
+                    <td>{{ cell }}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% for i in data %}
+<h1>{{i}}</h1>
+{% endfor %}
+{% endif %}
+
+{% endblock %}

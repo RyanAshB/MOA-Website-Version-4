@@ -1,18 +1,29 @@
-const parentContainer = document.querySelector('.read-more-container');
 
-parentContainer.addEventListener('click', event => {
-    const current = event.target;
+document.addEventListener('DOMContentLoaded', (event) => {
+    const parentContainer = document.querySelector('.read-more-container');
 
-    const isReadMoreBtn = current.className.includes('read-more-btn');
+    parentContainer.addEventListener('click', event => {
+        const current = event.target;
 
-    if (!isReadMoreBtn) return;
+        const isReadMoreBtn = current.className.includes('read-more-btn');
 
-    const currentText = event.target.parentNode.querySelector('.read-more-text');
+        if (!isReadMoreBtn) return;
 
-    currentText.classList.toggle('read-more-text--show');
+        const currentText = event.target.parentNode.querySelector('.read-more-text');
 
-    current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+        currentText.classList.toggle('read-more-text--show');
+        console.log("clicked");
+
+        current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
+    });
 });
 
+function openPopup_1() {
+    let popup = document.getElementById('hte-popup-1');
+    popup.classList.add('hte-open-popup');  
+}
 
-
+function closePopup_1() {
+    const popup = document.getElementById('hte-popup-1');
+    popup.classList.remove('hte-open-popup');  
+}
