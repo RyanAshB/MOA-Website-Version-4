@@ -1,128 +1,157 @@
 {% extends "base.html" %}
 
 {% block main %}
-<div class="hte-body">
-    <div class="hte-page">
-        <h1 id="hte-page-title">Step By Step: How To <span style="color: yellow;">EXPORT</span></h1>
-        <div class="hte-plants">
-            <div class="hte-plants-page-top">
-                <div class="hte-plants-page-top-text">
-                    <div class="plant-title">
-                        <h1 id="plant-title">Plants & Plant Products</h1>
-                    </div>
-                    <div class="plant-title-para">
-                        <p class="overview"><strong>Export permits are required to validate the phytosanitary health of the product and its authenticity as an originating product from Jamaica. The primary agency that manages the export of plants and plant products is the Plant Quarantine and Produce Inspection (PQPI) division.</strong></p>
-                        <p class="overview"><Strong>Export services are also provided by other agencies depending on the nature of the product. In addition to the PQPI, consult the agencies below for guidance if exporting Coffee, Cocoa, Coconut, Tumeric, Ginger, Other Spices, or Banana.</Strong></p>
-                    </div>
+<div class="hte-page">
+    <h1 id="hte-page-title">Step By Step: How To <span style="color: yellow;">EXPORT</span></h1>
+    <div class="hte-plants">
+        <div class="hte-plants-page-top">
+            <div class="hte-plants-page-top-text">
+                <div class="plant-title">
+                    <h1 id="plant-title">Plants & Plant Products</h1>
+                </div>
+                <div class="plant-title-para">
+                    <p class="overview"><strong>Export permits are required to validate the phytosanitary health of the product and its authenticity as an originating product from Jamaica. The primary agency that manages the export of plants and plant products is the Plant Quarantine and Produce Inspection (PQPI) division.</strong></p>
+                    <p class="overview"><Strong>Export services are also provided by other agencies depending on the nature of the product. In addition to the PQPI, consult the agencies below for guidance if exporting Coffee, Cocoa, Coconut, Tumeric, Ginger, Other Spices, or Banana.</Strong></p>
                 </div>
             </div>
-            <div class="hte-plants-page-bottom">
-                <div class="read-more-container">
-                    <div class="container">
-                        <h2 id="step-1">Step 1: Acquire Import Requirements</h2>
-                        <span class="read-more-text">
-                            <ul>
-                                <li>Acquire import requirements from importer in overseas market.</li>
-                            </ul>
-                        </span>
-                        <button type="button" class="read-more-btn">Read More...</button>
-                    </div>
-                    <div class="container">
-                        <h2 id="step-2">Step 2: Packing House Facility.</h2>
-                        <span class="read-more-text">
-                            <ul>
-                                <li>Utilizing Personal Packing House Facility. 
-                                    <div>
-                                        <a href="{{ url_for('static', filename='packing.pdf') }}" target="_blank">
-                                            <img src="{{ url_for('static', filename='popup-icon.png') }}" alt="Bauxite">
-                                        </a>
-                                    </div>
-                                </li>
-                                <li>Utilizing Packing House Facility From Another Exporter. 
-                                    <div class="hte-popup-button" onclick="openPopup_1()">
-                                        <img src="{{ url_for('static', filename='popup-icon.png') }}" alt="Bauxite">
-                                    </div> 
-                                </li>
-                            </ul>
-                        </span>
-                        <button type="button" class="read-more-btn">Read More...</button>
-                    </div>
-                    <div class="container">
-                        <h2 id="step-3">Step 3: Make Appointment With PQPI</h2>
-                        <span class="read-more-text">
-                            <ul>
-                                <li>Make an appointment for the inspection of the packing house by a Plant Quarantine Inspector.</li>
-                                <li>If the packing house is approved, the following information must be provided:
-                                    <ol>
-                                        <li>Name and address of company.</li>
-                                        <li>Location of packing house.</li>
-                                        <li>Name, address and telephone number of contact person.</li>
-                                    </ol>
-                                </li>
-                                <li>If packing house is approved, the Chief Plant Quarantine Officer will prepare a letter to the Export Certification Officer, JAMPRO, requesting that they proceed with the certification process. The Produce may either be transported to the PQPI facility or the PQPI may also visit the exporter. </li>
-                                <li>All produce for export must be prepared and packed in an approved packing house.</li>
-                                <li>All produce must be appropriately packaged in new, clean, properly labelled bags or boxes.</li>
-                                <li>Labelling on packages must coincide with the information on the export documents.</li>
-                                <li>A Plant Quarantine/Produce Inspector must inspect all shipments. If the shipment is approved, an export certificate will be issued.</li>
-                                <li>Appointments for inspection must be made 24 hours in advance before the shipment is brought to the export complex or before the time when the inspector is to inspect the shipment at the packing.</li>
+            <div class="hte-plants-page-top-img">
+                <img src="{{ url_for('static', filename='fruit-basket.jpg') }}" alt="Bauxite">
+            </div>
+        </div>
+        <div class="hte-plants-page-middle">
+        
+            <div class="container">
+                <h2 id="step-1">Step 1: Acquire Import Requirements</h2>
+                <span class="read-more-text">
+                    <ul>
+                        <li>Acquire import requirements from importer in overseas market.</li>
+                    </ul>
+                </span>
+                <!-- <button type="button" class="read-more-btn">Read More...</button> -->
+            </div>
+            <div class="container">
+                <h2 id="step-2">Step 2: Packing House Facility.</h2>
+                <span class="read-more-text">
+                    <ul>
+                        <li>Utilizing Personal Packing House Facility. 
+                            <div>
+                                <a href="{{ url_for('static', filename='packing.pdf') }}" target="_blank">
+                                    <img src="{{ url_for('static', filename='popup-icon.png') }}" alt="Bauxite">
+                                </a>
+                            </div>
+                        </li>
+                        <li>Utilizing Packing House Facility From Another Exporter. 
+                            <div class="hte-popup-button" onclick="openPopup_1()">
+                                <img src="{{ url_for('static', filename='popup-icon.png') }}" alt="Bauxite">
+                            </div> 
+                        </li>
+                    </ul>
+                </span>
+                <!-- <button type="button" class="read-more-btn">Read More...</button> -->
+            </div>
+            <div class="container">
+                <h2 id="step-3">Step 3: Make Appointment With PQPI</h2>
+                <span class="read-more-text">
+                    <ul>
+                        <li>Make an appointment for the inspection of the packing house by a Plant Quarantine Inspector.</li>
+                        <li>If the packing house is approved, the following information must be provided:
+                            <ol>
+                                <li>Name and address of company.</li>
+                                <li>Location of packing house.</li>
+                                <li>Name, address and telephone number of contact person.</li>
+                            </ol>
+                        </li>
+                        <li>If packing house is approved, the Chief Plant Quarantine Officer will prepare a letter to the Export Certification Officer, JAMPRO, requesting that they proceed with the certification process. The Produce may either be transported to the PQPI facility or the PQPI may also visit the exporter. </li>
+                        <li>All produce for export must be prepared and packed in an approved packing house.</li>
+                        <li>All produce must be appropriately packaged in new, clean, properly labelled bags or boxes.</li>
+                        <li>Labelling on packages must coincide with the information on the export documents.</li>
+                        <li>A Plant Quarantine/Produce Inspector must inspect all shipments. If the shipment is approved, an export certificate will be issued.</li>
+                        <li>Appointments for inspection must be made 24 hours in advance before the shipment is brought to the export complex or before the time when the inspector is to inspect the shipment at the packing.</li>
 
-                            </ul>
-                        </span>
-                        <button type="button" class="read-more-btn">Read More...</button>
-                    </div>
-
-                    <div class="other-services">
-                        <div class="service">
-                            <h2>JACRA</h2>
-                        </div>
-                        <div class="service">
-                            <h2>Coconut Board</h2>
-                        </div>
-                        <div class="service">
-                            <h2>Banana Board</h2>
-                        </div>
-                        <div class="service">
-                            <h2>Export Division Services</h2>
-                        </div>
-                        
-                    </div>
-                </div>
-
+                    </ul>
+                </span>
+                <!-- <button type="button" class="read-more-btn">Read More...</button> -->
             </div>
         </div>
 
-        <div class="hte-animals">
-            <div class="hte-animals-page-top">
-                <div class="hte-animals-page-top-text">
-                    <div class="animals-title">
-                        <h1 id="animals-title">Animals & Animal Products</h1>
-                    </div>
-                    <div class="animals-title-para">
-                        <p class="overview"><strong>Export Permits are required to validate the sanitary health of animals and animal products originating from Jamaica.</strong></p>
-                        <p class="overview"><Strong>The primary agency that manages the export of animals and animal products is the Veterinary Services division.</Strong></p>
-                        <p class="overview"><Strong>The export requirements for these products is provided below.</Strong></p>
-                    </div>
+            <div class="other-services">
+                <div class="service" onclick="openPopup_icons()">
+                    <h2>JACRA</h2>
                 </div>
+                <div class="service">
+                    <h2>Coconut Board</h2>
+                </div>
+                <div class="service">
+                    <h2>Banana Board</h2>
+                </div>
+                <div class="service">
+                    <h2>Export Division Services</h2>
+                </div>
+                
             </div>
-        </div>
+            
+
         
     </div>
-    <div class="hte-popup" id="hte-popup-1">
-        <strong>
-        <h1>Use of Packing House Facility by Another Produce Exporter</h1>
-        <p>As of March 1, 1999 the following conditions apply when you give permission to someone to use your packing house for the purpose of preparing and packaging produce for export:</p>
-        <ol>
-            
-            <li>The arrangements should be for a period not exceeding six (6) months.</li>
-            <li>A letter written on your company’s stationery and signed by you or one other person designated by you should accompany each shipment verifying that the produce was packed at your premises and also indicating the quantity of each item included in the shipment.</li>
-            <li>The names of the two persons authorized to sign and a sample of their signature should be sent to the Plant Quarantine/Produce Inspection Division prior to the start of exportation.</li>
-            <li>You will be required to notify the Plant Quarantine Office when you have ceased packing on behalf of the person.</li>
-            <li>Please note that shipments will not be certified unless condition #2 is met each time a shipment is presented for inspection and certification.</li>
-            
-        </ol>
-        </strong>
-        <button type="button" class="btn" id="btn" onclick="closePopup_1()">OK</button>
-    <script src="{{ url_for('static', filename='script.js') }}"></script> 
 
+    
 </div>
+<div class="hte-popup" id="hte-popup-1">
+    <strong>
+    <h1>Use of Packing House Facility by Another Produce Exporter</h1>
+    <p>As of March 1, 1999 the following conditions apply when you give permission to someone to use your packing house for the purpose of preparing and packaging produce for export:</p>
+    <ol>
+        
+        <li>The arrangements should be for a period not exceeding six (6) months.</li>
+        <li>A letter written on your company’s stationery and signed by you or one other person designated by you should accompany each shipment verifying that the produce was packed at your premises and also indicating the quantity of each item included in the shipment.</li>
+        <li>The names of the two persons authorized to sign and a sample of their signature should be sent to the Plant Quarantine/Produce Inspection Division prior to the start of exportation.</li>
+        <li>You will be required to notify the Plant Quarantine Office when you have ceased packing on behalf of the person.</li>
+        <li>Please note that shipments will not be certified unless condition #2 is met each time a shipment is presented for inspection and certification.</li>
+        
+    </ol>
+    </strong>
+    <button type="button" class="btn" id="btn" onclick="closePopup_1()">OK</button>
+</div>
+
+<div class="hte-popup-icons" id="hte-popup-icons">
+    <div class="hte-popup-icon" id="hte-popup-cocoa-icon">
+        <img src="{{ url_for('static', filename='cocoa-icon.png') }}" alt="Bauxite">
+        <h2>Cocoa</h2>
+    </div>
+
+    <div class="hte-popup-icon" id="hte-popup-coffee-icon">
+        <img src="{{ url_for('static', filename='coffee-beans-icon.png') }}" alt="Bauxite">
+        <h2>Coffee</h2>
+    </div>
+
+    <div class="hte-popup-icon" id="hte-popup-coffee-icon">
+        <img src="{{ url_for('static', filename='coconut-shell-icon.png') }}" alt="Bauxite">
+        <h2>Coconut</h2>
+    </div>
+
+    <div class="hte-popup-icon" id="hte-popup-coffee-icon">
+        <img src="{{ url_for('static', filename='spice-icon.png') }}" alt="Bauxite">
+        <h2>Spices</h2>
+    </div>
+</div>
+
+<!-- <div class="hte-popup" id="hte-popup-2">
+    <strong>
+    <h1>JACRA Special Requirements:</h1>
+    <ol>
+        <li>Submit Application/Request for International Coffee Organization number (ICO#) for shipment of processed green coffee beans</li> 
+        <li>JACRA will review the Application, if approved an ICO# will be issued</li>            
+        <li>The exporter will be required to submit the shipping instructions</li>            
+        <li>The exporter will be required to submit duly packaged and labelled coffee shipment</li>            
+        <li>JACRA will conduct quality testing of samples and prepare assessment report</li>            
+        <li>If shipping instructions are approved, shipping instruction will be stamped "Approved For Export"</li>            
+        <li>JACRA will fulfill the approved shipping instructions</li>            
+        <li>The exporter will then reimburse all costs advanced by JACRA</li>            
+    </ol>
+    </strong>
+    <button type="button" class="btn" id="btn" onclick="closePopup_2()">OK</button>
+</div> -->
+
+<script src="{{ url_for('static', filename='script.js') }}"></script> 
+
 {% endblock %}

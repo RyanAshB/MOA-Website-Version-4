@@ -313,7 +313,13 @@ header {
     align-items: center;
     border: 2px solid black;
     box-shadow: -10px 10px 10px black;
-    z-index: 1000;
+    z-index: 500;
+}
+
+.hte-open-popup {
+    visibility: visible;  
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .hte-popup li {
@@ -325,21 +331,56 @@ header {
     margin-bottom: 0;
 }
 
-.hte-open-popup {
-    visibility: visible;  
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
+.hte-popup-icons {
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    top: -15%;
+    left: 0%;
+    transform: translate(0%, 0%) scale(0.1);
+    visibility: hidden; 
+    transition: transform 0.4s, top 0.4s;   
 }
+
+.hte-popup-icons-open {
+    visibility: visible;
+    top: 25%;
+    transform: translate(0%, 0%) scale(1);
+}
+
+.hte-popup-icons img{
+    width: 100px;
+    height:100px;
+
+}
+
+.hte-popup-icon {
+    background: linear-gradient(rgb(209, 255, 141), rgb(255, 255, 161));
+    width:150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    border: 2px solid black;
+}
+
+
+
+
+
+
 
 .hte-body {
     background-color: lightgray;
 }
 
 .hte-page {
-    width: 80%;
-    margin-left: 10%;
     background-color: white;
-    padding-top: 20px;
+    padding-top: 10%;
     box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
 }
 
@@ -357,38 +398,17 @@ header {
 
 .hte-page h1 {
     font-size: 50px;
+    margin-top:0;
 }
 
 .plant-title {
-    margin-top: 20px;
-    border: 2px solid black;
     border-radius: 5px;
     color: yellow;
-    text-shadow: -2px 2px 1px black;
-    text-align: center;
+    text-shadow: -1px 1px 1px black;
 }
 
-.hte-plants-page-top-text .step-numbering {
-    display: flex;
-}
 
-.hte-plants-page-top-text .step-numbering h1 {
-    width: 75px; 
-    height: 75px;
-    background: linear-gradient(rgb(199, 199, 199), rgb(238, 238, 238));
-    text-align: center;
-    border-radius: 100px;
-    box-shadow: -2px 2px 5px black;
-}
 
-.hte-plants-page-top-text .step-numbering .not-1 {
-    margin-left: 50px;
-}
-
-.hte-plants-page-top-text #plant-title {
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .hte-page .read-more-text li{
     padding-top: 5px;
@@ -415,21 +435,17 @@ header {
     padding-left: 10px;
 }
 
-.hte-plants-page-bottom {
-    margin-top: 50px;
+.hte-plants-page-middle {
+    margin-top: 200px;
 }
 
 .hte-page .plant-title-para {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(238, 238, 238);
     border-radius: 5px;
-    box-shadow: -2px 2px 5px black;
-
 }
 
 .hte-page .plant-title-para p {
     padding: 20px;
+    padding-left: 0px;
     margin: 0;
 }
 
@@ -456,49 +472,38 @@ header {
 }
 
 
-.hte-plants-page-bottom .instruction {
+.hte-plants-page-middle .instruction {
     margin-bottom: 30px;
     border-top: 1px solid gray;
 }
 
-.hte-plants-page-bottom .container {
-    border-top: 2px solid black;
+.hte-plants-page-middle .container {
     border-radius: 20px;
     margin-bottom: 40px;
-    background: linear-gradient(rgb(199, 199, 199), white);
-
-
 }
 
-.hte-plants-page-bottom .container:hover {
-    background: linear-gradient(rgb(209, 255, 141), white);
 
-}
 
-.hte-plants-page-bottom .container button {
+.hte-plants-page-middle .container button {
     margin-bottom: 10px;
 }
 
-.hte-plants-page-bottom .read-more-container .container {
+.hte-plants-page-middle .read-more-container .container {
     padding-left: 20px;
 }
 
+.read-more-container {
+    margin-top: 20%;
+}
+
 .read-more-text {
-    display: none;
+    display: block;
     font-size: 20px;
-    background-color: rgb(238, 238, 238);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 10px;
-    border: 2px solid black
-}
-
-
-
-.read-more-text--show {
-    display: block;
 }
 
 .read-more-text img {
@@ -508,9 +513,7 @@ header {
 }
 
 .hte-plants {
-    background-image: linear-gradient(to right, rgb(109, 203, 235), rgb(190, 220, 230));
     border-radius: 10px;
-    border: 2px solid black;
     width: 90%;
     margin-left: 5%;
 }
@@ -521,56 +524,19 @@ header {
 }
 
 .hte-plants-page-top {
-    margin-left: 10px;
-    margin-right: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
 }
 
-.hte-plants-page-bottom {
-    margin-left: 10px;
-    margin-right: 10px;
-
+.hte-plants-page-top img {
+    width: 400px;
+    height: 400px;
+    margin-left: 100px;
 }
 
-.hte-animals {
-    background-image: linear-gradient(to right, rgb(109, 203, 235), rgb(190, 220, 230));
-    border-radius: 10px;
-    border: 2px solid black;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 50px;
-}
-
-.hte-animals-page-top {
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.animals-title {
-    margin-top: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: yellow;
-    text-shadow: -2px 2px 1px black;
-    text-align: center;
-}
-
-.hte-animals-page-top-text #animals-title {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.hte-page .animals-title-para {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(238, 238, 238);
-    border-radius: 5px;
-    box-shadow: -2px 2px 5px black;
-}
-
-.hte-page .animals-title-para p {
-    padding: 20px;
-    margin: 0;
-}
 
 .twenty-page-container {
     width: 80%;

@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         const currentText = event.target.parentNode.querySelector('.read-more-text');
 
         currentText.classList.toggle('read-more-text--show');
-        console.log("clicked");
 
         current.textContent = current.textContent.includes('Read More') ? "Read Less..." : "Read More...";
     });
@@ -27,3 +26,23 @@ function closePopup_1() {
     const popup = document.getElementById('hte-popup-1');
     popup.classList.remove('hte-open-popup');  
 }
+
+function openPopup_icons() {
+    let popup = document.getElementById('hte-popup-icons');
+    popup.classList.add('hte-popup-icons-open');  
+}
+
+document.addEventListener('click', function(event) {
+    let popup = document.getElementById('hte-popup-icons');
+    if (!popup.contains(event.target) && !event.target.closest('.service')) {
+        popup.classList.remove('hte-popup-icons-open');
+    }
+});
+
+document.addEventListener('click', function(event) {
+    let popup = document.getElementById('hte-popup-1');
+    if (!popup.contains(event.target) && !event.target.closest('.hte-popup-button')) {
+        popup.classList.remove('hte-open-popup');
+    }
+});
+
