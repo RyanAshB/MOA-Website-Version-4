@@ -3,8 +3,6 @@ from flask_mail import Mail, Message
 from flask_mysqldb import MySQL
 import mysql.connector
 import pandas as pd
-import openpyxl
-from fileinput import filename
 
 app = Flask(__name__)
 
@@ -25,17 +23,17 @@ def dbTest():
 
 @app.route('/submit_form', methods=['POST'])
 def submit_form():
-    print("Attempt 9")
+    print("Debug-1")
     file = request.files['my_file']
     df = pd.read_excel(file)
     df.columns = df.columns.str.strip()
-
+    print("Debug-2")
     conn = get_db_connection()
     cursor = conn.cursor()
 
     cursor.execute("DROP TABLE IF EXISTS overseas_importers;")
     cursor.execute("CREATE TABLE overseas_importers (Commodity varchar(255), Country varchar(255), Name_of_Company varchar(255), Address varchar(255), Address_Continued varchar(255));")
-
+    print("Debug-3")
     for index, row in df.iterrows():
 
         values = [
@@ -50,6 +48,7 @@ def submit_form():
             "INSERT INTO overseas_importers (Commodity, Country, Name_of_Company, Address, Address_Continued) VALUES (%s, %s, %s, %s, %s)",
             values
         )
+        print("Debug-4")
 
     conn.commit()
     cursor.close()
