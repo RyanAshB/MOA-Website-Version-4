@@ -2,7 +2,9 @@ from flask import Flask, render_template, request, jsonify
 from flask_mail import Mail, Message
 from flask_mysqldb import MySQL
 import mysql.connector
-
+import pandas as pd
+import openpyxl
+from fileinput import filename
 
 app = Flask(__name__)
 
@@ -10,7 +12,7 @@ db_config = {
     'user': 'root',
     'password': 'password123',
     'host': 'localhost',
-    'database': 'food_import_cleaned'
+    'database': 'overseas_importers'
 
 }
 
@@ -23,44 +25,53 @@ def dbTest():
 
 @app.route('/submit_form', methods=['POST'])
 def submit_form():
-    chapter_code = request.form['chapter_code']
-    chapter_heading = request.form['chapter_heading']
-    result = request.form.getlist('result')
-    description = request.form['description']
+    print("Attempt 9")
+    file = request.files['my_file']
+    df = pd.read_excel(file)
+    df.columns = df.columns.str.strip()
 
-    params = ', '.join(result)
-    query_var = []
-    table_headings = []
+    conn = get_db_connection()
+    cursor = conn.cursor()
 
-    connection = get_db_connection()
-    cursor = connection.cursor()
-    query = f"SELECT {params} FROM food_import_cleaned WHERE TRUE"
+    cursor.execute("DROP TABLE IF EXISTS overseas_importers;")
+    cursor.execute("CREATE TABLE overseas_importers (Commodity varchar(255), Country varchar(255), Name_of_Company varchar(255), Address varchar(255), Address_Continued varchar(255));")
 
-    if chapter_code:
-        chapter_code_end = (" AND `Chapter code 1`= %s")
-        query = query + chapter_code_end
-        query_var.append(chapter_code)
-        table_headings.append("Chapter Codes")
+    for index, row in df.iterrows():
 
-    if chapter_heading:
-        chapter_heading_end = (" AND `Chapter`= %s")
-        query = query + chapter_heading_end
-        query_var.append(chapter_heading)
-        table_headings.append("Chapter Headings")
+        values = [
+            row['Commodity'] if pd.notna(row['Commodity']) else None,
+            row['Country'] if pd.notna(row['Country']) else None,
+            row['Name of Company'] if pd.notna(row['Name of Company']) else None,
+            row['Address'] if pd.notna(row['Address']) else None,
+            row.get("Address Cont'd") if pd.notna(row.get("Address Cont'd")) else None
+        ]
 
+        cursor.execute(
+            "INSERT INTO overseas_importers (Commodity, Country, Name_of_Company, Address, Address_Continued) VALUES (%s, %s, %s, %s, %s)",
+            values
+        )
 
-    if description:
-        description_end = (" AND `Description`= %s")
-        query = query + description_end
-        query_var.append(description)
-        table_headings.append("Descriptions")
-
-
-    cursor.execute(query, tuple(query_var))
-    fetchdata = cursor.fetchall()
+    conn.commit()
     cursor.close()
-    connection.close()
-    return render_template('results.html', data=fetchdata)
+    conn.close()
+    
+    return render_template('dbTest.html')
+    
+
+    # conn = get_db_connection()
+    # cursor = conn.cursor()
+
+    # for index, row in df.iterrows():
+    #     cursor.execute(
+    #         "INSERT INTO importers (Commodity, Country, Name_of_Company, Address, Address_Contd) VALUES (%s, %s, %s, %s, %s)",
+    #         (row['Commodity'], row['Country'], row['Name of Company'], row['Address'], row['Address Contd'])
+    #     )
+    # conn.commit()
+    # cursor.close()
+    # conn.close()
+
+    # return "Effort"
+    
     # hs_code = request.form['hs_code']
     # ie = request.form['placeholder']
     # year = request.form['year']

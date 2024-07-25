@@ -17,6 +17,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+
+
 function openPopup_1() {
     let popup = document.getElementById('hte-popup-1');
     popup.classList.add('hte-open-popup');  

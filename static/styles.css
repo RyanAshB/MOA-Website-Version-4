@@ -401,11 +401,7 @@ header {
     margin-top:0;
 }
 
-.plant-title {
-    border-radius: 5px;
-    color: yellow;
-    text-shadow: -1px 1px 1px black;
-}
+
 
 
 
@@ -435,40 +431,83 @@ header {
     padding-left: 10px;
 }
 
+
+
 .hte-plants-page-middle {
-    margin-top: 200px;
+    background-image: linear-gradient(to left, rgb(0, 0, 90), rgb(106, 106, 117));
+    color: white;
+    padding-left: 10%;
+    padding-top: 5%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+
+}
+
+.hte-plants-page-middle-steps {
+    margin-left: 50%
 }
 
 .hte-page .plant-title-para {
     border-radius: 5px;
+
 }
 
 .hte-page .plant-title-para p {
     padding: 20px;
-    padding-left: 0px;
+    padding-left: 15px;
     margin: 0;
+
+}
+
+.plant-title {
+    border-radius: 5px;
+    color: rgb(202, 131, 0);
+    text-shadow: -1px 1px 1px black;
+}
+
+.hte-plants-page-top-text h1 {
+    padding-left: 15px;
+    
 }
 
 .hte-page .other-services {
     font-size: 24px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
+    justify-content: space-around;
 }
 
 .hte-page .other-services .service {
     text-align: center;
-    margin: 20px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-image: var(--cover-gradient);
+    border-radius: 40px;
+    background-image: linear-gradient(to top, rgb(0, 102, 255), rgb(0, 153, 255));
+    width:90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
 
+.hte-page .other-services .service:hover {
+    background-image: var(--cover-gradient);
+}
+
+.hte-page .other-services .service-box {
+    margin: 30px;
+    width: 50%;
+    margin-left: 25%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
 }
 
 .hte-page .other-services .service h2 {
     margin: 10px;
     color: black;
     text-shadow: -0.5px 0.5px white;
+    font-size: 24px;
 }
 
 
@@ -514,8 +553,7 @@ header {
 
 .hte-plants {
     border-radius: 10px;
-    width: 90%;
-    margin-left: 5%;
+
 }
 
 .hte-page hr {
@@ -524,7 +562,7 @@ header {
 }
 
 .hte-plants-page-top {
-
+    padding-left: 10%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
