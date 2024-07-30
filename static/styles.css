@@ -1,849 +1,355 @@
 :root {
-    /* --bgcolor: #4f7ae2;
-    --ribbon-color: #223f81; */
-    /* --bgcolor: linear-gradient(rgb(231, 23, 231),purple); */
-    /* --bgcolor: rgb(231, 23, 231); */
-    --title-color: rgb(63, 63, 63);
-    --text-color: rgb(63, 63, 63);
-    --title-highlight-color: orange;
-    --cover-gradient: linear-gradient(blue, rgb(0, 153, 255));
+    --cover-gradient: linear-gradient(rgb(0, 217, 255), rgb(0, 255, 255));
 }
 
 body {
-    margin: 0;
-    /* font-family: Arial, sans-serif; */
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
-
+    
 }
 
-
-
-.nav-bar {
-    background-color: white;
+.container-fluid {
+    padding: 0;
 }
 
-.nav-bar h1 {
-    color: black;
-    text-shadow: -1px 1px 5px greenyellow;
-}
-
-.nav-bar #heading-1{
-    margin-top: 0;
-    margin-bottom:0;
-}
-
-
-
-.nav-bar .top-nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-header li{
-    list-style: none;
-}
-
-
+/* This Is The Nav-Bar Section */
 
 .page-name-bg{
-    background: var(--cover-gradient);
+    background: white;
 }
 
 .page-name {
-    display: inline-flex
+    display: inline-flex;
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-light {
+    background-color: lightblue;
 }
 
 .page-name img{
-    width: 100px;
     height: 100px;
     padding-top: 4px;
     padding-left: 40px;
     padding-right: 30px;
 }
 
-.nav-bar .top-nav a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
+.my-nav-bar #navbarSupportedContent {
+    margin-left: 50%;
 }
 
-.h-section-2-products a {
-    text-decoration: none;
-    color: white;
-    font-size: 15px;
-}
-
-
-
-.top-nav {
-    background-color: gray;
-    display: inline-flex;
-    width: 100%;
-}
-
-.top-nav ul {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
-    padding-left: 100px;
-    padding-right: 75px;
-    align-items: center;
-}
-
-.top-nav h3 {
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 100px;
-    font-size: 40px;
-    color: rgb(255, 235, 51);
-    text-shadow: -1.2px 1.2px 2px black;
-}
-
-header {
-}
-.nav-bar{
-    width: 100%;
-}
-
-.banner img {
-    width: 100%;
-    height: 100%;
-}
-
-
-
-.home-page {
-    width: 80%;
-    padding-left: 10%;
-}
-
-.h-section-1 {
-    display: inline-flex;
-    padding-top: 5%;
-    padding-bottom: 5%;
-}
-
-.h-section-1 img {
-    width: 420%;
-    height: 300%;
-    padding-top: 20px;
-}
-
-.home-title {
-    margin: 0;
-    font-size: 40px;
-    color: var(--title-color)
-}
-
-.home-para {
-    color: var(--title-color)
-}
-
-#yellow {
-    color: yellow;
-}
-
-.h-section-1-text {
-    padding-left: 3%;
-    color: var(--title-color);
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";;
-}
-
-.h-section-1-text button {
-    background-color: white;
-    width: 40%;
-    height: 50px;
-    border-color: black;
-    border-width: 4px;
-
-}
-
-.h-section-1-text .button {
-    padding-top: 40px;
-}
-
-.h-section-2-text {
-    color: var(--title-color);
-}
-
-
-
-
-
-
-
-.h-section-2{
-    padding-bottom: 100px;
-}
-
-.h-section-2-products img {
-    border-radius: 50%;
-    width: 80px;
-    height: 75px;
-
-}
-
-.h-section-2-products .product {
-    display: flex;
-    background-color: aqua;
-    margin-bottom: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    border-top-left-radius: 20px;
-    background: linear-gradient(to right, greenyellow, white);
-
-}
-
-
-.h-section-2-products .product:hover {
-    background: linear-gradient(to left, greenyellow, white);
-}
-
-
-.h-section-2-products .product h1 {
-    padding-left: 15px;
-}
-
-.h-section-3 {
-    background: linear-gradient(rgb(119, 228, 255), rgb(184, 237, 250), rgb(119, 228, 255));
-    background: white;
-    border: 2px solid gray;
-    border-radius: 10px;
-}
-
-.h-section-3-cards-margin {
-    width: 90%;
-    padding-left: 5%
-}
-
-.h-section-3 .card img{
-    width: 80px
-}
-
-.h-section-3 .home-title {
-    padding-bottom: 80px;
-    padding-top: 20px;
-}
-
-.h-section-3-cards {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 10px;
-}
-
-.h-section-3-cards h3{
-    color: var(--title-color)
-}
-
-.h-section-3-cards .card {
-    padding-right: 40px;
-    padding-left: 40px;
-    padding-top: 20px;
-    border-radius: 5px;
-}
-
-.h-section-3-cards .card:hover {
-    background-color: rgb(214, 214, 214);
-    
-}
-
-.h-section-3-cards .card:hover h3{
-    font-size: 19px;   
-    transition-duration: 50ms;  
-}
-
-.h-section-3-cards button {
-    background-color: white;
-    width: 80%;
-    height: 40px;
-    border-color: black;
-    border-width: 4px;
-}
-
-.h-section-3-cards button:hover {
-    background-color: gray;
-    transition-duration: 0.2s;
-}
-
-
-/* THESE ARE THE HTE-ACKEE PAGE SELECTORS */
-/* .hte-popup {
-    width: 50%;
-    height: 80%;
-    background: linear-gradient(rgb(0, 162, 255), rgb(0, 180, 255));
-    border-radius: 6px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    padding: 0 30px 30px;
-    visibility: visible;
-    transition: transform 0.4s, top 0.4s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    box-shadow: -10px 10px 10px black;
-}
-
-
-.hte-open-popup {
-    visibility: visible;
-    top: 53%;
-    transform: translate(-50%, -50%) scale(1);
-
-} */
-
-.hte-popup {
-    width: 50%;
-    height: 90%;
-    background: linear-gradient(rgb(209, 255, 141), rgb(255, 255, 161));
-    border-radius: 6px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    padding: 0 30px 30px;
-    visibility: hidden; 
-    transition: transform 0.4s, top 0.4s;
-    align-items: center;
-    border: 2px solid black;
-    box-shadow: -10px 10px 10px black;
-    z-index: 500;
-}
-
-.hte-open-popup {
-    visibility: visible;  
-    top: 50%;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-.hte-popup li {
-    padding-bottom: 15px;
-}
-
-
-.hte-popup ol {
-    margin-bottom: 0;
-}
-
-.hte-popup-icons {
-    width: 70%;
-    margin-left: 15%;
-    display: flex;
-    justify-content: space-around;
-    position: fixed;
-    top: -15%;
-    left: 0%;
-    transform: translate(0%, 0%) scale(0.1);
-    visibility: hidden; 
-    transition: transform 0.4s, top 0.4s;   
-}
-
-.hte-popup-icons-open {
-    visibility: visible;
-    top: 25%;
-    transform: translate(0%, 0%) scale(1);
-}
-
-.hte-popup-icons img{
-    width: 100px;
-    height:100px;
-
-}
-
-.hte-popup-icon {
-    background: linear-gradient(rgb(209, 255, 141), rgb(255, 255, 161));
-    width:150px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    border: 2px solid black;
-}
-
-
-
-
-
-
-
-.hte-body {
-    background-color: lightgray;
-}
-
-.hte-page {
-    background-color: white;
-    padding-top: 10%;
-    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.9);
-}
-
-.hte-page .overview {
-    font-size: large;
-}
-
-.hte-page #hte-page-title {
-    font-size: 50px;
-    margin-top: 0px;
-    margin-left: 10px;
-    width: 90%;
-    margin-left: 5%;
-}
-
-.hte-page h1 {
-    font-size: 50px;
-    margin-top:0;
-}
-
-
-
-
-
-
-.hte-page .read-more-text li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-
-.hte-page .container button {
-    margin-top: 10px
-}
-
-.hte-page .step-numbering a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-}
-
-.hte-page .step-title-number {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hte-page .step-title-number h2 {
-    padding-left: 10px;
-}
-
-
-
-.hte-plants-page-middle {
-    background-image: linear-gradient(to left, rgb(0, 0, 90), rgb(106, 106, 117));
-    color: white;
-    padding-left: 10%;
-    padding-top: 5%;
-    border-top-left-radius: 50%;
-    border-bottom-right-radius: 5%;
-    border-bottom-left-radius: 50%;
-
-}
-
-.hte-plants-page-middle-steps {
-    margin-left: 50%
-}
-
-.hte-page .plant-title-para {
-    border-radius: 5px;
-
-}
-
-.hte-page .plant-title-para p {
-    padding: 20px;
-    padding-left: 15px;
-    margin: 0;
-
-}
-
-.plant-title {
-    border-radius: 5px;
-    color: rgb(202, 131, 0);
-    text-shadow: -1px 1px 1px black;
-}
-
-.hte-plants-page-top-text h1 {
-    padding-left: 15px;
-    
-}
-
-.hte-page .other-services {
-    font-size: 24px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-around;
-}
-
-.hte-page .other-services .service {
-    text-align: center;
-    border-radius: 40px;
-    background-image: linear-gradient(to top, rgb(0, 102, 255), rgb(0, 153, 255));
-    width:90%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
-
-.hte-page .other-services .service:hover {
-    background-image: var(--cover-gradient);
-}
-
-.hte-page .other-services .service-box {
-    margin: 30px;
-    width: 50%;
-    margin-left: 25%;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 10px;
-}
-
-.hte-page .other-services .service h2 {
-    margin: 10px;
-    color: black;
-    text-shadow: -0.5px 0.5px white;
-    font-size: 24px;
-}
-
-
-.hte-plants-page-middle .instruction {
-    margin-bottom: 30px;
-    border-top: 1px solid gray;
-}
-
-.hte-plants-page-middle .container {
-    border-radius: 20px;
-    margin-bottom: 40px;
-}
-
-
-
-.hte-plants-page-middle .container button {
-    margin-bottom: 10px;
-}
-
-.hte-plants-page-middle .read-more-container .container {
-    padding-left: 20px;
-}
-
-.read-more-container {
-    margin-top: 20%;
-}
-
-.read-more-text {
-    display: block;
-    font-size: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
-.read-more-text img {
-    width: 20px;
-    height: 20px;
-    margin-left: 5px;
-}
-
-.hte-plants {
-    border-radius: 10px;
-
-}
-
-.hte-page hr {
-    background-color: black;
-    height: 2px;
-}
-
-.hte-plants-page-top {
-    padding-left: 10%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-}
-
-.hte-plants-page-top img {
-    width: 400px;
-    height: 400px;
+.my-nav-bar .navbar-brand {
     margin-left: 100px;
+    font-size: 32px;
 }
 
 
-.twenty-page-container {
+/* THIS IS THE HOME VIDEO SECTION */
+.home-video-section {
+    display: flex;
+}
+
+.home-video-section video {
+    height: 700px !important;
+}
+
+.home-video-section .home-video-bubbles .badge-secondary {
+    background-color: rgb(255, 255, 199);
+    margin-top: 50px;
+    color: black;
+    border-radius: 10px;
+}
+
+.home-video-section .home-video-bubbles {
+    background-image: linear-gradient(to left, rgb(255, 255, 95), white);
+    background-color: black;
+    width: 100%;
+}
+
+
+.home-video-section .home-video-bubbles .float-right {
+    margin-top: 141px;
+    margin-right: 70px;
+}
+
+/* This Is The JACRA Licence Information */
+
+.card {
+    align-items: center;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    width: 100px;
+    margin-top: 10px;
+}
+
+.modal-image {
+    width: 100px;
+}
+
+.licence-modal-text {
+    text-align: left;
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 700px;
+        margin: 1.75rem auto;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 30%;
+        margin: 5px;
+
+    }
+}
+
+@media (min-width: 768px) {
+    .ml-auto {
+        flex: 0 0 30%;
+        margin: 5px !important;
+
+    }
+}
+
+.jacra-body {
+    padding-top: 74px !important;
+}
+
+.jacra-body .carousel-inner img {
+    width: 500px;
+    height: 500px;
+}
+
+.jacra-licence-page .modal .ml-auto {
+    margin-left:0;
+}
+
+.jacra-licence-page-steps {
+    display: flex;
+}
+
+.jacra-licence-page-steps-content {
+    margin-left: 10%;
+    margin-right: 5%;
+    border-radius: 4px;
+    padding: 0px;
+}
+
+.licence-page-products{
+    width: 150%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jacra-licence-page h1 {
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.row {
+    justify-content: center !important;
+}
+
+.jacra-licence-page .card h5{
+    padding-bottom: 10px;
+}
+
+.jacra-licence-page-body {
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+.jacra-licence-page .popup-card {
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+
+.jacra-licence-page .popup-card .btn-primary {
+    border-radius: 20px;
+}
+
+.jacra-sidebar {
+    background-color: gray;
+}
+
+
+/* This Is The 2025 Page */
+
+.landing-page img {
+    margin-top: 50px;
+}
+
+.landing-second-section {
+    padding-top: 5%;
+}
+
+.landing-second-section h1 {
+    /* font-size: 100px; */
+    text-align: center;
+    font-weight: bolder;
+}
+
+.landing-second-section h1, .landing-second-section h3{
+    color: rgba(242,198,65,255);
+}
+
+.landing-second-section-content {
+    padding-top: 0%;
+    padding-left: 5%;
+
+}
+
+.landing-second-section-content .content {
+    padding-top: 3%;
+}
+
+.landing-third-section {
+    position: relative;
+    font-family: 'Glacial Indifference'
+}
+  
+.landing-third-section table {
+    text-align: center;
+    margin: 0;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 20%;
+    display: flex;
+    width: 100%;
+}
+
+.overlay-text p {
+    color: white;
+}
+
+.overlay-text-left {
+    width: 35%;
+    margin-left: 8%;
+}
+
+.overlay-text-left-bottom {
+    text-align: center;
+    padding-top: 40px
+}
+
+.overlay-text-left-bottom #explore-link {
+    padding-top: 30px;
+    text-decoration: underline;
+}
+
+.overlay-text-left-bottom #explore-link:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.overlay-text-right {
+    width: 30%;
+    margin-left: 15%;
+}
+
+.overlay-text-right-content p {
+    margin: 0;
+}
+
+.landing-page .overlay-text-right {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.landing-page .overlay-text-right-content li {
+    text-decoration: none;
+}
+
+.overlay-text-right-content {
     width: 80%;
     margin-left: 10%;
-    background-color: rgb(233, 255, 202);
-}
-
-.twenty-page-container-2 {
-    width: 94%;
-    margin-left: 3%;
-}
-
-.twenty-page-top-header {
-    font-size: 32px;
-    border-radius: 10px;
-    box-shadow: -5px 5px 10px black;
-    transition: font-size 0.5s;
-}
-
-.twenty-page-top-header:hover {
-    font-size: 38px;
-}
-
-.twenty-page-top-header h1{
-    margin: 0;
-    padding-left: 30px;
-    padding-bottom: 10px;
-    color: yellow;
-    text-shadow: 2px 2px 5px black;
-}
-
-.twenty-page-top {
-    margin-top: 20px;
-}
-
-.twenty-page-top-para {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 0;
+    margin-top: 70px;
     font-size: large;
+    text-align: center;
+
 }
 
-.twenty-page-top-header {
+.overlay-text-right-content .head {
+    font-weight: bolder;
+}
+
+.overlay-text-right-content .bottom {
+    padding-top: 25%;
+}
+
+.overlay-text-right-content .list-item {
+    padding-top: 5%;
+}
+
+.landing-fourth-section{
+    margin-top: 5%;
+    font-family: 'Glacial Indifference'
+}
+
+.landing-fourth-section h1 {
     text-align: center;
 }
 
-/* This Is The Card Area */
-.twenty-page-container .card-container  {
-    width: 100%;
-    height: 400px;
-    perspective: 1000px;
+.landing-fourth-section #heading {
+    font-weight: bold;
+    color: rgba(242,198,65,255);
+    font-family: 'Helsinki', sans-serif;
+}
+
+
+.landing-fourth-section .lists {
     display: flex;
-    justify-content: space-around;
-}
-
-.twenty-page-container .card-error-container:hover > .card{
-    cursor: pointer;
-    transform: rotateY(180deg)
-}
-
-.twenty-page-container .card-container .card {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transition: transform 0.5s;
-    transform-style: preserve-3d;
-}
-
-.twenty-page-container-2 .card-error-container {
-    width: 30%;
-    height: 100%
-    
-}
-
-
-
-.twenty-page-container .front, .back {
-    width: 100%;
-    height: 100%;
-    border-radius: 2em;
-    position: absolute;
-    backface-visibility: hidden;
-    box-shadow: -3px 3px 10px black;
-}
-
-.twenty-page-container .back {
-    background: linear-gradient(gray, rgb(211, 211, 211));
-    transform: rotateY(180deg);
-}
-
-.twenty-page-container .front {
-    background: linear-gradient(blue, rgb(0, 255, 242));
     text-align: center;
-    font-size: 24px;
-    text-shadow: -3px 3px 10px black;
-}
-
-.twenty-page-container .front h1 {
-    color: rgb(231, 231, 0);
-}
-
-.twenty-page-container .back ul {
-    list-style: none;
-}
-
-.twenty-page-container .back li {
-    font-size: 32px;
-} 
-
-/* This Is The Card Area */
-
-
-.country-container {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px;
-}
-
-.country-container .country {
-    font-size: 40px;
-    background: linear-gradient(gray, rgb(199, 199, 199));
-    border: 2px solid black;
-    border-radius: 10px;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-}
-
-.country-container .country:hover {
-    background: linear-gradient(rgb(187, 187, 187), white);
-    box-shadow: -2px 2px 10px black;
-}
-
-.country-container .country:hover img {
-    width: 185px;
-    height: 185px;
-    box-shadow: -1px 1px 10px gray;
-}
-
-.country-container img {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 2px solid black;
-    transition-duration: 0.2s;
-    
-}
-
-.country-container h3 {
-    margin: 0;
-    margin-top: 20px;
+    text-decoration: none;
+    margin-top: 7%;
+    font-size: 30px;
 }
 
 
-/* THIS IS TEST CODE REMOVE AFTER USE */
-
-
-.popup img{
-    width: 100px;
-    height: 100px;
+.landing-fourth-section .lists p{
+    width: 70%;
+    margin-left: 15%;
+    /* background-color: rgb(248, 208, 75); */
+    background-color: rgba(11,45,130,255);
+    color: white;
+    border-radius: 30px;
+    box-shadow: -1px 1px 2px black;
 }
 
 
-
-
-.popup {
+.landing-fourth-section .lists .left-list, .landing-fourth-section .lists .right-list {
     width: 50%;
-    height: 80%;
-    background: linear-gradient(rgb(0, 162, 255), rgb(0, 180, 255));
-    border-radius: 6px;
-    position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    padding: 0 30px 30px;
-    visibility: hidden;
-    transition: transform 0.4s, top 0.4s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid black;
-    box-shadow: -10px 10px 10px black;
 }
 
-
-.open-popup {
-    visibility: visible;
-    top: 53%;
-    transform: translate(-50%, -50%) scale(1);
-
+.landing-fourth-section .import-bill {
+    margin-top: 5%
 }
 
-
-
-.popup img {
-    width: 100px;
-    margin-top: -50px;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+.landing-fourth-section .import-bill {
+    text-align: center;
 }
 
-.popup h2 {
-    font-size: 38px;
-    font-weight: 500;
-    margin: 30px 0 10px;
-}
-
-.popup button {
-    width: 30%;
+.landing-fourth-section .import-bill p {
     margin-top: 50px;
-    padding: 10px 0;
-    background-color: White;
-    color: Black;
-    border: 0;
-    outline: none;
-    font-size: 18px;
-    border-radius: 4px;
-    cursor: pointer;
-    position: absolute;
-    bottom: 20px;
-    left: 35%;
-    right: 0;
-}
-
-.popup button:hover {
-    background: linear-gradient(rgb(85, 85, 85), white);
-    border: 2px solid black;
-}
-
-.popup .button-container {
-    width: 100%;
-    height: 100%;
-}
-
-.twenty-page table {
-    width: 90%;
-    background-color: white;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-}
-
-.popup h3 {
-    margin: 0;
-    margin-top: 30px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-    width: 90%;
-    text-align: center;
-    background-color: yellow;
-    background: linear-gradient(rgb(207, 207, 0), yellow);
-    border: 2px solid black;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-
-}
-
-.twenty-page table td {
-    text-align: center;
-}
-
-.twenty-page table th, td {
-    border: 1px solid black;
+    font-size: large;
+    width: 40%;
+    margin-left: 30%;
 }
 
 
-
+.landing-fourth-section .alert-info {
+    margin-top: 3%;
+}
