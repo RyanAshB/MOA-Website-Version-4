@@ -19,6 +19,22 @@ def licence():
 def twenty():
     return render_template('2025.html')
 
+@app.route('/landing')
+def landing():
+    return render_template('landing.html')
+
+@app.route('/export-animals')
+def export_animals():
+    return render_template('export-animals.html')
+
+@app.route('/banana-board')
+def banana_board():
+    return render_template('banana-board.html')
+
+@app.route('/domestic-market')
+def domestic_market():
+    return render_template('domestic-market.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
 

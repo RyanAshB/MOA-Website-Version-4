@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="domestic-body">
+    <div class="domestic-first-section">
+
+        <img src="{{ url_for('static', filename='face.png') }}" class="img-fluid" alt="Responsive image">
+
+        <div class="folder" id="folder-1">
+            <div class="folder-title"><h1 id="folder-1-title">
+                A<br>C<br>K<br>E<br>E</h1>
+            </div>
+
+            <div class="folder-content" id="folder-1-content">
+                <div class="folder-top">
+                    <div class="folder-1-top-markets">
+                        <h1>Markets</h1>
+                        <ul>
+                            <li>Domonican Republic</li>
+                            <li>Colombia</li>
+                            <li>Europe</li>
+                            <li>Value addition necessary to further penetrate non-traditional markets</li>
+                        </ul>
+                    </div>
+                    <div class="folder-1-top-img">
+                        <img src="{{ url_for('static', filename='ackee-pie-chart.png') }}" class="img-fluid" alt="Responsive image">
+                        <p>Jamaica’s Ackee Exports by Trading Partner – 2022</p>
+                    </div>
+                </div>
+
+                <div class="folder-bottom">
+                    <div class="folder-1-bottom-tips">
+                        <h1>Ackee (Preserved)</h1>
+                        <ul>
+                            <li>US$ 25 Million earned in 2022</li>
+                            <li>Jamaica exports preserved ackee at an average price of US$7.79 Per Kg.</li>
+                            <li>Value in Specific Markets:</li>
+                            <ul>
+                                <li>Middle East -US$ 15.12</li>
+                                <li>USA – US$ 7.63</li>
+                                <li>Canada - US$ 6.41.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <img src="{{ url_for('static', filename='ackee-table.png') }}" class="img-fluid" id="folder-1-bottom-img" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="folder-tail" id="folder-1-tail">
+            
+            </div>
+        </div>
+
+        <div class="folder" id="folder-2">
+            <div class="folder-title"><h1 id="folder-2-title">M<br>A<br>N<br>G<br>O</h1></div>
+
+            <div class="folder-content" id="folder-2-content">
+                <div class="folder-top">
+                    <div class="folder-2-top-markets">
+                        <h1>Markets</h1>
+                        <p>High Demand For East Indian And Keitt Mangoes, Globally</p>
+                        <ul>
+                            <li>Europian Union</li>
+                            <li>Switzerland</li>
+                            <li>China</li>
+                        </ul>
+                    </div>
+                    <div class="folder-2-top-img">
+                        <img src="{{ url_for('static', filename='mango-major-markets.png') }}" class="img-fluid" id="folder-2-top-img" alt="Responsive image">
+                    </div>
+                </div>
+
+                <div class="folder-bottom">
+                    <img src="{{ url_for('static', filename='mango-global-earnings.png') }}" class="img-fluid" id="folder-2-bottom-left-img" alt="Responsive image">
+                    <img src="{{ url_for('static', filename='mango-major-earnings.png') }}" class="img-fluid" id="folder-2-bottom-right-img" alt="Responsive image">
+                </div>
+            </div>
+
+            <div class="folder-tail" id="folder-2-tail">
+            
+            </div>
+        </div>
+        
+        <div class="folder" id="folder-3">
+            <div class="folder-title"><h1 id="folder-3-title">Y<br>A<br>M</h1></div>
+
+            <div class="folder-content" id="folder-3-content">
+                <div class="folder-top">
+                    <img src="{{ url_for('static', filename='yam-global-demand.png') }}" class="img-fluid" id="folder-3-top-left-img" alt="Responsive image">
+                    <img src="{{ url_for('static', filename='yam-export-performance.png') }}" class="img-fluid" id="folder-3-top-right-img" alt="Responsive image">
+
+                </div>
+                <div class="folder-bottom" id="folder-3-bottom">
+                    <img src="{{ url_for('static', filename='yam-major-demand.png') }}" class="img-fluid" id="folder-3-bottom-img" alt="Responsive image">
+                </div>
+                <img src="{{ url_for('static', filename='yam-earnings-kg.png') }}" class="img-fluid" id="folder-3-top-left-img" alt="Responsive image">
+
+            </div>
+
+            <div class="folder-tail" id="folder-3-tail">
+            
+            </div>
+        </div>
+
+        <div class="folder" id="folder-4">
+            <div class="folder-title"><h1 id="folder-4-title">B<br>R<br>E<br>A<br>D<br>F<br>R<br>U<br>I<br>T</h1></div>
+            <div class="folder-content" id="folder-4-content">
+                <div class="folder-top">
+                    <div class="folder-4-top-markets" >
+                        <h1>Markets</h1>
+                        <ul>
+                            <li>United States</li>
+                            <li>Europe (Belgium, France)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card" id="folder-4-card" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Facts</h5>
+                            <p class="card-text">Breadfruit was third largest export by volume for fresh agricultural produce.<br><br>Volume Exported in 2022:<br>1,271,921.62 kg</p>
+                        </div>
+                    </div>
+
+                    <img src="{{ url_for('static', filename='breadfruit-export-performance.png') }}" class="img-fluid" id="folder-4-top-middle-img" alt="Responsive image">
+
+                </div>
+                <div class="folder-bottom">
+                    <img src="{{ url_for('static', filename='breadfruit-export-earnings.png') }}" class="img-fluid" id="folder-4-bottom-img" alt="Responsive image">
+                </div>
+            </div>
+            <div class="folder-tail" id="folder-4-tail">
+            
+            </div>
+        </div>
+
+        <div class="folder" id="folder-5">
+            <div class="folder-title"><h1 id="folder-5-title">S<br>W<br>E<br>E<br>T<br><br>P<br>O<br>T<br>A<br>T<br>O</h1></div>
+            <div id="folder-5-content"></div>
+            <div class="folder-tail" id="folder-5-tail">
+            
+            </div>
+        </div>
+        
+
+
+        <!-- <div class="folder" id="folder-1">
+            <img src="{{ url_for('static', filename='first.png') }}" class="img-fluid" alt="Responsive image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore mollitia, exercitationem adipisci cupiditate incidunt laborum beatae maxime neque deserunt fuga explicabo dolorem labore ducimus id harum ut? Pariatur accusamus rem vero reprehenderit labore ducimus culpa dolor alias nesciunt earum voluptate, veniam in voluptas dolores, ipsa impedit. Adipisci laborum ipsam quibusdam rerum harum voluptatum molestiae quaerat cumque consequuntur temporibus? Delectus, autem assumenda beatae porro nisi laborum totam maiores vero numquam veritatis libero suscipit! Praesentium amet tempora reprehenderit tempore harum consequatur mollitia eligendi aliquid incidunt! Expedita praesentium maiores aliquid dolor veniam temporibus, quaerat veritatis dolorum atque, ad quas dolores, optio repellat!</p>
+        </div>
+
+        <div class="folder" id="folder-2">
+            <img src="{{ url_for('static', filename='second.png') }}" class="img-fluid" alt="Responsive image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolore mollitia, exercitationem adipisci cupiditate incidunt laborum beatae maxime neque deserunt fuga explicabo dolorem labore ducimus id harum ut? Pariatur accusamus rem vero reprehenderit labore ducimus culpa dolor alias nesciunt earum voluptate, veniam in voluptas dolores, ipsa impedit. Adipisci laborum ipsam quibusdam rerum harum voluptatum molestiae quaerat cumque consequuntur temporibus? Delectus, autem assumenda beatae porro nisi laborum totam maiores vero numquam veritatis libero suscipit! Praesentium amet tempora reprehenderit tempore harum consequatur mollitia eligendi aliquid incidunt! Expedita praesentium maiores aliquid dolor veniam temporibus, quaerat veritatis dolorum atque, ad quas dolores, optio repellat!</p>
+        </div> -->
+    </div>
+</div>
+{% endblock %}
+
+

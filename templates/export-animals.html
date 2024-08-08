@@ -1,0 +1,104 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="export-animals-page">
+    <div class="export-animals-first-section">
+        <img src="{{ url_for('static', filename='export-animals-img-2.png') }}" class="img-fluid" alt="Responsive image">
+        <div class="export-animals-first-section-content">
+            <h1>HOW TO EXPORT LIVE ANIMALS</h1>
+            <div class="export-animals-first-section-list">
+                <h2><strong>Start Exporting Now:</strong></h2>
+                <ul>
+                    <a href="#export-animals-second-section-body"><li><h3><strong>Export Protocols</strong></h3></li></a>
+                    <a href="#export-animals-third-section"><li><h3><strong>Apply For Certifications</strong></h3></li></a>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="export-animals-second-section-body" id="export-animals-second-section-body">
+        <h1 id="export-animals-second-section-head">Step By Step Guide</h1>
+        <hr>
+        <div class="export-animals-second-section">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='meat.jpg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title helsin">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Export Procedure</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='cat-dog.jpg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title helsin">Cats and Dogs</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="{{ url_for('static', filename='Procedure For Exporting Dogs and Cats.pdf') }}" target="_blank" class="btn btn-primary">Export Procedure</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='horse.jpg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title helsin">Horses</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="{{ url_for('static', filename='Procedure For Exporting Horses.pdf') }}"  target="_blank"class="btn btn-primary">Export Procedure</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='bird.jpg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title helsin">Pet Birds and Exotic Animals</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="{{ url_for('static', filename='Procedure For Exporting Pet Birds and Other Exotic Animals.pdf') }}" target="_blank" class="btn btn-primary">Export Procedure</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="export-animals-third-section" id="export-animals-third-section">
+        <h1><span style="color:rgba(11,45,130,255);">Apply For Certifications</span></h1>
+        <hr size="10">
+        <img src="{{ url_for('static', filename='apply-man.png') }}" class="img-fluid" alt="Responsive image">
+        <div class="export-animals-third-section-content">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title-section">
+                        <h5 class="card-title helsin">Export Health Certificate</h5>
+                        <img src="{{ url_for('static', filename='approved.png') }}" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <p class="card-text">Click Here! to apply for Export Health Certification</p>
+                    <a href="{{ url_for('static', filename='export-health-certificate.pdf') }}" target="_blank" class="btn btn-primary">Apply Now!</a>
+                </div>
+            </div>
+
+            <div class="card" id="second-card">
+                <div class="card-body">
+                    <div class="card-title-section">
+                        <h5 class="card-title helsin">Breeder Farm Certificate</h5>
+                        <img src="{{ url_for('static', filename='approved.png') }}" class="img-fluid" alt="Responsive image">
+                    </div>
+                    <p class="card-text">Click Here! to apply for Breeder Farm Certification</p>
+                    <a href="{{ url_for('static', filename='breeder-farm-certificate.pdf') }}" target="_blank" class="btn btn-primary">Apply Now!</a>
+                </div>
+            </div>
+
+            <div class="card" id="third-card">
+                <div class="card-body" id="third-card-body">
+                    <h5 class="card-title helsin">Other Useful Links:</h5>
+                    <div class="third-card-buttons">
+                        <a href="https://www.moa.gov.jm/content/veterinary-services-division" target="_blank" class="btn btn-primary">Veteranary Services Division</a>
+                        <a href="https://www.moatrade.gov.jm/MOA/" target="_blank" class="btn btn-primary">MOAT Page</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
+
+

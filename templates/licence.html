@@ -28,9 +28,9 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div>
+    </div>
     <div class="jacra-licence-page">
-        <h1>How To Obtain Jacra Export Licence</h1>
+        <h1 id="main-header">How To Obtain Jacra Export Licence</h1>
         <div class="jacra-licence-page-steps">
             <div class="jacra-licence-page-steps-content">
                 <h2>Step 1</h2>
@@ -72,49 +72,47 @@
             </div>
             <div class="licence-page-products">
                 <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="{{ url_for('static', filename='licence-coffee.jpg') }}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Coffee</h5>
-                      <p class="card-text">Click Here! To learn more about the different Coffee Licences</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <p class="card-text">Click Here! To learn more about the different Coffee Licences and Permits</p>
+                      <a href="https://jacra.org/divisions/coffee/licensing-permits/" target="_blank" class="btn btn-primary">View Page</a>
                     </div>
                   </div>
                   <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="{{ url_for('static', filename='licence-cocoa.jpg') }}" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Cocoa</h5>
+                      <p class="card-text">Click Here! To learn more about the different Cocoa Licences and Permits</p>
+                      <a href="https://jacra.org/divisions/cocoa/licensing-permits/" target="_blank" class="btn btn-primary">View Page</a>
                     </div>
                   </div>
                   <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="{{ url_for('static', filename='licence-coconut.jpg') }}" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Coconut</h5>
+                      <p class="card-text">Click Here! To learn more about the different Coconut Licences and Permits</p>
+                      <a href="https://jacra.org/divisions/coconut/licencing-and-permits/" target="_blank" class="btn btn-primary">View Page</a>
                     </div>
                   </div>
                   <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="{{ url_for('static', filename='licence-spices.jpg') }}" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Spices</h5>
+                      <p class="card-text">Click Here! To learn more about the different Spice Licences and Permits</p>
+                      <a href="https://jacra.org/divisions/spices/licensing-permits/" target="_blank" class="btn btn-primary">View Page</a>
                     </div>
                   </div>
             </div>
         </div>
-
-        <div class="card" style="width: 18rem;">
+        
+        <div class="card final-card" style="width: 18rem;">
             <img class="card-img-top" src="{{ url_for('static', filename='jacra-Logo.png') }}" alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">JACRA</h5>
                 <p class="card-text">Click Here!<br>to learn more about how to apply for JACRA Dealer's Licence</p>
                 <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
-                    Launch demo modal
-                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">Licence Forms</button>
                 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
