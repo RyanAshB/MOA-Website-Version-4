@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="overseas-body">
+    <form action="/overseas_form" method="POST">
+        <label for="commodity">Enter Commodity:</label>
+        <input type="text" id="commodity" name="commodity" required>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Overseas Importers</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Country</th>
+                <th>Name of Company</th>
+                <th>Address</th>
+                <th>Address Continued</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}

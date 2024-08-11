@@ -1,7 +1,19 @@
 from flask import Flask, render_template, request, jsonify
+from flask_mysqldb import MySQL
+import mysql.connector
 
 app = Flask(__name__)
 
+db_config = {
+    'user': 'root',
+    'password': 'password123',
+    'host': 'localhost',
+    'database': 'overseas_importers'
+
+}
+
+def get_db_connection():
+    return mysql.connector.connect(**db_config)
 
 @app.route('/')
 def base():
@@ -34,6 +46,29 @@ def banana_board():
 @app.route('/domestic-market')
 def domestic_market():
     return render_template('domestic-market.html')
+
+@app.route('/overseas')
+def overseas():
+    return render_template('overseas.html')
+
+@app.route('/overseas_form', methods=['POST'])
+def overseas_form():
+    commodity = request.form['commodity']
+
+    connection = get_db_connection()
+    cursor = connection.cursor()
+
+    query = "SELECT Country, Name_of_Company, Address, Address_Continued FROM overseas_importers WHERE Commodity=%s"
+
+    cursor.execute(query, (commodity,))
+    fetchdata = cursor.fetchall()
+    cursor.close()
+    connection.close()
+
+    return render_template('overseas-results.html', data=fetchdata)
+
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
