@@ -23,9 +23,9 @@ def base():
 def home():
     return render_template('home.html')
 
-@app.route('/licence')
-def licence():
-    return render_template('licence.html')
+@app.route('/jacra')
+def jacra():
+    return render_template('jacra.html')
 
 @app.route('/2025')
 def twenty():
@@ -42,6 +42,10 @@ def export_animals():
 @app.route('/banana-board')
 def banana_board():
     return render_template('banana-board.html')
+
+@app.route('/international-market')
+def international_market():
+    return render_template('international-market.html')
 
 @app.route('/domestic-market')
 def domestic_market():
