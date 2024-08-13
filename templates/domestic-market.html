@@ -2,6 +2,16 @@
 
 {% block main %}
 <div class="domestic-body">
+    <div class="domestic-first-section">
+        <img src="{{ url_for('static', filename='domestic-top-background.png') }}" class="img-fluid product-img" alt="Responsive image">
+        <div class="domestic-first-section-content">
+            <h1><span style="font-style: italic;">DOMESTIC</span><br><span style="font-weight:bolder;">DEMAND</span></h1>
+
+            <div class="domestic-first-section-sub-text">
+              <p>Explore</p>
+            </div>
+        </div>
+    </div>
 
     <div class="domestic-second-section">
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
@@ -11,18 +21,19 @@
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="#yellow-yam" class="nav-link text-white" aria-current="page">
-                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
-                  Yellow Yam
-                </a>
-              </li>
               <li>
                 <a href="#sweet-potato" class="nav-link text-white">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
                   Sweet Potato
                 </a>
               </li>
+              <li class="nav-item">
+                <a href="#yellow-yam" class="nav-link text-white" aria-current="page">
+                  <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                  Yellow Yam
+                </a>
+              </li>
+              
               <li>
                 <a href="#tumeric" class="nav-link text-white">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
@@ -36,15 +47,55 @@
                 </a>
               </li>
               <li>
-                <a href="#" class="nav-link text-white">
+                <a href="#pepper" class="nav-link text-white">
                   <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
-                  Customers
+                  Pepper
                 </a>
               </li>
             </ul>
         </div>
 
         <div class="domestic-products">
+              <div class="product" id="sweet-potato">
+                <h2>Sweet Potato</h2>
+                <hr>
+
+                <h6>Supply Availability</h6>
+                <p>Sweet Potato is available all year round and cultivated islandwide, and the parishes of Manchester, St. Elizabeth, Clarendon and St. Ann are the major producers.</p>
+
+                <h6>Sweet Potato Varieties</h6>
+                <p>The Uplifter, Quarter Million, Eustace, Big Red, Clarendon, Blue Bud and Dor are the most popular varieties in Jamaica. The Beauregard variety was imported in Jamaica to boost production mainly for the export market.</p>
+
+                <h6>Area Reaped and Yield per Hectare</h6>
+                <p>The total area reaped for sweet potato islandwide in 2021 increased by approximately 20% to 3,308 hectares moving from 2,752 in 2016. Also, in 2021, the average yield per hectare decreased slightly to 17.37 MT, in 2021 from 17.44 MT in 2016.</p>
+
+                <img src="{{ url_for('static', filename='sweet-potato-farmgate-price.png') }}" class="img-fluid product-img left-img" alt="Responsive image">
+
+                
+
+                <h6 class="under-img">Why Invest in Sweet Potato Production</h6>
+                <ul>
+                    <li>High rate of return on investment, and moderate level of risks</li>
+                    <li>Increasing demand</li>
+                    <li>GOJ incentive programme, e.g, duty concessions on farm related equipment and farm vehicles</li>
+                    <li>GOJ assistance with access to farm lands</li>
+                    <li>High demand in both local and export market</li>
+                    <li>It is adaptable to Jamaica’s ecology</li>
+                    <li>Great foreign exchange earner</li>
+                    <li>Agro processing opportunities</li>
+                    <li>Easy access to plant material</li>
+                    <li>Versatile for culinary practices</li>
+                </ul>
+
+                <h6>Value Added</h6>
+                <ul>
+                  <li>Gluten-free flour</li>
+                  <li>Dried Chips</li>
+                  <li>Juice/Smoothie</li>
+                  <li>Pancake Mixes</li>
+                </ul>
+            </div>
+
             <div class="product" id="yellow-yam">
                 <h2>Yellow Yam</h2>
                 <hr>
@@ -88,44 +139,25 @@
                 </ul> 
             </div>
 
-            <div class="product" id="sweet-potato">
-                <h2>Sweet Potato</h2>
-                <hr>
-
-                <h6>Supply Availability</h6>
-                <p>Sweet Potato is available all year round and cultivated islandwide, and the parishes of Manchester, St. Elizabeth, Clarendon and St. Ann are the major producers.</p>
-
-                <h6>Sweet Potato Varieties</h6>
-                <p>The Uplifter, Quarter Million, Eustace, Big Red, Clarendon, Blue Bud and Dor are the most popular varieties in Jamaica. The Beauregard variety was imported in Jamaica to boost production mainly for the export market.</p>
-
-                <h6>Area Reaped and Yield per Hectare</h6>
-                <p>The total area reaped for sweet potato islandwide in 2021 increased by approximately 20% to 3,308 hectares moving from 2,752 in 2016. Also, in 2021, the average yield per hectare decreased slightly to 17.37 MT, in 2021 from 17.44 MT in 2016.</p>
-
-                <img src="{{ url_for('static', filename='sweet-potato-farmgate-price.png') }}" class="img-fluid product-img left-img" alt="Responsive image">
-
-                
-
-                <h6 class="under-img">Why Invest in Sweet Potato Production</h6>
-                <ul>
-                    <li>High rate of return on investment, and moderate level of risks</li>
-                    <li>Increasing demand</li>
-                    <li>GOJ incentive programme, e.g, duty concessions on farm related equipment and farm vehicles</li>
-                    <li>GOJ assistance with access to farm lands</li>
-                    <li>High demand in both local and export market</li>
-                    <li>It is adaptable to Jamaica’s ecology</li>
-                    <li>Great foreign exchange earner</li>
-                    <li>Agro processing opportunities</li>
-                    <li>Easy access to plant material</li>
-                    <li>Versatile for culinary practices</li>
-                </ul>
-            </div>
-
             <div class="product" id="tumeric">
-                <h2>tumeric</h2>
+                <h2>Tumeric</h2>
                 <hr>
                 <h6>Local Market</h6>
                 <p>In addition to local turmeric production, 1.6 billion kg (valuing J$CIF 500 million) was imported during 2016-2021. This represents an opportunity for import substitution. There is a sizeable need for facilities which are able to dry and convert the turmeric into a powdered form, allowing easier use. The table below represents the quantity and value of imports.</p>
                 <img src="{{ url_for('static', filename='tumeric-import-quality.png') }}" class="img-fluid product-img left-img" alt="Responsive image">
+
+                <h6>Market Demand</h6>
+                <ul>
+                  <li>Local market conditions for turmeric are excellent with two main markets showing robust and increasing demand for local turmeric:
+                    <ul>
+                      <li>Export market (in green form) and,</li>
+                      <li>local spice and beverage manufacturers (in dried fingers form).</li>
+                    </ul>
+                  </li>
+                  <li>There are several primary processors able to transform green to dried fingers on the island or if you are interested in investing in primary processing, information is available.</li>
+                  <li>For the period 2017 to 2021, Jamaica imported an annual average quantity of 310.81 MT, ranging from a high of 358.67 MT in 2017 to a low of 275.64 MT in 2021, signaling a decline.</li>
+                  <li>Currently, Jamaica earns an annual average of $ 232,677,812.1 from export of turmeric for the period 2017 to 2022, which represents 40% of total international demand.</li>
+                </ul>
             </div>
 
             <div class="product under-img" id="goat-milk">
@@ -154,6 +186,17 @@
                     <li>An existing Small Ruminant Association of Jamaica (SRAJ)</li>
                     <li>Good genetic material with no known diseases</li>
                 </ul>
+            </div>
+
+            <div class="product" id="pepper">
+              <h2>Pepper</h2>
+              <hr>
+              <h6>Local Market Demand</h6>
+              <ul>
+                <li>In 2022, it has been noted that only 45% of agro-processors demands are being met for hot peppers. The main markets for hot peppers are agro-processing for value addition; municipal and retail markets for mostly fresh; and the hospitality sector (restaurants and hotels) for a combination of fresh and value added.</li>
+                <li>As of 2024, approximately 53.5 % of total hot pepper sauce produced is consumed locally.</li>
+              </ul>
+            
             </div>
         </div>
     </div>

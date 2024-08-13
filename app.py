@@ -51,6 +51,14 @@ def international_market():
 def domestic_market():
     return render_template('domestic-market.html')
 
+@app.route('/investment-crops')
+def investment_crops():
+    return render_template('investment-crops.html')
+
+@app.route('/aquaculture')
+def aquaculture():
+    return render_template('aquaculture.html')
+
 @app.route('/overseas')
 def overseas():
     return render_template('overseas.html')

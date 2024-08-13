@@ -1,0 +1,587 @@
+{% extends "base.html" %}
+{% block main %}
+<div class="crops-main-body">
+    <div class="crops-first-section">
+        <img src="{{ url_for('static', filename='investments-banner.png') }}" class="card-img-top" alt="...">
+
+        <div class="crops-first-section-content">
+            <h6>SERIOUS ABOUT</h6>
+            <h1>INVESTMENT</h1>
+        </div>
+    </div>
+    
+    <div class="crops-body">
+        <div class="crops-second-section">
+            <div class="crops-overview">
+                <div class="crops-overview-text">
+                    <div class="text-container">
+                        <h5>The Priority crops under the New FACE of Food include Ackee, Breadfruit and Mango (“ABM”). Based on the market demand, the Government of Jamaica (GoJ) is encouraging production of 3,000 acres of fruit trees (ackee, breadfruit and mango) over the next two (2) years.</h5>
+                        <h5>The Government is making available 50,000 Ackee plants, 35,000 Breadfruit plants and 50,000 Mango plants, which amounts to a total investment by the Government of JMD $81,000,000.</h5>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="crops-cards">
+                <div class="container text-center">
+                    <div class="row" id="first-row">
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-ackee-card.jpeg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Ackee</h5>
+                                    <a href="#crop-ackee" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-mango-card.jpg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Mango</h5>
+                                    <a href="#crop-mango" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-breadfruit-card.jpeg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Breadfruit</h5>
+                                    <a href="#crop-breadfruit" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-yam-card.jpeg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Yam</h5>
+                                    <a href="#crop-yam" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-sweet-potato-card.jpeg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Sweet Potato</h5>
+                                    <a href="#crop-sweet-potato" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 12rem;">
+                                <img src="{{ url_for('static', filename='crops-avocado-card.jpg') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avocado</h5>
+                                    <a href="#crop-avocado" class="btn btn-primary">View Section!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="crops-third-section">
+            <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                  <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                  <span class="fs-4">All Products</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                  <li>
+                    <a href="#crop-ackee" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+                      Ackee
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#crop-mango" class="nav-link text-white" aria-current="page">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+                      Mango
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#crop-breadfruit" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+                      Breadfruit
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#crop-yam" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+                      Yam
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#crop-sweet-potato" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Sweet Potato
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#ruminants-button" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Ruminants
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#agroparks-button" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Agroparks
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#mining-button" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Mining
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#business-support-button" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Business Support
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#incentives-button" class="nav-link text-white">
+                      <svg class="bi me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+                      Other Incentives
+                    </a>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="all-products">
+                <div class="product" id="crop-ackee">
+                    <h1>Ackee</h1>
+                    <hr>
+                    <h5>Overview:</h5>
+                    <ul>
+                        <li>Ackee is Jamaica’s second largest Agricultural export, from which we earned US$25 Million in 2022. Our exports increased by 8.3% over 2021.</li>
+                        <li>Our strategic focus is on establishing around 1,000 acres of Ackee trees in the next three years.</li>
+                    </ul>
+                    <br>
+
+                    <h5>Investment Call</h5>
+                    <p>With an initial investment of approximately JM$6M in a 20-acre (8.09 ha.) ackee orchard, the investor will be able to reap revenue of JM$ 62.3M over 10 years. Export earnings are typically JA $6-7 Per Kg FOB for preserved ackee. On the domestic market investors will earn $100 per dozen (at minimum)</p>
+                    <br>
+
+                    <h5>Projected Cash Flow</h5>
+                    <p>The cash flow projections for a 20-acre Ackee orchard are negative for the first two years and then becomes positive for the remainder of ten-year period.</p>
+                </div>
+
+                <div class="product" id="crop-mango">
+                    <h1>Mango</h1>
+                    <hr>
+                    <h5>Overview:</h5>
+                    <ul>
+                        <li>Mango is one of Jamaica’s premier fruits for export, owing to the coveted and renowned flavour profile of Jamaican mangoes. The global demand for mango is approximately $4,197,180,000, and the market is expected to grow to $114 Million in 2031.</li>
+                        <li>Jamaica is calling for investors to establish mango orchards, amplifying the scope and output of mango cultivation across Jamaica.</li>
+                        <li>Under the New FACE of Food Initiative, we are making more lands available for investment in mango orchards.</li>
+
+                    </ul>
+                    <br>
+
+                    <h5>Investment Call</h5>
+                    <ul>
+                        <li>With an initial investment of approximately JM$18.5M, in a 50-acre (20.24ha.) Mango orchard (48 plants per acre), the investor can expect on average a profit margin of 92%.</li>
+                        <li>Jamaica’s export earnings from Mango in 2022 was US$571,081.38.</li>
+                        <li>The unit price ranges from US to US $3.73 to US $4.48 per kg.</li>
+                        <li>Jamaica is driving two specific varieties, which are East Indian and St. Julian.</li>
+                    </ul>
+                    
+                </div>
+
+                <div class="product" id="crop-breadfruit">
+                    <h1>Breadfruit</h1>
+                    <hr>
+                    <h5>Overview:</h5>
+                    <ul>
+                        <li>Breadfruit provides an astounding investment opportunity, as the world moves towards healthier and sustainable food choices, including gluten free flour.</li>
+                        <li>Approximately 93 million people, globally, presently consume the fruit</li>
+                        <li>Approximately 150 million more people will eat the fruit if it becomes available</li>
+                        <li>There is also an increase in demand for Breadfruit Tostones.</li>
+                        <li>In 2021, the nation exported 1,537,382.21 kilograms of fresh breadfruit, valued at US$2.114 million. The local market is also resilient, absorbing a substantial 93.85% of fresh and agro-processed breadfruit.</li>    
+                    </ul>
+                    <br>
+
+                    <h5>Investment Call</h5>
+                    <p>Jamaica is calling for investors to set up (at minimum) 20 acre breadfruit farms with an initial investment of JM $2.7M, with 35 trees per acre. The average revenue for the ten years is expected to amount to approximately JM$27M.<br>The estimated financials show an Internal Rate of Return (IRR) of 81%.</p>
+                    <br>
+
+                    <h5>Estimated Prices</h5>
+                    <p>Several markets are available for farmers of breadfruit, which include the following:</p>
+                    <ul>
+                        <li>In Overseas Markets</li>
+                        <ul>
+                            <li>US importers will pay US $ 1.35 per lb</li>
+                            <li>UK importers will pay US $1.26 per lb</li>
+                            <li>UK importers will pay US $1.26 per lb</li>
+                        </ul>
+                        <li>Domestically,</li>
+                        <ul>
+                            <li>Exporters purchase for JM $50 -$70 per fruit</li>
+                            <li>Higglers purchase for JM $80-$100 per fruit</li>
+                            <li>Processors purchase for JM $17 per pound</li>
+                        </ul>
+                    </ul>
+                    <br>
+
+                    <h5>Potential for Value Added Products:</h5>
+                    <ul>
+                        <li>Flour</li>
+                        <li>Chips</li>
+                        <li>Fries</li>
+                        <li>Baked Produce</li>
+                        <li>Beer/Distilled Liqueur</li>
+                        <li>Flavoured Dips</li>
+                        <li>Flavoured Drinks and Preserves</li>
+                    </ul>
+                </div>
+
+                <div class="product" id="crop-yam">
+                    <h1>Yam</h1>
+                    <hr>
+                    <h5>Overview:</h5>
+                    <p>Jamaica’s yam exports comprise approximately 22.2% of the global market. In 2022, Jamaica's total yam production surged to an impressive 207,500 tonnes, signifying the country's capacity to cultivate this staple crop on a substantial scale.<br>The United States of America and Canada are Jamaica’s main export destinations, accounting for 90% of market share.</p>
+                    <ul>
+                        <li>Jamaica’s yam export earnings for 2022 was US $34,993,486.40.</li>
+                        <li>Global Demand – US $194,100,000</li>
+                        <li>Jamaica’s Export Potential – US $69,000,000</li>
+                    </ul>
+                    <br>
+
+                    <h5>Investment Call</h5>
+                    <ul>
+                        <li>With an injection of JM$6.8M in a 5-acre yam farm, the investor can receive an approximate rate of return on Investment is 178% or JM$12,100,000.</li>
+                        <li>40,000 kgs of yam can be produced on the 5-acres.</li>
+                        <li>There is significant potential for value added products, both for penetration of traditional and non-traditional markets. These include:</li>
+                        <ul>
+                            <li>Vacuum sealed yam slices</li>
+                            <li>Yam Fries</li>
+                            <li>Yam Salad</li>
+                            <li>Flour</li>
+                            <li>Wine</li>
+                            <li>Cupcakes</li>
+                            <li>Sweet Bread</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="product" id="crop-sweet-potato">
+                    <h1>Sweet Potato</h1>
+                    <hr>
+                    <h5>Overview:</h5>
+                    <p>Sweet potato is one of the top superfoods with an annual production of more than 100 million metric tonnes per year. This market is predicted to grow by at least 5% per annum, driven by a growing preference for this product as a healthy alternative to refined starches.<br>Approximately 60,000 tonnes of sweet potato is produced annually, with an average export volume of 1,500 tonnes to key markets, such as Canada, the UK, and the Cayman Islands. Jamaica is ranked 22nd for global sweet potato exports. We are calling for investors to reach our production target of 75,000 tonnes and grow exports by 2,500 tonnes over the next three years.</p>
+                    <br>
+
+                    <h5>Investment Call</h5>
+                    <ul>
+                        <li>JM$3M needed to invest in a 10-acre sweet potato farm</li>
+                        <li>From this investment, the net profit after <strong>four months is approximately JM$9,294,915 (320%) from 69,840 kg of Sweet Potato.</strong></li>
+                    </ul>
+                    <br>
+
+                    <h5>Potential for Value Added Products:</h5>
+                    <ul>
+                        <li>Flour</li>
+                        <li>Dried Chips</li>
+                        <li>Juice/Smoothie Mixes</li>
+                        <li>Pancake Mixes, etc.</li>
+                    </ul>
+                    <br>
+
+                    <h5>Intercropping Potential</h5>
+                    <p>Intercropping, the practice of growing multiple crops in proximity, can optimize land use and increase profitability. It allows for better resource utilization and risk management in agricultural production.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="crops-fourth-section">
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="ruminants-button">
+                <h6>Ruminants</h6>
+                <img src="{{ url_for('static', filename='ruminant-background.png') }}" class="card-img-top" alt="...">
+
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" id="agroparks-button">
+                <h6>Agroparks</h6>
+                <img src="{{ url_for('static', filename='agropark-background.png') }}" class="card-img-top" alt="...">
+
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="mining-button">
+                <h6>Mining</h6>
+                <img src="{{ url_for('static', filename='mining-background.png') }}" class="card-img-top" alt="...">
+
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" id="business-support-button">
+                <h6>Business Support</h6>
+                <img src="{{ url_for('static', filename='business-background.png') }}" class="card-img-top" alt="...">
+
+            </button>
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" id="incentives-button">
+                <h6>Other Incentives</h6>
+                <img src="{{ url_for('static', filename='incentive-background.png') }}" class="card-img-top" alt="...">
+
+            </button>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Ruminants</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Overview</h5>
+                        <p>Small ruminants are significantly consumed globally, with demand expected to rise.</p>
+                        <br>
+                        <p>Goat Meat is in high in demand across CARICOM and around the world. The 2022 global value of trade was approximately US$9,696,043,000, and the CARICOM demand is approximately US $44 Million.</p>
+                        <br>
+                        <p>Jamaica has a significant market for chevon (goat meat), with local production not meeting consumption demands. This gap indicates a robust market opportunity.</p>
+                        <br>
+                        <p>Jamaica's current scenario reveals a substantial reliance on imported meat, accounting for 60 to 70 percent of the nation's consumption. Approximately 39,757 (487,932 kgs or 1,073,450 lbs) goats are being slaughtered annually, however, to satisfy the assumed annual consumption of 3,323,094kg (7,301,807lb) of chevon per year, a total of 270,437 goats will be needed.</p>
+                        <br>
+                        <p>Common breeds for meat production include Boer, Nubian, and Kiko goats, each with specific weight and growth characteristics beneficial for farming.</p>
+                        <br>
+                        <p>Initial investment for a commercially sustainable operation involves purchasing breeding animals, with costs detailed for bucks and does.</p>
+                        <br>
+                        <br>
+
+                        <h5>Value Added Products</h5>
+                        <p>Dairy goat farming offers additional revenue streams through products like:</p>
+                        <ul>
+                            <li>Goat Milk</li>
+                            <li>Goat Cheese</li>
+                            <li>Goat Milk Soap</li>
+                            <li>Canned Manish Water</li>
+                        </ul>
+                        <br>
+
+                        <p>An initial investment of $3,070,000 in live animals (bucks and does) can lead to a profit of $2,555,000 in the first year.</p>
+
+                        <br>
+                        <br>
+                        <h5>Government Support for Small Ruminants</h5>
+                        <ul>
+                            <li>Artificial insemination and embryo transfer</li>
+                            <li>Financial incentives, including GCT waiver for the importation of live animals</li>
+                            <li>Establishment of fodder banks</li>
+                            <li>Feed Pelletizer to produce feed locally</li>
+                            <li>Market development support</li>
+                            <li>Extension and training services</li>
+                        </ul>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Agroparks</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Overview</h5>
+                        <ul>
+                            <li>The Agro-Park initiative integrates all facets of the agricultural <strong>value chain from pre-production, production, post-harvesting to marketing</strong>. We continue to build out our agro-parks with infrastructure and technological adaptation.</li>
+                            <li>The Agro-Invest Cooperation manages 7,778 acres of arable land for lease to investors. This includes 10 Agro Production zones and 8 Agro Parks. These provide an opportunity for the diaspora to invest in high-value orchard and cash crops for both local consumption and export markets.</li>
+                            <li><strong>Two new Agro-parks</strong> have been established - Amity-Bridge Pen in St. Catherine and Parnassus in Clarendon to provide an additional 1900 acres (795 hectares) of fertile irrigated land. Matching Grant financing to support sustainable and profitable farming practices in the amounts of $150,000 to JMD $500,000 will be available through these new agro-parks.</li>
+                            <li>The Agro-Investment Corporation (AIC) has also dedicated approximately 200 acres of prime lands with approximately 150 water acres for the development of an aquaculture park in Amity Hall, St. Catherine.</li>
+                            <li><strong>We are encouraging investors to invest on our agro-parks. Applications are open for these two Agro Parks, as of June 1.</strong></li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Mining</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>Investment Opportunities In Mining</h5>
+                        <p>Accounting for approximately 1.1% of GDP in 2022, the mining industry is the backbone of our traditional exports, contributing over 80% of their value and generating upwards of US$325 million from exports and inflows.</p>
+                        <br>
+                        <p>Investment Opportunities are available in:</p>
+                        <ul>
+                            <li>Mineral exploration</li>
+                            <li>Limestone quarrying for coastal defense</li>
+                            <li>Quarrying hard volcanic rocks</li>
+                            <li>Production of very fine sand</li>
+                            <li>Clay for pottery and related activities</li>
+                            <li>Cutting and polishing local marble</li>
+                            <li>Private sector investment in port development</li>
+                        </ul>
+
+                        <br>
+                        <br>
+                        <h5>Port Development and Expansion</h5>
+                        <p>The port development and expansion project is being undertaken to expand the
+                            loading capacity of the Reynolds Pier to 8 million metric tonnes per year and will
+                            cause our pier to be multi-faceted port, that can dually berth Panamax Vessels that
+                            exports industrial material as well as the new large cruise vessels.
+                            Investment in port development allows for the efficient transportation and export of
+                            industrial minerals, tapping into global markets and increasing revenue streams. A
+                            modernized port system enhances Jamaica's position in the global market by enabling
+                            timely delivery of minerals, meeting customer demands, and competing effectively
+                            with other exporting nations.
+                            We have already begun to engage on conversations with private interest and the Port
+                            Authority of Jamaica to explore possible locations for a new port or to extend existing
+                            ones. We are seeking investors</p>
+
+                        <h5>Limestone Quarrying</h5>
+                        <p>As the global demand for construction materials continues to surge, particularly in
+                            emerging markets, Jamaica stands as a prosperous opportunity with its abundant
+                            limestone resources.
+                            Jamaica has high quality limestone deposits that can be used for diverse applications,
+                            ranging from construction aggregates to agricultural supplements and industrial uses.
+                            There is potential for growth in both domestic consumption and export markets,
+                            positioning investors to capitalize on a developing sector with a strong foundation for
+                            expansion.</p>
+
+                        <h5>Incentives for Investors</h5>
+                        <ul>
+                            <li>Mineral-rich economic zones with favourable regulations, tax breaks, and
+                                infrastructure to enhance investment opportunities.</li>
+                            <li>Robust support from investment promotion agencies will boost confidence and
+                                drive foreign investment in our industrial minerals.</li>
+                            <li>Public private partnerships opportunities that leverage government resources,
+                                share risks, and foster sustainable growth in infrastructure, research, and skills
+                                training</li>
+                            <li>Export promotion support to expand markets and global competitiveness</li>
+                            <li>Environmental stewardship incentives incentivizing ecofriendly practices in
+                                mining to align with Jamaica&#39;s conservation goals and attracts environmentally
+                                conscious investors.</li>
+                            <li>Under Section 5 (1) of the Bauxite and Alumina Industries (Encouragement)
+                                Act, miners have access to incentives such as concessions on fuel imports for
+                                equipment, prescribed vehicles and equipment used in the winning of Bauxite
+                                and Alumina.</li>
+                            <li>Miners involved in pharmaceutical limestone and beach sand quarrying benefit
+                                from PIR through Ministry of Industry, Investment and Commerce (MIIC) to
+                                include waivers on equipment, additional stamp duty and corporate income tax.</li>
+                            <li>GCT deferment is also an incentive accessible to miners that intend to expand.</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Business Support</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h5>OPPORTUNITIES FOR PUBLIC PRIVATE PARTNERSHIP</h5>
+                        <p>There are numerous opportunities for Public-Private Partnerships in developing
+                            agricultural infrastructure, including irrigation systems, storage facilities, and
+                            processing plants. We are, therefore, calling for investments to:</p>
+                        <ul>
+                            <li>upgrade and expand core infrastructure.</li>
+                            <li>expand and upgrade airport and seaport facilities.</li>
+                            <li>improve access to global logistics and value-add manufacturing networks, including development of logistics parks, distribution centres, and technology hubs.</li>
+                            <li>Develop a robust, affordable network of storage facilities, strategically located
+                                to support distribution, effective management of the net food reserves and
+                                exports.</li>
+                        </ul>
+
+                        <h5>OPPORTUNITIES FOR BUSINESS SUPPORT SERVICES</h5>
+                        <ul>
+                            <li>exports coordination of throughput and logistics for seamless trade flows.</li>
+                            <li>travel and logistics services.</li>
+                            <li>affordable implements and technologies to improve efficiency.</li>
+                        </ul>
+
+                        <h5>FINANCING IN AGRICULTURE, FISHERIES AND MINING</h5>
+                        <p>The agriculture sector requires significant investments for its growth and expansion,
+                            and we continue to call for greater levels of investment in the sectors especially due to
+                            the potential for great returns.</p>
+                        <br>
+                        <p>We are also calling upon our financial institutions to make available larger sums of
+                            money at more attractive terms and conditions so as to invigorate capital input.
+                            The sector needs at least JM$50 billion annually in concessional loans and grants for
+                            continuous engagement and expansion.</p>
+                        <br>
+                        <p>The Ministry will be working closely with the Ministry of Finance and the Public
+                            Service to establish an Agriculture Development Fund through the amalgamation of
+                            current contributions and future projects. This Fund, similar to the Tourism
+                            Enhancement Fund, will be used to support and infuse capital into the sector for
+                            development purposes.</p>
+                        <br>
+                        <p>We want to thank all our international and local partners for their continuous support.</p>
+
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Other Incentives</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p><strong>In addition to the government support outlined earlier, the Government also provides the following incentives:</strong></p>
+                        <ol>
+                            <li><strong>Production Input Relief (PIR) </strong>- Waiver of applicable duties and taxes
+                                on certain tools and equipment imported for use in primary
+                                production/approved farming activity/activities. This applies to all
+                                sectors.</li><br>
+                            <li><strong>20% Duty Concession</strong> on vehicles for use in agriculture.</li><br>
+                            <li><strong>Income Tax Relief </strong>- an incentive to off-set losses incurred on the farm
+                                against the profits gained in another owned enterprise.</li><br>
+                            <li><strong>Waiver of Additional Stamp Duty (ASD) </strong>on select agricultural raw
+                                materials.</li><br>
+                            <li>Subsidized costs for health certificates, fumigation, hot water treatment
+                                and other SPS certifications applicable to exportation of plant-based
+                                products under the Plant Quarantine Produce Inspection Trade
+                                Facilitation Support Programme.</li>
+                        </ol>
+                        
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
