@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="agreements-body">
+    <div class="agreements-header">
+        <h1>FREE TRADE AGREEMENTS</h1>
+    </div>
+
+    <div class="agreements-content">
+        <p>Free Trade Agreements assist Jamaican importers and exporters by providing improved access for goods and/or services in contracting states, and by reducing trade barriers in those markets. Among other things, FTAs:</p>
+        <ul>
+            <li>Grant preferential tariff rates for originating goods traded among contracting parties;</li>
+            <li>Establish the rules by which goods can qualify as originating;</li>
+            <li>Outline Customs procedures for accessing preferential tariff rates;</li>
+            <li>Sets out the general principles for customs procedures among the contracting parties of an Agreement</li>
+        </ul>
+
+        <p>Practical Guidance to Using FTAs:</p>
+            <ol>
+                <li>Determine the proper tariff classificationfor the goods</li>
+                <li>Consult specific FTA to ascertain if products of that tariff heading are eligible for preferential access</li>
+                <li>Consult specific FTA to find out the rules of origin relevant to the specific goods to be traded</li>
+                <li>Ensure that you meet the direct consignment rule</li>
+                <li>Ensure that you have and maintain correct and complete documentation for the goods</li>
+            </ol>
+
+        <p>In order to benefit under an FTA:</p>
+            <ul>
+                <li>The trader must present a valid, original certificate of origin for the goods seeking preferential access when submitting the relevant import declaration;</li>
+                <li>The goods must also have been directly consigned from the relevant exporting contracting party to Jamaica.</li>
+            </ul>
+
+
+        <a href="http://www.sice.oas.org/ctyindex/JAM/JAMagreements_e.asp" target="_blank">
+            <div class="agreements-click-here-button">
+                <h3>Click Here<br>To Learn More</h3>
+                <img src="{{ url_for('static', filename='document.png') }}" class="img-fluid" alt="Responsive image">
+            </div>
+        </a>
+
+
+
+    </div>
+</div>
+{% endblock %}

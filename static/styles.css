@@ -1127,14 +1127,18 @@ body {
     position: relative;
 }
 
+.landing-body .landing-first-section #landing-first-section-background {
+    width: 100vw;
+}
+
 .landing-body .landing-first-section .plane-img {
     position: absolute;
 }
 
 .landing-body .landing-first-section #plane-1 {
-    top: 181px;
-    left: 816px;
-    width: 100px;
+    top: 31%;
+    left: 60%;
+    width: 8%;
     animation-name: topFly;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -1146,41 +1150,41 @@ body {
         transform: translate(0, 0);
     }
     10% {
-        transform: translate(42px, -10px);
+        transform: translate(40%, -20%);
     }
     20% {
-        transform: translate(84px, -18px);
+        transform: translate(80%, -40%);
     }
     30% {
-        transform: translate(126px, -24px);
+        transform: translate(120%, -55%);
     }
     40% {
-        transform: translate(168px, -28px);
+        transform: translate(160%, -65%);
     }
     50% {
-        transform: translate(210px, -30);
+        transform: translate(200%, -70%);
     }
     60% {
-        transform: translate(252px, -28px);
+        transform: translate(240%, -65%);
     }
     70% {
-        transform: translate(294px, -24px);
+        transform: translate(280%, -55%);
     }
     80% {
-        transform: translate(336px, -18px);
+        transform: translate(320%, -40%);
     }
     90% {
-        transform: translate(378px, -10px);
+        transform: translate(360%, -20%);
     }
     100% {
-        transform: translate(420px, 0);
+        transform: translate(400%, 0);
     }
 }
 
 .landing-body .landing-first-section #plane-2 {
-    top: 214px;
-    left: 796px;
-    width: 100px;
+    top: 17vw;
+    left: 61vw;
+    width: 7%;
     animation-name: bottomFly;
     animation-duration: 4s;
     animation-iteration-count: infinite;
@@ -1194,11 +1198,21 @@ body {
     }
 
     100% {
-        transform: translate(220px, 100px);
+        transform: translate(246%, 235%);
     }
 }
 
 
+
+.landing-body .landing-first-section {
+    display: flex;
+    align-items: center;
+}
+
+.landing-body .landing-first-section #landing-fold {
+    position: absolute;
+    
+}
 
 .landing-body .landing-first-section-content {
     position: absolute;
@@ -1209,19 +1223,18 @@ body {
 .landing-body .landing-first-section-content h1 {
     font-family: var(--helsin);
     color: white;
-    font-size: 75px;
+    font-size: 6vw;
 }
 
 .landing-body .landing-first-section-content .landing-first-section-sub-text {
     font-family: var(--glacier);
     color: black;
     background-color: aqua;
-    margin-top: 19%;
-    height: 50%;
-    width: 400px;
+    margin-top: 10%;
+    width: 23vw;
     display: flex;
     justify-content: center;
-    font-size: 35px;
+    font-size: 2.5vw;
     font-style: italic;
     border-radius: 50px;
 }
@@ -1235,53 +1248,62 @@ body {
     position: relative;
 }
 
+.landing-body .landing-second-section #landing-second-section-background {
+    /* width: 100vw; */
+    /* width: var(--initial-vw);
+    height: auto;  */
+}
+
 .landing-body .landing-second-section-content {
-    position: absolute;
-    top: 15%;
-    left: 10%;
-    margin-right:40%
+    top: 1%;
+    width: 50vw;
+    padding-left: 8%;
+    padding-top: 8%;
+    margin-top: -56%;
 }
 
 
 .landing-body .landing-second-section-content h1 {
-    font-size: 70px;
+    font-size: 5.5rem;
     font-family: var(--helsin);
 }
 
 
 .landing-body .landing-second-section-content p {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: var(--glacier);
+}
+
+.landing-body .landing-second-section .landing-second-section-sub-text {
+    width: 100%;
 }
 
 
 
 .landing-body .landing-second-section-content #step-by-step {
-    font-size: 25px;
+    font-size: 2rem;
     font-weight: bold;
     font-style: italic;
 }
 
-/*Start of Third*/
 
-.landing-body .landing-second-section .container-fluid {
-    position: absolute;
+.landing-body .landing-third-section .container-fluid {
     top: 50%;
 }
 
-.landing-body .landing-second-section #col-1 {
+.landing-body .landing-third-section #col-1 {
     background-color: rgba(10,26,68,255);
 }
 
-.landing-body .landing-second-section #col-2 {
+.landing-body .landing-third-section #col-2 {
     background-color: rgba(7,19,50,255);
 }
 
-.landing-body .landing-second-section #col-3 {
+.landing-body .landing-third-section #col-3 {
     background-color: rgba(10,26,68,255);
 }
 
-.landing-body .landing-second-section .col-num {
+.landing-body .landing-third-section .col-num {
     background-color: #00c4cc;
     width: 50px;
     height: 50px;
@@ -1291,68 +1313,115 @@ body {
     border-radius: 50%
 }
 
-.landing-body .landing-second-section .col-num p {
+.landing-body .landing-third-section .col-num p {
     margin-top: 20px;
     font-weight: bold;
 }
 
-.landing-body .landing-second-section .col-text {
+.landing-body .landing-third-section .col-text {
     color: white;
     margin-top: 50px;
 }
 
-.landing-body .landing-second-section #col-2-text {
+.landing-body .landing-third-section #col-2-text {
     color: #57e4ff;
 }
 
 
-.landing-body .landing-second-section .column-container {
+.landing-body .landing-third-section .column-container {
     width: 60%;
     margin-left: 20%;
     margin-top: 10%;
     font-family: var(--glacier);
 }
 
-.landing-body .landing-second-section .column-container .col-img {
+.landing-body .landing-third-section .column-container .col-img {
     width: 100px;
     margin-top: 20%;
     margin-left: 20%;
     align-items: center;
 }
 
-.landing-body .landing-second-section .column-container #col-3-img {
+.landing-body .landing-third-section .column-container #col-3-img {
     margin-top: 70px;
     width: 110px;
 } 
 
-.landing-body .landing-second-section .text-center {
+.landing-body .landing-third-section .text-center {
     text-align: left !important;
     margin: 0;
 }
 
-.landing-body .landing-second-section .col-sm-8 {
+.landing-body .landing-third-section .col-sm-8 {
     font-size: 50px;
     display: flex;
     align-items: end;
     z-index: 0;
-}
-
-.landing-body .landing-second-section .landing-second-section-sub-text {
-    position: absolute;
-    z-index: 10;
-    width: 600px;
-}
-
-.landing-body .landing-second-section .col-sm-8 p {
-    margin-left: 15%;
-}
-
-.landing-body .landing-second-section .col-sm-4 {
     padding: 0;
 }
 
-.landing-body .landing-second-section .col-sm-4 img {
+.landing-body .landing-third-section .container-fluid {
+    margin-top: -26%;
+}
+
+
+
+.landing-body .landing-third-section .col-sm a{
+    text-decoration: none;
+}
+
+.landing-body .landing-third-section .col-sm-8 p {
+    margin-left: 15%;
+}
+
+.landing-body .landing-third-section .col-sm {
+    padding: 0;
+}
+
+.landing-body .landing-third-section .col-sm-4 {
+    padding: 0;
+}
+
+.landing-body .landing-third-section .col-sm-4 img {
     width: 100%;
+}
+
+@media (max-width: 1023px) {
+
+    .landing-body .landing-second-section #landing-second-section-background  {
+        display: none;
+    }
+
+    .landing-body .landing-second-section-content{
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 80vw;
+        position: static;
+    }
+
+    .landing-body .landing-third-section {
+        margin-top: 10%;
+    }
+
+    .landing-body .landing-third-section #boat {
+        display: none;
+    }
+
+    .landing-body .landing-third-section .container-fluid {
+        margin-top: 0;;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .landing-body .landing-second-section-content h1 {
+        font-size: 10vw;
+    }
 }
 
 /*Crops Page*/
@@ -1462,6 +1531,20 @@ body {
 .crops-body .crops-fourth-section .btn {
     font-size: 20px;
     width: 200px;
+    height: 300px;
+    border: none;
+    transition: 0.2s;
+    border: 2px solid black;
+    box-shadow: -2px 2px 5px black;
+}
+
+.crops-body .crops-fourth-section .btn:hover {
+    transform: scale(1.05);
+}
+
+.crops-body .crops-fourth-section .btn h2{
+    font-family: var(--helsin);
+    color: var(--bg-blue);
 }
 
 .crops-body .crops-fourth-section .btn img{
@@ -1479,7 +1562,7 @@ body {
 }
 
 .aquaculture-body .aquaculture-body-second-section .aquaparks-section-text {
-    position: absolute;
+    /* position: absolute; */
     top: 10%;
     left: 10%;
     width: 40%;
@@ -1582,4 +1665,53 @@ body {
 .aquaculture-body .why-invest h1 {
     font-size: 40px;
     text-align: center;
+}
+
+
+/* THIS IS THE AGREEMENTS SECTION */
+
+.agreements-body .agreements-header {
+    background-color: #7cd5e7;
+    margin-top:2%;
+}
+
+.agreements-body .agreements-header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    margin-left:10%;
+}
+
+
+.agreements-body .agreements-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.agreements-body .agreements-content p {
+    margin-top: 5%;
+}
+
+.agreements-body .agreements-content p, li {
+    font-family: var(--glacier);
+}
+
+.agreements-body .agreements-content .agreements-click-here-button {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.agreements-body .agreements-content .agreements-click-here-button:hover > h3, .agreements-body .agreements-content .agreements-click-here-button:hover > img{
+    transform: scale(1.05);
+}
+
+
+
+.agreements-body .agreements-content h3 {
+    font-family: var(--helsin);
+    text-decoration: none;
+}
+
+.agreements-body .agreements-content img {
+    width: 20%;
 }

@@ -59,9 +59,17 @@ def investment_crops():
 def aquaculture():
     return render_template('aquaculture.html')
 
+@app.route('/resources')
+def resource():
+    return render_template('resources.html')
+
 @app.route('/overseas')
 def overseas():
     return render_template('overseas.html')
+
+@app.route('/trade-agreements')
+def trade_agreements():
+    return render_template('trade-agreements.html')
 
 @app.route('/overseas_form', methods=['POST'])
 def overseas_form():

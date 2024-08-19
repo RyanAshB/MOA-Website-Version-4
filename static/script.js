@@ -16,13 +16,4 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // const folder_one = document.getElementById('folder-1');
-    // folder_one.addEventListener('click', function() {
-    //     console.log("Clicked Folder 1");
-    // });
-
-    // const folder_two = document.getElementById('folder-2');
-    // folder_two.addEventListener('click', function() {
-    //     console.log("Clicked Folder 2");
-    // });
 });

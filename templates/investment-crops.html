@@ -306,34 +306,24 @@
 
         <div class="crops-fourth-section">
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="ruminants-button">
-                <h6>Ruminants</h6>
-                <img src="{{ url_for('static', filename='ruminant-background.png') }}" class="card-img-top" alt="...">
-
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" id="ruminants-button" style="background-image: url('{{ url_for('static', filename='ruminants.png') }}');">
+                <h2>Ruminants</h2>
             </button>
 
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" id="agroparks-button">
-                <h6>Agroparks</h6>
-                <img src="{{ url_for('static', filename='agropark-background.png') }}" class="card-img-top" alt="...">
-
+                <h2>Agroparks</h2>
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="mining-button">
-                <h6>Mining</h6>
-                <img src="{{ url_for('static', filename='mining-background.png') }}" class="card-img-top" alt="...">
-
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal3" id="mining-button" style="background-image: url('{{ url_for('static', filename='mining.png') }}');">
+                <h2>Mining</h2>
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" id="business-support-button">
-                <h6>Business Support</h6>
-                <img src="{{ url_for('static', filename='business-background.png') }}" class="card-img-top" alt="...">
-
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4" id="business-support-button" style="background-image: url('{{ url_for('static', filename='support.png') }}');">
+                <h2>Business Support</h2>
             </button>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" id="incentives-button">
-                <h6>Other Incentives</h6>
-                <img src="{{ url_for('static', filename='incentive-background.png') }}" class="card-img-top" alt="...">
-
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5" id="incentives-button" style="background-image: url('{{ url_for('static', filename='incentive.png') }}');">
+                <h2>Other Incentives</h2>
             </button>
 
             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
