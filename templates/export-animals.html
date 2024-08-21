@@ -3,8 +3,8 @@
 {% block main %}
 <div class="export-animals-page">
     <div class="export-animals-first-section">
-        <img src="{{ url_for('static', filename='export-animals-img-2.png') }}" class="img-fluid" alt="Responsive image">
-        <h1>HOW TO EXPORT LIVE ANIMALS</h1>
+        <!-- <img src="{{ url_for('static', filename='export-animals-img-2.png') }}" class="img-fluid" alt="Responsive image"> -->
+        <h1>Export Animals and Animal Products</h1>
         <div class="export-animals-first-section-list">
             <h2><strong>Start Exporting Now:</strong></h2>
             <ul>
@@ -23,6 +23,15 @@
                 <div class="card-body">
                     <h5 class="card-title helsin">Meat & Meat Products</h5>
                     <p class="card-text">Click To See Export Procedure Of Meat & Meat Products!</p>
+                    <a href="#" class="btn btn-primary">Export Procedure</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='livestock.jpeg') }}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title helsin">LiveStock</h5>
+                    <p class="card-text">Click To See Export Procedure Of Livestock</p>
                     <a href="#" class="btn btn-primary">Export Procedure</a>
                 </div>
             </div>

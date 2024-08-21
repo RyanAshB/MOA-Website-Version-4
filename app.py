@@ -78,7 +78,7 @@ def overseas_form():
     connection = get_db_connection()
     cursor = connection.cursor()
 
-    query = "SELECT Country, Name_of_Company, Address, Address_Continued FROM overseas_importers WHERE Commodity=%s"
+    query = "SELECT Country, Name_of_Company, Address, Address_Continued, Contact_Information FROM overseas_importers WHERE Commodity=%s"
 
     cursor.execute(query, (commodity,))
     fetchdata = cursor.fetchall()
