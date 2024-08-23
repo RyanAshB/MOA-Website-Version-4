@@ -502,7 +502,7 @@ body {
 
 
 .export-animals-first-section {
-    background-image: url("/static/export-animals-img-2.png");
+    background-image: url("/static/export-animals-img.png");    
     background-size: 100vw;
     background-repeat: no-repeat
 }
@@ -556,7 +556,7 @@ body {
 .export-animals-second-section .card {
     background-color: var(--bg-yellow);
     border: 0;
-    width: 24% !important;
+    width: 19% !important;
 }
 
 .export-animals-third-section {
@@ -694,10 +694,6 @@ body {
 
     #export-animals-second-section-head {
         margin-top: 15%;
-    }
-
-    .export-animals-first-section {
-        background-image: url("/static/export-animals-img-2-v2.png");
     }
 
     .export-animals-first-section .export-animals-first-section-list {
@@ -1922,6 +1918,7 @@ body {
     font-size: 60px;
     font-weight: bold;
     margin-left:10%;
+    color: var(--bg-blue)
 }
 
 @media (max-width: 425px) {
@@ -1953,6 +1950,10 @@ body {
 
 .agreements-body p, li {
     font-family: var(--glacier);
+}
+
+.agreements-body h1 {
+    font-family: var(--helsin);
 }
 
 .agreements-body .agreements-click-here-button {
@@ -1995,13 +1996,42 @@ body {
     margin-top: 10%;
 }
 
+.agreements-body .export-elevator-img {
+    /* position: relative; */
+    width: 120%;
+}
+
+/* .agreements-body .export-elevator-img p {
+    position: absolute;
+    line-height: 29px;
+    width: 90%;
+    margin-left: 5%;
+    font-weight: bold;
+    top: 30%;
+    display: none;
+    color: var(--bg-yellow);
+    background-image: url(export-expansion-img-text.png);
+    border: 2px solid black;
+    border-radius: 15px;
+    text-shadow: 2px 2px 1px black;
+    font-size: 113%;
+}
+
+.agreements-body .export-elevator-img:hover > #elevator-img {
+    opacity: 10%;
+}
+
+.agreements-body .export-elevator-img:hover > p {
+    display: block;
+} */
+
 .agreements-body #elevator-img {
-    width: 40%;
+    width: 100%;
 }
 
 .agreements-body .agreements-overview {
-    padding-right: 10%;
-
+    padding-right: 5%;
+    font-size: 0.9rem;
 }
 
 .agreements-body .agreements-bottom .flex-column {
@@ -2026,3 +2056,94 @@ body {
     grid-template-columns: auto auto auto auto auto ;
 
 }
+
+.training-body #elevator-img {
+    width: 40%;
+    box-shadow: 6px 6px 16px black;
+    position:relative;
+    z-index: 2;
+}
+
+.training-body .export-expansion {
+    display: flex;
+}
+
+.training-body .export-expansion .export-text{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    background-image: url('/static/export-background.png');
+    background-position: right;
+}
+
+.training-body .export-expansion .export-text p {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    font-family: var(--glacier);
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 1.5rem;
+}
+
+.training-body .export-expansion .export-text-header {
+    width: 100%;
+    margin-top: 5%;
+    height: 12%;
+}
+
+.training-body .export-expansion .export-text-header h1{
+    font-size: 526%;
+    margin-top: 9%;
+    padding-left: 5%;
+    font-weight: bold;
+    color: var(--bg-yellow);
+    text-shadow: 4px 4px 1px black;
+
+}
+
+.training-body .export-expansion .export-text .export-expansion-links {
+    margin-left: 5%;
+    display: flex
+}
+
+.training-body .export-expansion .export-text .export-expansion-links .export-expansion-add-info {
+    display: flex;
+    flex-direction: column;
+    padding-left: 19%;
+}
+
+.training-body .export-expansion .export-text .export-expansion-links .export-expansion-add-info .btn-primary {
+    margin-bottom: 1%;
+    border: 2.5px solid black;
+    --bs-btn-bg: var(--bg-yellow);
+    --bs-btn-hover-bg: rgb(251, 255, 0);
+    color: black;
+    font-weight: bold;
+}
+
+.training-body .agreements-click-here-button {
+    display: flex;
+    align-items: center;
+}
+
+.training-body .agreements-click-here-button:hover > h3, .agreements-body .agreements-click-here-button:hover > img{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+
+.training-body .agreements-click-here-button h3 {
+    font-family: var(--helsin);
+    text-decoration: none;
+    color: white;
+    text-shadow: 1.5px 1.5px 1px black;
+
+}
+
+.training-body .agreements-click-here-button img {
+    width: 165px;
+}
+
+

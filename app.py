@@ -97,6 +97,10 @@ def overseas():
 def trade_agreements():
     return render_template('trade-agreements.html')
 
+@app.route('/training')
+def training():
+    return render_template('training.html')
+
 @app.route('/overseas_form', methods=['GET', 'POST'])
 def overseas_form():
     connection = get_db_connection()
