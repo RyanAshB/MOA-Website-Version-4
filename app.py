@@ -65,27 +65,76 @@ def resource():
 
 @app.route('/overseas')
 def overseas():
-    return render_template('overseas.html')
+    connection = get_db_connection()
+    cursor = connection.cursor()
+
+    query = "DESCRIBE overseas_importers;"
+    cursor.execute(query, )
+
+    headings=[]
+    headingdata = cursor.fetchall()
+    for i in headingdata:
+        headings.append(i[0].replace("_", " "))
+
+     
+    query = f"SELECT DISTINCT {headings[0]} FROM overseas_importers"
+    cursor.execute(query, )
+    distinct_commodities = cursor.fetchall()
+
+    main_commodities = []
+    for distinct in distinct_commodities:
+        main_commodities.append(distinct[0])
+    print(main_commodities)
+
+        
+    cursor.close()
+    connection.close()
+    return render_template('overseas.html', main_commodities=main_commodities)
+
+
 
 @app.route('/trade-agreements')
 def trade_agreements():
     return render_template('trade-agreements.html')
 
-@app.route('/overseas_form', methods=['POST'])
+@app.route('/overseas_form', methods=['GET', 'POST'])
 def overseas_form():
-    commodity = request.form['commodity']
-
     connection = get_db_connection()
     cursor = connection.cursor()
 
-    query = "SELECT Country, Name_of_Company, Address, Address_Continued, Contact_Information FROM overseas_importers WHERE Commodity=%s"
+    query = "DESCRIBE overseas_importers;"
+    cursor.execute(query, )
 
-    cursor.execute(query, (commodity,))
-    fetchdata = cursor.fetchall()
+    headings=[]
+    headingdata = cursor.fetchall()
+    for i in headingdata:
+        headings.append(i[0].replace("_", " "))
+
+     
+    query = f"SELECT DISTINCT {headings[0]} FROM overseas_importers"
+    cursor.execute(query, )
+    distinct_commodities = cursor.fetchall()
+
+    main_commodities = []
+    for distinct in distinct_commodities:
+        main_commodities.append(distinct[0])
+    print(main_commodities)
+
+    fetchdata = []
+    
+    if request.method == 'POST':
+        commodity = request.form['commodity']
+
+
+        query = "SELECT * FROM overseas_importers WHERE Commodity LIKE %s"
+        cursor.execute(query, ('%' + commodity + '%',))
+        fetchdata = cursor.fetchall()
+        
     cursor.close()
     connection.close()
 
-    return render_template('overseas-results.html', data=fetchdata)
+    return render_template('overseas-results.html', data=fetchdata, headings=headings, main_commodities=main_commodities)
+
 
 
 
@@ -99,6 +148,7 @@ if __name__ == '__main__':
 
 
 
+    
 
 
 

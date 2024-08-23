@@ -1959,6 +1959,9 @@ body {
     margin-top: 70px;
     display: flex;
     align-items: center;
+}
+
+.agreements-body #agreements-learn-more {
     margin-left: 10%
 }
 
@@ -1975,7 +1978,7 @@ body {
 }
 
 .agreements-body .agreements-click-here-button img {
-    width: 15%;
+    width: 165px;
 }
 
 .agreements-body .agreements-top {
@@ -1997,7 +2000,8 @@ body {
 }
 
 .agreements-body .agreements-overview {
-    margin-left: 10%
+    padding-right: 10%;
+
 }
 
 .agreements-body .agreements-bottom .flex-column {
@@ -2018,6 +2022,7 @@ body {
 }
 
 .agreements-body .agreements-summaries {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto ;
+
 }

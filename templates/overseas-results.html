@@ -2,32 +2,41 @@
 
 {% block main %}
 <div class="overseas-body">
-    <form action="/overseas_form" method="POST">
-        <label for="commodity">Enter Commodity:</label>
-        <input type="text" id="commodity" name="commodity" required>
+    <div class="overseas-body">
+        <div class="search-background"></div>
+        <form action="/overseas_form" method="POST">
+            <label for="commodity">Enter a Commodity:</label>
+            <input type="text" id="commodity" name="commodity">
+            <button type="submit">Submit</button>
+        </form>
 
-        <button type="submit">Submit</button>
-    </form>
+        <form action="/overseas_form" method="POST">
+            <label for="select-bar">Select a Commodity:</label>
+            <select id="select-bar" name="commodity">
+                {% for comm in main_commodities %}
+                    <option value="{{ comm }}">{{ comm }}</option>
+                {% endfor %}
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
 
     <h2>Overseas Importers</h2>
     <table>
         <thead>
             <tr>
-                <th>Country</th>
-                <th>Name of Company</th>
-                <th>Address</th>
-                <th>Address Continued</th>
-                <th>Contact Information</th>
+                {% for head in headings %}
+                    <th>{{ head }}</th>
+                {% endfor %}
             </tr>
         </thead>
         <tbody>
             {% for row in data %}
                 <tr>
-                    <td>{{ row[0] }}</td>
-                    <td>{{ row[1] }}</td>
-                    <td>{{ row[2] }}</td>
-                    <td>{{ row[3] }}</td>
-                    <td>{{ row[4] }}</td>
+                    {% for item in row %}
+                        <td>{{ item }}</td>
+                    {% endfor %}
                 </tr>
             {% endfor %}
         </tbody>

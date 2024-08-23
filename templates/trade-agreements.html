@@ -8,21 +8,47 @@
 
     <div class="agreements-top">
         <div class="agreements-top-flex">
-            <img src="{{ url_for('static', filename='elevator-img.jpg') }}" class="img-fluid" id="elevator-img" alt="Responsive image">
             <div class="agreements-overview">
                 <h1>Overview</h1>
                 <hr>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores totam, veniam illum beatae commodi quasi. Quas ratione alias eum, aliquid, vero aut praesentium quam dolor nam autem minus fugit, repellendus numquam animi! Facilis quae amet odit sapiente consectetur possimus quibusdam adipisci odio beatae pariatur, aperiam asperiores, dolor ratione unde officia ipsa? Iusto impedit cum culpa mollitia id ullam, ipsum saepe totam, distinctio est sint voluptatibus nostrum quidem praesentium. Excepturi quis ullam, vero temporibus architecto voluptates dolorum adipisci. Quam assumenda, iusto delectus minima voluptatibus atque sapiente ad inventore nesciunt mollitia doloremque cumque tenetur repellat sunt, in accusantium corrupti? Omnis, itaque corporis?</p>
+                <p id="agreement-content-top">Free Trade Agreements assist Jamaican importers and exporters by providing improved access for goods and/or services in contracting states, and by reducing trade barriers in those markets. Among other things, FTAs:</p>
+                <ul>
+                    <li>Grant preferential tariff rates for originating goods traded among contracting parties;</li>
+                    <li>Establish the rules by which goods can qualify as originating;</li>
+                    <li>Outline Customs procedures for accessing preferential tariff rates;</li>
+                    <li>Sets out the general principles for customs procedures among the contracting parties of an Agreement</li>
+                </ul>
+
+                <p>Practical Guidance to Using FTAs:</p>
+                    <ol>
+                        <li>Determine the proper tariff classificationfor the goods</li>
+                        <li>Consult specific FTA to ascertain if products of that tariff heading are eligible for preferential access</li>
+                        <li>Consult specific FTA to find out the rules of origin relevant to the specific goods to be traded</li>
+                        <li>Ensure that you meet the direct consignment rule</li>
+                        <li>Ensure that you have and maintain correct and complete documentation for the goods</li>
+                    </ol>
+
+                <p>In order to benefit under an FTA:</p>
+                    <ul>
+                        <li>The trader must present a valid, original certificate of origin for the goods seeking preferential access when submitting the relevant import declaration;</li>
+                        <li>The goods must also have been directly consigned from the relevant exporting contracting party to Jamaica.</li>
+                    </ul>
+                <a href="#" target="_blank">
+                    <div class="agreements-click-here-button" id="agreements-register">
+                        <h3>Click Here<br>To Learn More</h3>
+                        <img src="{{ url_for('static', filename='document.png') }}" class="img-fluid" alt="Responsive image">
+                    </div>
+                </a>
             </div>
+            <img src="{{ url_for('static', filename='elevator-img.jpg') }}" class="img-fluid" id="elevator-img" alt="Responsive image">
+
         </div>
 
-        <a class="btn btn-primary" href="#" role="button">Register</a>
     </div>
 
 
     <div class="agreements-bottom">
-        
-        <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
+        <!-- <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
             <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
                 <span class="fs-4">All Trade Agreements</span>
@@ -61,38 +87,11 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div> -->
         
 
         <div class="agreements-content">
 
-            <div class="agreement-content-text">
-                <p id="agreement-content-top">Free Trade Agreements assist Jamaican importers and exporters by providing improved access for goods and/or services in contracting states, and by reducing trade barriers in those markets. Among other things, FTAs:</p>
-                <ul>
-                    <li>Grant preferential tariff rates for originating goods traded among contracting parties;</li>
-                    <li>Establish the rules by which goods can qualify as originating;</li>
-                    <li>Outline Customs procedures for accessing preferential tariff rates;</li>
-                    <li>Sets out the general principles for customs procedures among the contracting parties of an Agreement</li>
-                </ul>
-
-                <p>Practical Guidance to Using FTAs:</p>
-                    <ol>
-                        <li>Determine the proper tariff classificationfor the goods</li>
-                        <li>Consult specific FTA to ascertain if products of that tariff heading are eligible for preferential access</li>
-                        <li>Consult specific FTA to find out the rules of origin relevant to the specific goods to be traded</li>
-                        <li>Ensure that you meet the direct consignment rule</li>
-                        <li>Ensure that you have and maintain correct and complete documentation for the goods</li>
-                    </ol>
-
-                <p>In order to benefit under an FTA:</p>
-                    <ul>
-                        <li>The trader must present a valid, original certificate of origin for the goods seeking preferential access when submitting the relevant import declaration;</li>
-                        <li>The goods must also have been directly consigned from the relevant exporting contracting party to Jamaica.</li>
-                    </ul>
-            
-            </div>
-
-            
             <div class="agreements-summaries">
 
                 <div class="agreement">
@@ -127,11 +126,10 @@
                                         ""competitive need"" limits contained in the US Generalized System of Preferences
                                         (GSP). These restrictions are intended to ensure that duty-free sugar imports will not
                                         impede the United States price support system for domestically produced sugar.</p>
-
-                                    <a href="https://uscode.house.gov/view.xhtml?path=/prelim@title19/chapter15&edition=prelim" target="_blank">Click Here To See Full Agreement!</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="https://uscode.house.gov/view.xhtml?path=/prelim@title19/chapter15&edition=prelim" target="_blank"><button type="button" class="btn btn-primary">Full Agreement</button></a>
                                 </div>
                             </div>
                         </div>
@@ -183,10 +181,10 @@
                                         originating. A De minimis (or maximum ignorable) allowance of not more than 7% of
                                         inputs being untransformed is also provided for.</p>
 
-                                    <a href="https://www.jacustoms.gov.jm/sites/default/files/docs/TradeAgreements/Agreement%20Establishing%20The%20Free%20Trade%20Area%20between%20The%20Caribbean%20Community%20and%20The%20Dominican%20Republic.pdf" target="_blank">Click Here To See Full Agreement!</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="https://www.jacustoms.gov.jm/sites/default/files/docs/TradeAgreements/Agreement%20Establishing%20The%20Free%20Trade%20Area%20between%20The%20Caribbean%20Community%20and%20The%20Dominican%20Republic.pdf" target="_blank"><button type="button" class="btn btn-primary">Full Agreement</button></a>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +202,7 @@
                         <div class="modal-dialog modal-dialog-scrollable">
                             <div class="modal-content">
                                 <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel-3">CARICOM/ Dominican Republic Free Trade Agreement</h1>
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel-3">CARICOM- REVISED TREATY OF CHAGUARAMAS</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-body">
@@ -246,10 +244,10 @@
                                         that have been substantially transformed. That is, they must ultimately be classified
                                         under a different tariff heading from that of the source materials.</p>
                                     
-                                    <a href="https://caricom.org/documents/4906-revised_treaty-text.pdf" target="_blank">Click Here To See Full Agreement!</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="https://caricom.org/documents/4906-revised_treaty-text.pdf" target="_blank"><button type="button" class="btn btn-primary">Full Agreement</button></a>
                                 </div>
                             </div>
                         </div>
@@ -328,10 +326,10 @@
                                         signed by the exporter, must be presented to Customs at the time of release,
                                         accounting or refund.</p>
 
-                                    <a href="https://www.treaty-accord.gc.ca/text-texte.aspx?id=104941" target="_blank">Click Here To See Full Agreement!</a>
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="https://www.treaty-accord.gc.ca/text-texte.aspx?id=104941" target="_blank"><button type="button" class="btn btn-primary">Full Agreement</button></a>
                                 </div>
                             </div>
                         </div>
@@ -400,11 +398,123 @@
                                         while, CARIFORUM Members have 15-25 years to gradually reduce trade barriers
                                         for EU imports.</p>
 
-                                    <a href="https://publications.europa.eu/resource/cellar/f5c1c99f-9d19-452b-b0b0-ed690a53dd5f.0006.05/DOC_1" target="_blank">Click Here To See Full Agreement!</a>
 
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="https://publications.europa.eu/resource/cellar/f5c1c99f-9d19-452b-b0b0-ed690a53dd5f.0006.05/DOC_1" target="_blank"><button type="button" class="btn btn-primary">Full Agreement</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
+                        The CARICOM-Venezuela Trade and Investment Agreement
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-6" tabindex="-1" aria-labelledby="exampleModalLabel-6" aria-hidden="true">
+                        <!-- <div class="modal-dialog modal-dialog-scrollable modal-xl"> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel-6">The CARICOM-Venezuela Trade and Investment Agreement</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The CARICOM Venezuela Trade and Investment Agreement is the first of the bilateral trade agreements CARICOM signed with the Bolivarian Republic of Venezuela in October 1992 and ratified in June 2006.
+                                        <br>This Agreement is currently a non-reciprocal preferential Agreement in favour of CARICOM and allows selected products which have been agreed to by the Parties to enter the Venezuelan market free of duty from all CARICOM countries.  From Barbados’ perspective, given that CARICOM is not required to reciprocate this preferential access, it therefore follows that Barbados must grant Venezuela Most Favoured Nation (MFN) treatment in respect of all goods imported from that country.  MFN treatment refers to the tariff applied to goods at the border of a particular WTO Member when exported from another WTO Member. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button" class="btn btn-primary">Full Agreement</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-7">
+                        The CARICOM-Colombia Trade, Economic and Technical Cooperation Agreement
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-7" tabindex="-1" aria-labelledby="exampleModalLabel-7" aria-hidden="true">
+                        <!-- <div class="modal-dialog modal-dialog-scrollable modal-xl"> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel-7">The CARICOM-Colombia Trade, Economic and Technical Cooperation Agreement</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The Agreement on Trade, Economic and Technical Cooperation between CARICOM and Colombia was signed in July 1994 and ratified in June 2006. This Agreement began as a non-reciprocal agreement providing for the one way preferential access of certain products from CARICOM to the Colombian market. The Parties, however, agreed for a level of reciprocity to ensue on a select list of goods four (4) years after entry into force of the non-reciprocal agreement.   A protocol amending the Agreement to allow for this reciprocity was signed in May 1998. 
+                                        <br>The Protocol to the Agreement outlines a list of items subject to duty free trade as well as a list of items eligible for phased reduction of duty between the CARICOM MDCs of Barbados, Guyana, Jamaica and Trinidad and Tobago and Colombia.  The Lesser Developed Members of CARICOM are not required to grant preferential access to Colombia.  It should be noted that the phasing process for goods under this list has been completed.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button" class="btn btn-primary">Full Agreement</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
+                        The CARICOM-Cuba Trade and Economic Cooperation Agreement
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-8" tabindex="-1" aria-labelledby="exampleModalLabel-8" aria-hidden="true">
+                        <!-- <div class="modal-dialog modal-dialog-scrollable modal-xl"> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel-8">The CARICOM-Cuba Trade and Economic Cooperation Agreement</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The fourth bilateral agreement signed by CARICOM and to which Barbados is a Party, is the CARICOM Cuba Trade and Economic Cooperation Agreement.  This Agreement was signed between the Parties in July 2000 and seeks to strengthen their commercial and economic ties.  The Agreement allows for the reciprocal preferential trade in goods between the CARICOM MDCs of Barbados, Guyana, Jamaica, Suriname and Trinidad and Tobago and Cuba.  The Least Developed Countries of CARICOM are not required to engage in the liberalisation effort.
+                                        <br>At a Joint Commission Meeting in 2007, at the initiative of Cuba, both Parties commenced negotiations for preferential access for additional products into each other’s market. 
+                                        <br>Discussions at future Joint Commission Meetings between the two parties led to the formation of the Second (2nd) Additional Protocol of the Trade and Economic Cooperation Agreement between the Caribbean Community (CARICOM) and the Government of the Republic of Cuba.  The Second (2nd) Additional Protocol to the Trade and Economic Cooperation Agreement was signed by CARICOM and Cuba on 10 November 2017 in the margins of the Forty-Fifth (45th) Meeting of the Council for Trade and Development (COTED) in Georgetown, Guyana. </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button" class="btn btn-primary">Full Agreement</button></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="agreement">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-9">
+                        The CARICOM-Costa Rica Free Trade Agreement
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel-9" aria-hidden="true">
+                        <!-- <div class="modal-dialog modal-dialog-scrollable modal-xl"> -->
+                        <div class="modal-dialog modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel-9">The CARICOM-Costa Rica Free Trade Agreement</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The most recently concluded bilateral agreement between CARICOM and the Spanish speaking countries of the hemisphere is the CARICOM-Costa Rica Free Trade Agreement which was signed on March 9, 2004 and ratified in June 2006.  As part of this Agreement, the CARICOM MDCs of Barbados, Guyana, Jamaica, Suriname and Trinidad and Tobago and Costa Rica agreed to reciprocal preferential market access for a select range of products (goods).
+                                        <br>The Agreement provides for preferential access for a wide range of products.  Some sensitive products have been excluded from free trade and a special list of products have been granted differentiated market access between Costa Rica and each of the CARICOM MDCs.  There is also a list of products on a phased reduction of duty list.  This phased reduction of duty list is no longer relevant given that the time period for liberalisation of the goods has ran its course.
+                                        <br>The first Joint Council Meeting between the Parties took place on 17 June 2015 and concluded on 18 June 2015.
+                                        <br>Major issues discussed at the Joint Council Meeting include non-tariff barriers, treatment for selected agricultural products, contact points, services and transportation.
+                                    </p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    <a href="#"><button type="button" class="btn btn-primary">Full Agreement</button></a>
                                 </div>
                             </div>
                         </div>
@@ -415,8 +525,8 @@
         </div>
     </div>
 
-    <a href="http://www.sice.oas.org/ctyindex/JAM/JAMagreements_e.asp" target="_blank" id="agreements-click-here-button-link">
-        <div class="agreements-click-here-button">
+    <a href="http://www.sice.oas.org/ctyindex/JAM/JAMagreements_e.asp" target="_blank">
+        <div class="agreements-click-here-button" id="agreements-learn-more">
             <h3>Click Here<br>To Learn More</h3>
             <img src="{{ url_for('static', filename='document.png') }}" class="img-fluid" alt="Responsive image">
         </div>
