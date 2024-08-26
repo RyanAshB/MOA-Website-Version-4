@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block main %}
+<div class="market-research-page">
+    <div class="market-research-body">
+        <div class="market-research-body-text">
+            <h1>Market Research Tools</h1>
+            <p>The International Trade Centre's Export Potential Map is a big data tool that supports trade development by identifying export opportunities through an analysis of a country's export performance, target market demand, market access conditions, and bilateral trade relationships. It provides valuable insights for trade advisers, policymakers, and private companies by giving the user an efficient method of identifying unexplored export opportunities, attractive target markets for desired products, as well as their countries export potential when prioritizing products and markets.</p>
+        </div>
+
+        <img src="{{ url_for('static', filename='market-2.jpg') }}" alt="...">
+
+    </div>
+
+    <hr>
+
+    <div class="market-research-bottom">
+        <div class="card" style="width: 25rem;">
+            <img src="{{ url_for('static', filename='trade-map-image.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Click Here To See ITC's Trade Map</p>
+                <a href="https://intracen.org/resources/tools/trade-map" target="_blank" class="btn btn-primary">See Map!</a>
+            </div>
+        </div>  
+
+        <div class="card" style="width: 25rem;">
+            <img src="{{ url_for('static', filename='export-potential-image.png') }}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">Click Here To See ITC's Export Potential Map</p>
+                <a href="https://intracen.org/resources/tools/export-potential-map" target="_blank" class="btn btn-primary">See Map!</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

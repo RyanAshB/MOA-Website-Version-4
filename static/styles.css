@@ -1908,7 +1908,7 @@ body {
 /* THIS IS THE AGREEMENTS SECTION */
 
 .agreements-body .agreements-header {
-    background-color: #7cd5e7;
+    background-color: var(--bg-blue);
     margin-top:2%;
 }
 
@@ -1918,7 +1918,8 @@ body {
     font-size: 60px;
     font-weight: bold;
     margin-left:10%;
-    color: var(--bg-blue)
+    color: var(--bg-yellow);
+    text-shadow: 2px 2px 2px black;
 }
 
 @media (max-width: 425px) {
@@ -2120,6 +2121,7 @@ body {
     --bs-btn-hover-bg: rgb(251, 255, 0);
     color: black;
     font-weight: bold;
+    box-shadow: 1px 1px 5px black;
 }
 
 .training-body .agreements-click-here-button {
@@ -2145,5 +2147,69 @@ body {
 .training-body .agreements-click-here-button img {
     width: 165px;
 }
+
+.business-development {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.business-development .business-body {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.business-development .business-header h1 {
+    text-align: center;
+    background-color: var(--bg-yellow);
+}
+
+.business-body {
+    background-image: url('/static/business-development-background.png');
+    background-repeat: no-repeat;
+}
+
+
+.market-research-page .market-research-body img {
+    width: 43%;
+    margin-left: 5%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+
+}
+
+.market-research-page .market-research-body {
+    display: flex;
+    background-image: linear-gradient(45deg,black, rgb(71, 71, 71)) ;
+    box-shadow: 2px 2px 2px black;
+}
+
+.market-research-page .market-research-body .market-research-body-text {
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: var(--glacier);
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.market-research-page .market-research-body .market-research-body-text h1 {
+    padding-top: 5%;
+    font-family: var(--helsin);
+    color: var(--bg-yellow);
+}
+
+.market-research-page .market-research-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+.market-research-page hr {
+    margin-top: 5%;
+}
+
 
 
