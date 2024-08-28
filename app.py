@@ -105,6 +105,10 @@ def training():
 def market_research():
     return render_template('market-research.html')
 
+@app.route('/sps-tbt')
+def sps_tbt():
+    return render_template('sps-tbt.html')
+
 @app.route('/overseas_form', methods=['GET', 'POST'])
 def overseas_form():
     connection = get_db_connection()

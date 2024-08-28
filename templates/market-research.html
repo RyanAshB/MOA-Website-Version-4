@@ -3,12 +3,22 @@
 {% block main %}
 <div class="market-research-page">
     <div class="market-research-body">
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{ url_for('static', filename='market-2.jpg') }}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
+
+
         <div class="market-research-body-text">
             <h1>Market Research Tools</h1>
             <p>The International Trade Centre's Export Potential Map is a big data tool that supports trade development by identifying export opportunities through an analysis of a country's export performance, target market demand, market access conditions, and bilateral trade relationships. It provides valuable insights for trade advisers, policymakers, and private companies by giving the user an efficient method of identifying unexplored export opportunities, attractive target markets for desired products, as well as their countries export potential when prioritizing products and markets.</p>
         </div>
 
-        <img src="{{ url_for('static', filename='market-2.jpg') }}" alt="...">
+        <img src="{{ url_for('static', filename='market-2.jpg') }}" id="second-image" alt="...">
 
     </div>
 
