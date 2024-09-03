@@ -1,7 +1,7 @@
 :root {
     --cover-gradient: linear-gradient(rgb(0, 217, 255), rgb(0, 255, 255));
-    --bg-blue: rgba(5,40,133,255);
-    --bg-yellow: rgba(242, 198, 65, 255);
+    --bg-blue: rgb(5,40,133);
+    --bg-yellow: rgb(242, 198, 65);
     --helsin: 'Helsinki', sans-serif;
     --glacier: 'Glacial Indifference', sans-serif;
 }
@@ -145,10 +145,6 @@ body {
         margin: 5px !important;
 
     }
-}
-
-.jacra-body {
-    padding-top: 74px !important;
 }
 
 .jacra-body .carousel-inner img {
@@ -715,6 +711,91 @@ body {
         width: 90% !important;
     }
 }
+
+/*THIS IS THE EXPORT PLANTS SECTION */
+.export-plants-first-section {
+    background-image: url('/static/export-plants-img.png');
+    background-size: 100vw;
+    background-repeat: no-repeat;
+}
+
+.export-plants-first-section h1 {
+    color: var(--bg-yellow);
+    font-size: 6vw;
+    width: 61%;
+    margin-left: 1%;
+    padding-top: 5%;
+    text-align: left;
+}
+
+.export-plants-first-section .export-plants-first-section-list {
+    padding-top: 9%;
+    padding-left: 31%;
+    padding-bottom: 1%;
+}
+
+.export-plants-first-section-content .export-plants-first-section-list ul {
+    margin-top: 10%;
+}
+
+.export-plants-page h2,.export-plants-page h3 {
+    font-size: 3vw;
+}
+
+.export-plants-first-section .export-plants-first-section-list h2 {
+    font-family: var(--helsin);
+}
+
+.export-plants-page .export-plants-second-section {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    display: flex;
+}
+
+.export-plants-page .export-plants-second-section .export-plants-overview {
+    width: 75%;
+    border: 2px solid gray;
+    box-shadow: 4px 4px 4px black;
+}
+
+.export-plants-page .export-plants-second-section .export-plants-overview-text {
+    margin: 5%;
+}
+
+.export-plants-page .export-plants-second-section .export-plants-overview h1 {
+    font-size: 4vw;
+    color: var(--bg-yellow);
+}
+
+.export-plants-page .export-plants-second-section .export-plant-second-section-links {
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+
+.export-plants-page .export-plants-second-section .export-plant-second-section-links .card {
+    box-shadow: 0px 0px 6px black;
+    border-radius: none;
+}
+
+.export-plants-page .export-plants-third-section {
+    background-image: url(/static/export-plants-third-section-bakcground.png);
+    margin-top: 5%;
+    background-size: 1250px;
+    background-repeat: no-repeat;
+    height: 703px;
+}
+
+.export-plants-page .export-plants-third-section .export-plants-steps {
+    margin-left: 500px;
+    padding-top: 6%;
+}
+
+.export-plants-page .export-plants-third-section .export-plants-steps h1 {
+    color: var(--bg-yellow);
+}
+
 
 /*This is the Banana Board Section */
 .banana-board-page {
@@ -1731,6 +1812,31 @@ body {
     display: flex;
 }
 
+.crops-main-body .business-support-section {
+    margin-top:5%;
+    border: 5px solid var(--bg-blue);
+}
+
+.crops-main-body .business-support-section .business-support-section-text {
+    margin: 5%;
+}
+
+.crops-main-body .business-support-section .business-support-section-text h5 {
+    margin-top: 3%;
+}
+
+.crops-main-body .business-support-section .business-support-section-text h1 {
+    color: var(--bg-yellow);
+}
+
+.crops-main-body .business-support-section .business-support-section-text h5, h1 {
+    font-family: var(--helsin);
+}
+
+.crops-main-body .business-support-section .business-support-section-text li, p {
+    font-family: var(--glacier);
+}
+
 @media (max-width: 524px) {
     .crops-body .crops-fourth-section .btn {
         width: 200px;
@@ -1841,10 +1947,10 @@ body {
 }
 
 .aquaculture-body .aquaculture-body-second-section .aquaparks-section-text {
-    /* position: absolute; */
-    top: 10%;
-    left: 10%;
-    width: 40%;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    margin-bottom: 5%;
 }
 
 .aquaculture-body .aquaculture-body-second-section p {
@@ -1946,6 +2052,18 @@ body {
     text-align: center;
 }
 
+.aquaculture-body #learn-more {
+    position: fixed;
+    top: 85%;
+    left: 77%;
+    width: 18%;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+    font-family: var(--helsin);
+    color: white;
+    font-size: 1.5rem;
+}
+
 
 /* THIS IS THE AGREEMENTS SECTION */
 
@@ -2024,6 +2142,11 @@ body {
     width: 165px;
 }
 
+.agreements-body .agreements-cards {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 .agreements-body .agreements-top {
     margin-left: 10%;
     margin-right: 10%;
@@ -2034,7 +2157,7 @@ body {
     display: flex;
 }
 
-.agreements-body .agreements-top .btn {
+.agreements-body .agreements-top .main-button {
     margin-top: 10%;
 }
 
@@ -2070,8 +2193,35 @@ body {
 
 .agreements-body .agreements-summaries {
     display: grid;
-    grid-template-columns: auto auto auto auto auto ;
+    grid-template-columns: repeat(4, 1fr);
+}
 
+.agreements-body .agreements-summaries .agreement .main-button {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50%;
+    background-color: rgb(185, 185, 185);
+
+    color: black;
+    border-color: black;
+    font-family: var(--glacier);
+    font-weight: bold;
+    height: 300px
+}
+
+.agreements-body .agreements-summaries .agreement .main-button:hover {
+    box-shadow: 2px 2px 5px black;
+    background-color: rgb(204, 204, 204);
+
+}
+
+.agreements-body .agreements-summaries .agreement .main-button h6 {
+    font-weight: bold;
+}
+
+.agreements-body .agreements-summaries .img-fluid {
+    max-width: none;
+    width: 167px;
 }
 
 .training-body #elevator-img {
@@ -2149,7 +2299,7 @@ body {
     align-items: center;
 }
 
-.training-body .agreements-click-here-button:hover > h3, .agreements-body .agreements-click-here-button:hover > img{
+.training-body .agreements-click-here-button h3:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
@@ -2162,10 +2312,6 @@ body {
     color: white;
     text-shadow: 1.5px 1.5px 1px black;
 
-}
-
-.training-body .agreements-click-here-button img {
-    width: 165px;
 }
 
 .business-development {

@@ -16,4 +16,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+
+    const urlParams = new URLSearchParams(window.location.search);
+    const modalToShow = urlParams.get('modal');
+
+    // Check if the "modal" parameter is set to "incentives"
+    if (modalToShow === 'incentives') {
+        // Trigger the modal to open
+        const incentivesModal = new bootstrap.Modal(document.getElementById('exampleModal5'));
+        incentivesModal.show();
+    }
 });
