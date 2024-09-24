@@ -99,7 +99,7 @@ def overseas():
 
 @app.route('/trade-agreements')
 def trade_agreements():
-    return render_template('trade-agreements.html')
+    return render_template('trade-agreements-v2.html')
 
 @app.route('/training')
 def training():

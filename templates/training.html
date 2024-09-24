@@ -2,65 +2,145 @@
 
 {% block main %}
 <div class="training-body">
-    <div class="export-expansion">
-        <img src="{{ url_for('static', filename='elevator-img.jpg') }}" class="img-fluid" id="elevator-img" alt="Responsive image">
-        
-        <div class="export-text">
-            <div class="export-text-header">
-                <h1>Overview</h1>
-            </div>
-
-            <p>The Export Expansion Clinic is an initiative of the Trade Unit, to continue to operationalize the Ministry’s
-                strategic objective of increasing domestic export. The Export Expansion Clinics are workshops and
-                forums designed to equip new and existing exporters, farmers, agro-processors and other stakeholders
-                with essential information, key insights and perspectives to increase positive export outcomes. The
-                Clinics represent a continuous effort of the Trade Unit to reduce the proverbial red tape surrounding
-                export and increase stakeholder engagement with the Unit and by extension the Ministry, fostering
-                greater synergies for the holistic development of the agriculture sector.</p>
-
-            <div class="export-expansion-links">
-                <a href="https://forms.office.com/r/3bdQ3fSNKu" target="_blank">
-                    <div class="agreements-click-here-button" id="agreements-register">
-                        <h3>Click Here To Register</h3>
-                        <!-- <img src="{{ url_for('static', filename='register.png') }}" class="img-fluid" alt="Responsive image"> -->
-                    </div>
-                </a>
-
-                <div class="export-expansion-add-info">
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
-                        Market Opportunities
-                    </button>
-                      
-                    
-
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                        Export Readiness
-                    </button>                                      
-
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                        Target Participants
-                    </button>
-
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                        Organization and Delivery
-                    </button>
-                      
-                      
-                </div>
-            </div>
-
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <h1 class="display-3 text-white animated slideInRight">Training</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb animated slideInRight mb-0">
+                    <li class="breadcrumb-item"><a href="/landing">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Market Acess</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Training</li>
+                </ol>
+            </nav>
         </div>
     </div>
+    <!-- Page Header End -->
+
+    <!-- Features Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Why Choosing Us!</p>
+                    <h1 class="display-5 mb-4">Overview</h1>
+                    <p class="mb-4">The Export Expansion Clinic is an initiative of the Trade Unit, to continue to operationalize the Ministry’s
+                        strategic objective of increasing domestic export. The Export Expansion Clinics are workshops and
+                        forums designed to equip new and existing exporters, farmers, agro-processors and other stakeholders
+                        with essential information, key insights and perspectives to increase positive export outcomes. The
+                        Clinics represent a continuous effort of the Trade Unit to reduce the proverbial red tape surrounding
+                        export and increase stakeholder engagement with the Unit and by extension the Ministry, fostering
+                        greater synergies for the holistic development of the agriculture sector.</p>
+                    <div class="row gy-4">
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                            Market Opportunities
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                            Export Readiness
+                                        </button>   
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                            Target Participants
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-check text-white"></i>
+                                </div>
+                                <div class="ms-4">
+                                    <span>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                            Organization and Delivery
+                                        </button>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="position-relative me-lg-4">
+                        <img class="img-fluid w-100" src="{{ url_for('static', filename='elevator-img.jpg') }}" alt="">
+                        <span
+                            class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
+                            style="width: 120px; height: 120px;"></span>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Features End -->
 
     <hr>
-
+<!-- 
     <div class="business-development">
         <h1>TESTIMONIALS</h1>
         <div class="business-body">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/psK7xWOl_q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/Xb4ja_xjlnA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-    </div>
+    </div> -->
+
+        <!-- Testimonial Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Testimonial</p>
+                    <h1 class="display-5 mb-5">What Our Clients Say!</h1>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/psK7xWOl_q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xb4ja_xjlnA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/psK7xWOl_q8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="testimonial-item text-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Xb4ja_xjlnA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial End -->
 
     <!-- /*Put here*/ -->
     <div class="my_modals">

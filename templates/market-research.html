@@ -2,44 +2,84 @@
 
 {% block main %}
 <div class="market-research-page">
-    <div class="market-research-body">
-
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="{{ url_for('static', filename='market-2.jpg') }}" class="d-block w-100" alt="...">
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="row gx-3 h-100">
+                        <div class="col-6 align-self-start wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="card" style="width: 16rem;">
+                                <img src="{{ url_for('static', filename='trade-map-image.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Click Here To See ITC's Trade Map</p>
+                                    <a href="https://intracen.org/resources/tools/trade-map" target="_blank" class="btn btn-primary">See Map!</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="col-6 align-self-end wow fadeInDown" data-wow-delay="0.1s">
+                            <div class="card" style="width: 16rem;">
+                                <img src="{{ url_for('static', filename='export-potential-image.png') }}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <p class="card-text">Click Here To See ITC's Export Potential Map</p>
+                                    <a href="https://intracen.org/resources/tools/export-potential-map" target="_blank" class="btn btn-primary">See Map!</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="fw-medium text-uppercase text-primary mb-2">Market Research</p>
+                    <h1 class="display-5 mb-4">Research Tools</h1>
+                    <p class="mb-4">The International Trade Centre's Export Potential Map is a big data tool that supports
+                         trade development by identifying export opportunities through an analysis of a country's export
+                         performance, target market demand, market access conditions, and bilateral trade relationships. 
+                         It provides valuable insights for trade advisers, policymakers, and private companies by giving 
+                         the user an efficient method of identifying unexplored export opportunities, attractive target 
+                         markets for desired products, as well as their countries export potential when prioritizing 
+                         products and markets.</p>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="flex-shrink-0 bg-primary p-4">
+                            <h1 class="display-2">25</h1>
+                            <h5 class="text-white">Years of</h5>
+                            <h5 class="text-white">Experience</h5>
+                        </div>
+                        <div class="ms-4">
+                            <p><i class="fa fa-check text-primary me-2"></i>Power & Energy</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Civil Engineering</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Chemical Engineering</p>
+                            <p><i class="fa fa-check text-primary me-2"></i>Mechanical Engineering</p>
+                            <p class="mb-0"><i class="fa fa-check text-primary me-2"></i>Oil & Gas Engineering</p>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-envelope-open text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Email us</p>
+                                    <h5 class="mb-0">info@example.com</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
+                                    <i class="fa fa-phone-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <p class="mb-2">Call us</p>
+                                    <h5 class="mb-0">+012 345 6789</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-        <div class="market-research-body-text">
-            <h1>Market Research Tools</h1>
-            <p>The International Trade Centre's Export Potential Map is a big data tool that supports trade development by identifying export opportunities through an analysis of a country's export performance, target market demand, market access conditions, and bilateral trade relationships. It provides valuable insights for trade advisers, policymakers, and private companies by giving the user an efficient method of identifying unexplored export opportunities, attractive target markets for desired products, as well as their countries export potential when prioritizing products and markets.</p>
-        </div>
-
-        <img src="{{ url_for('static', filename='market-2.jpg') }}" id="second-image" alt="...">
-
     </div>
-
-    <hr>
-
-    <div class="market-research-bottom">
-        <div class="card" style="width: 25rem;">
-            <img src="{{ url_for('static', filename='trade-map-image.png') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Click Here To See ITC's Trade Map</p>
-                <a href="https://intracen.org/resources/tools/trade-map" target="_blank" class="btn btn-primary">See Map!</a>
-            </div>
-        </div>  
-
-        <div class="card" style="width: 25rem;">
-            <img src="{{ url_for('static', filename='export-potential-image.png') }}" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Click Here To See ITC's Export Potential Map</p>
-                <a href="https://intracen.org/resources/tools/export-potential-map" target="_blank" class="btn btn-primary">See Map!</a>
-            </div>
-        </div>
-    </div>
+    <!-- About End -->
 </div>
 {% endblock %}

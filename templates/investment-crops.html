@@ -9,73 +9,172 @@
             <h1>INVESTMENT</h1>
         </div>
     </div>
-    
-    <div class="crops-body">
-        <div class="crops-second-section">
-            <div class="crops-overview">
-                <div class="text-container">
-                    <h1>Overview</h1>
-                    <hr>
-                    <p>The Priority crops under the New FACE of Food include Ackee, Breadfruit and Mango (“ABM”). Based on the market demand, the Government of Jamaica (GoJ) is encouraging production of 3,000 acres of fruit trees (ackee, breadfruit and mango) over the next two (2) years.</p>
-                    <p>The Government is making available 50,000 Ackee plants, 35,000 Breadfruit plants and 50,000 Mango plants, which amounts to a total investment by the Government of JMD $81,000,000.</p>
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts my-5 p-5">
+        <div class="row g-5">
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-certificate fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">25</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Years Experience</span>
                 </div>
             </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users-cog fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">135</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Team Members</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-users fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">957</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Happy Clients</span>
+                </div>
+            </div>
+            <div class="col-md-6 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                <div class="text-center border p-5">
+                    <i class="fa fa-check-double fa-3x text-white mb-3"></i>
+                    <h1 class="display-2 text-primary mb-0" data-toggle="counter-up">1839</h1>
+                    <span class="fs-5 fw-semi-bold text-white">Projects Done</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
 
-            
-            <div class="crops-cards">
-                <div class="first-row">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-ackee-card.jpeg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Ackee</h5>
-                            <a href="#crop-ackee" class="btn btn-primary">Learn More!</a>
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto pb-4 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="fw-medium text-uppercase text-primary mb-2">Our Products</p>
+                <h1 class="display-5 mb-4">SELECT A PRODUCT TO LEARN MORE ABOUT IT</h1>
+            </div>
+            <div class="row gy-5 gx-4">
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-ackee-card.jpeg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-ackee-card.jpeg') }}" alt="">
                         </div>
-                    </div>
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-mango-card.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Mango</h5>
-                            <a href="#crop-mango" class="btn btn-primary">Learn More!</a>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Ackee</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Ackee</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-breadfruit-card.jpeg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Breadfruit</h5>
-                            <a href="#crop-breadfruit" class="btn btn-primary">Learn More!</a>
-                        </div>
+                        <a class="btn btn-light" href="#crop-ackee">Read More</a>
                     </div>
                 </div>
-
-                <div class="second-row">
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-yam-card.jpeg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Yam</h5>
-                            <a href="#crop-yam" class="btn btn-primary">Learn More!</a>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-mango-card.jpg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-mango-card.jpg') }}" alt="">
                         </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Mango</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Mango</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="#crop-mango">Read More</a>
                     </div>
-
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-sweet-potato-card.jpeg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Sweet Potato</h5>
-                            <a href="#crop-sweet-potato" class="btn btn-primary">Learn More!</a>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-breadfruit-card.jpeg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-breadfruit-card.jpeg') }}" alt="">
                         </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Breadfruit</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Breadfruit</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="#crop-breadfruit">Read More</a>
                     </div>
-
-                    <div class="card" style="width: 15rem;">
-                        <img src="{{ url_for('static', filename='crops-avocado-card.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Avocado</h5>
-                            <a href="#crop-avocado" class="btn btn-primary">Learn More!</a>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-yam-card.jpeg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-yam-card.jpeg') }}" alt="">
                         </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Yam</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Yam</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="#crop-yam">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-sweet-potato-card.jpeg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-sweet-potato-card.jpeg') }}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Sweet Potato</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Sweet Potato</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="#crop-sweet-potato">Read More</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item">
+                        <img class="img-fluid" src="{{ url_for('static', filename='crops-avocado-card.jpg') }}" alt="">
+                        <div class="service-img">
+                            <img class="img-fluid" src="{{ url_for('static', filename='crops-avocado-card.jpg') }}" alt="">
+                        </div>
+                        <div class="service-detail">
+                            <div class="service-title">
+                                <hr class="w-25">
+                                <h3 class="mb-0">Avocado</h3>
+                                <hr class="w-25">
+                            </div>
+                            <div class="service-text">
+                                <p class="text-white mb-0">Click Here To Learn More About Avocado</p>
+                            </div>
+                        </div>
+                        <a class="btn btn-light" href="#crop-avocado">Read More</a>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <!-- Service End -->
+    
+    <div class="crops-body fadeInUp" data-wow-delay="0.7s">
 
-        <div class="crops-third-section">
+        <div class="crops-third-section fadeInUp" data-wow-delay="0.7s">
             <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark" style="width: 280px;">
                 <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
                   <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>

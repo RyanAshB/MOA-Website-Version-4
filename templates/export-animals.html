@@ -13,58 +13,48 @@
             </ul>
         </div>
     </div>
-    
-    <div class="export-animals-second-section-body" id="export-animals-second-section-body">
-        <h1 id="export-animals-second-section-head">Step By Step Guide</h1>
-        <hr>
-        <div class="export-animals-second-section">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ url_for('static', filename='meat.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title helsin">Meat & Meat Products</h5>
-                    <p class="card-text">Click To See Export Procedure Of Meat & Meat Products!</p>
-                    <a href="#" class="btn btn-primary">Export Procedure</a>
-                </div>
-            </div>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ url_for('static', filename='livestock.jpeg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title helsin">LiveStock</h5>
-                    <p class="card-text">Click To See Export Procedure Of Livestock</p>
-                    <a href="#" class="btn btn-primary">Export Procedure</a>
-                </div>
-            </div>
+    <hr>
 
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ url_for('static', filename='cat-dog.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title helsin">Cats and Dogs</h5>
-                    <p class="card-text">Click To See Export Procedure Of Cats & Dogs!</p>
-                    <a href="{{ url_for('static', filename='Procedure For Exporting Dogs and Cats.pdf') }}" target="_blank" class="btn btn-primary">Export Procedure</a>
+    <!-- Project Start -->
+    <div class="container-fluid py-5 my-5 px-0">
+        <div class="text-center mx-auto wow fadeIn" data-wow-delay="0.1s" style="max-width: 600px;">
+            <h1 class="display-5 mb-5">Step By Step Guide</h1>
+        </div>
+        <div class="owl-carousel project-carousel bg-dark wow fadeIn" data-wow-delay="0.1s">
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{{ url_for('static', filename='meat.jpg') }}" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Meat & Meat Products</h5>
                 </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ url_for('static', filename='horse.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title helsin">Horses</h5>
-                    <p class="card-text">Click To See Export Procedure Of Horses!</p>
-                    <a href="{{ url_for('static', filename='Procedure For Exporting Horses.pdf') }}"  target="_blank"class="btn btn-primary">Export Procedure</a>
+            </a>
+            <a class="project-item" href="">
+                <img class="img-fluid" src="{{ url_for('static', filename='livestock.jpeg') }}" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Livestock</h5>
                 </div>
-            </div>
-
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{ url_for('static', filename='bird.jpg') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title helsin">Pet Birds and Exotic Animals</h5>
-                    <p class="card-text">Click To See Export Procedure Of Pet Birds and Exotic Animals!</p>
-                    <a href="{{ url_for('static', filename='Procedure For Exporting Pet Birds and Other Exotic Animals.pdf') }}" target="_blank" class="btn btn-primary">Export Procedure</a>
+            </a>
+            <a class="project-item" href="{{ url_for('static', filename='Procedure For Exporting Dogs and Cats.pdf') }}" target="_blank">
+                <img class="img-fluid" src="{{ url_for('static', filename='cat-dog.jpg') }}" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Cats and Dogs</h5>
                 </div>
-            </div>
-            
+            </a>
+            <a class="project-item" href="{{ url_for('static', filename='Procedure For Exporting Horses.pdf') }}"  target="_blank">
+                <img class="img-fluid" src="{{ url_for('static', filename='horse.jpg') }}" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Horses</h5>
+                </div>
+            </a>
+            <a class="project-item" href="{{ url_for('static', filename='Procedure For Exporting Pet Birds and Other Exotic Animals.pdf') }}" target="_blank">
+                <img class="img-fluid" src="{{ url_for('static', filename='bird.jpg') }}" alt="">
+                <div class="project-title">
+                    <h5 class="text-primary mb-0">Pet Birds and Exotic Animals</h5>
+                </div>
+            </a>
         </div>
     </div>
+    <!-- Project End -->
 
     <div class="export-animals-third-section" id="export-animals-third-section">
         <h1><span style="color:rgba(11,45,130,255);">Apply For Certifications</span></h1>
