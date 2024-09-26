@@ -1205,6 +1205,17 @@ body {
     padding-top: 0;
 }
 
+.international-overview {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.international-overview h1 {
+    color: #e9cd04;
+}
+
 .international-body .international-second-section {
     margin-left: 100px;
     margin-right: 100px;
