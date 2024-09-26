@@ -1,7 +1,8 @@
 :root {
     --cover-gradient: linear-gradient(rgb(0, 217, 255), rgb(0, 255, 255));
     --bg-blue: rgb(5,40,133);
-    --bg-yellow: rgb(242, 198, 65);
+    /* --bg-yellow: rgb(242, 198, 65); */
+    --bg-yellow: #e9cd04;
     --helsin: "Rubik",sans-serif;
     --glacier: "Open Sans",sans-serif;
 }
@@ -496,15 +497,16 @@ body {
 .export-animals-first-section {
     background-image: url("/static/export-animals-img.png");    
     background-size: 100vw;
-    background-repeat: no-repeat
+    background-repeat: no-repeat;
+    height: 57vw;
 }
 
 
 .export-animals-first-section h1 {
     color: var(--bg-yellow);
     font-size: 6vw;
-    width: 63%;
-    margin-left: 36%;
+    width: 52%;
+    margin-left: -1%;
     padding-top: 5%;
     text-align: center;
 }
@@ -712,16 +714,16 @@ body {
     background-image: url('/static/export-plants-img.png');
     background-size: 100vw;
     background-repeat: no-repeat;
-    height: 42vw;
+    height: 57vw;
 }
 
 .export-plants-first-section h1 {
     color: var(--bg-yellow);
     font-size: 6vw;
-    width: 61%;
-    margin-left: 1%;
+    width: 52%;
+    margin-left: -1%;
     padding-top: 5%;
-    text-align: left;
+    text-align: center;
 }
 
 .export-plants-first-section .export-plants-first-section-list {
@@ -1541,7 +1543,7 @@ body {
 
 .landing-body .landing-second-section #landing-second-section-background {
     width: 100vw;
-    margin-top: -0.8%;
+    margin-top: -1.8%;
 }
 
 .landing-body .landing-second-section-content {
@@ -1949,10 +1951,11 @@ body {
 }
 
 .aquaculture-body .aquaculture-body-second-section .aquaparks-section-text {
-    width: 80%;
+    width: 44%;
     margin-left: 10%;
     text-align: center;
-    margin-bottom: 5%;
+    margin-bottom: 17%;
+    margin-top: -40%;
 }
 
 .aquaculture-body .aquaculture-body-second-section p {
