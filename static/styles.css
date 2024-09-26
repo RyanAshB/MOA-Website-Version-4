@@ -503,12 +503,14 @@ body {
 
 
 .export-animals-first-section h1 {
-    color: var(--bg-yellow);
+    color: white;
+    text-shadow: 3px 3px 3px black;
     font-size: 6vw;
     width: 52%;
     margin-left: -1%;
     padding-top: 5%;
     text-align: center;
+
 }
 
 .export-animals-first-section .export-animals-first-section-list {
@@ -718,7 +720,8 @@ body {
 }
 
 .export-plants-first-section h1 {
-    color: var(--bg-yellow);
+    color: white;
+    text-shadow: 3px 3px 3px black;
     font-size: 6vw;
     width: 52%;
     margin-left: -1%;
