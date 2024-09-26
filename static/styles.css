@@ -598,12 +598,7 @@ body {
 }
 
 .export-animals-third-section #third-card {
-    height: 150px;
-    width: 200px;
     margin-left: 12%;
-    border: none;
-    background-color: white;
-    margin-left: 80px;
 }
 
 .export-animals-third-section #third-card-body {
@@ -621,8 +616,8 @@ body {
     padding-top: 1px;
     padding-bottom: 1px;
     border-radius: 50px;
-    background-color: white;
-    border-color: white;
+    background-color: rgb(185, 185, 185);
+    border-color: rgb(185, 185, 185);
     text-decoration: underline;
     color: blue
 }
@@ -717,6 +712,7 @@ body {
     background-image: url('/static/export-plants-img.png');
     background-size: 100vw;
     background-repeat: no-repeat;
+    height: 42vw;
 }
 
 .export-plants-first-section h1 {
@@ -746,18 +742,7 @@ body {
     font-family: var(--helsin);
 }
 
-.export-plants-page .export-plants-second-section {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    display: flex;
-}
 
-.export-plants-page .export-plants-second-section .export-plants-overview {
-    width: 75%;
-    border: 2px solid gray;
-    box-shadow: 4px 4px 4px black;
-}
 
 .export-plants-page .export-plants-second-section .export-plants-overview-text {
     margin: 5%;
@@ -766,12 +751,15 @@ body {
 .export-plants-page .export-plants-second-section .export-plants-overview h1 {
     font-size: 4vw;
     color: var(--bg-yellow);
+    text-align: center;
 }
 
-.export-plants-page .export-plants-second-section .export-plant-second-section-links {
+.export-plants-page .export-plant-second-section-links {
     display: flex;
     justify-content: space-around;
-    width: 100%
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .export-plants-page .export-plants-second-section .export-plant-second-section-links .card {
@@ -1409,8 +1397,7 @@ body {
 }
 
 #footer-2 {
-    background-color: white !important;
-    color: #02245B !important;
+    background-color: rgba(7,19,50,255) !important;
 }
 
 .landing-body .landing-first-section {
@@ -1745,11 +1732,7 @@ body {
     position: relative;
 }
 
-.crops-main-body .text-center {
-    max-width: none !important;
-    width: 80% !important;
-    margin-left: 29%;
-}
+
 
 .crops-main-body .text-center .card-body {
     background-color: var(--bs-dark);
@@ -1840,17 +1823,11 @@ body {
 
 
 .crops-body .crops-third-section {
-    margin-top: 100px;
     display: flex;
 }
 
 .crops-main-body .business-support-section {
     margin-top:5%;
-    border: 5px solid var(--bg-blue);
-}
-
-.crops-main-body .business-support-section .business-support-section-text {
-    margin: 5%;
 }
 
 .crops-main-body .business-support-section .business-support-section-text h5 {
@@ -2139,10 +2116,12 @@ body {
 .agreements-body .agreements-click-here-button {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .agreements-body #agreements-learn-more {
-    margin-left: 10%;
     margin-top: 2%;
     margin-bottom: 2%;
 }
@@ -2157,6 +2136,7 @@ body {
 .agreements-body .agreements-click-here-button h3 {
     font-family: var(--helsin);
     text-decoration: none;
+    text-align: center;
 }
 
 .agreements-body .agreements-click-here-button img {
@@ -2515,9 +2495,8 @@ body {
 
 
 /*THIS IS THE SBS/TBT SECTION */
-.sbs-tbt-page {
+.sbs-tbt-page strong {
     text-align: center;
-    padding-top: 5%
 }
 
 

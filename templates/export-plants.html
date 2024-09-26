@@ -4,13 +4,13 @@
 <div class="export-plants-page">
     <div class="export-plants-first-section">
         <h1>Export Plants and Plant Products</h1>
-        <div class="export-plants-first-section-list">
+        <!-- <div class="export-plants-first-section-list">
             <h2><strong>Start Exporting Now:</strong></h2>
             <ul>
                 <a href="#"><li><h3><strong>Section 1</strong></h3></li></a>
                 <a href="#"><li><h3><strong>Section 2</strong></h3></li></a>
             </ul>
-        </div>
+        </div> -->
     </div>
     <div class="export-plants-second-section">
         <div class="export-plants-overview">
@@ -19,26 +19,6 @@
                 <hr>
                 <p>Export permits are required to validate the phytosanitary health of the product and its authenticity as an originating product from Jamaica. The primary agency that manages the export of plants and plant products is the Plant Quarantine and Produce Inspection (PQPI) division.</p>
                 <p>Export services are also provided by other agencies depending on the nature of the product. In addition to the PQPI, consult the agencies below for guidance if exporting Coffee, Cocoa, Coconut, Tumeric, Ginger, Other Spices, or Banana.</p>
-            </div>
-        </div>
-
-        <div class="export-plant-second-section-links">
-            <div class="card" style="width: 40%;">
-                <img class="card-img-top" src="{{ url_for('static', filename='placeholder-1.png') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">JACRA</h5>
-                    <p class="card-text">Click Here to learn about JACRA export licence</p>
-                    <a href="/jacra" target="_blank" class="btn btn-primary">View Page</a>
-                </div>
-            </div>
-            
-            <div class="card" style="width: 40%;">
-                <img class="card-img-top" src="{{ url_for('static', filename='placeholder-2.png') }}" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Banana Board</h5>
-                    <p class="card-text">Click Here to learn about Banana Board export Permit</p>
-                    <a href="/banana-board" target="_blank" class="btn btn-primary">View Page</a>
-                </div>
             </div>
         </div>
     </div>
@@ -66,6 +46,24 @@
             </ol>
 
             <p>NB: Please see attached <a href="{{ url_for('static', filename='fee-sheet.pdf') }}" target="_blank">fee sheet</a> for the services provided, packing house requirements and a flow chart of the export process.</p>
+        </div>
+    </div>
+
+    <div class="export-plant-second-section-links">
+        <div class="card" style="width: 40%;">
+            <div class="card-body">
+                <h5 class="card-title">JACRA</h5>
+                <p class="card-text">Click Here to learn about JACRA export licence</p>
+                <a href="/jacra" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 40%;">
+            <div class="card-body">
+                <h5 class="card-title">Banana Board</h5>
+                <p class="card-text">Click Here to learn about Banana Board export Permit</p>
+                <a href="/banana-board" target="_blank" class="btn btn-primary">More Info</a>
+            </div>
         </div>
     </div>
 </div>

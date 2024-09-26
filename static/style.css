@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #FF5E14;
+    --primary: #e9cd04;/*#FF5E14;*/
     --secondary: #5F656F;
     --light: #F5F5F5;
     --dark: #02245B;
@@ -37,7 +37,10 @@ h6,
 .fw-semi-bold {
     font-weight: 500 !important;
 }
-
+/*
+a {
+    color: var(--primary) !important;
+}*/
 
 .bg-dark {
     background-color: white !important;
