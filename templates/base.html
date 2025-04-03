@@ -74,57 +74,57 @@
         </div>
 
               
-              <!-- Navbar Start -->
-              <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
-                <a  href="/landing" class="navbar-brand ps-5 me-0">
-                    <img src="{{ url_for('static', filename='moafm-logo.png') }}" width="100" height="70">
-                    <!--<h1 class="text-white m-0">MOAFM</h1> moafm-logo.png-->
-                </a>
-                <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
-                    <div class="navbar-nav ms-auto p-4 p-lg-0">
-                        <div class="nav-item dropdown">
-                          <a href="/landing" class="nav-item nav-link active">Home</a>
-                        </div>
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market Access</a>
-                            <div class="dropdown-menu bg-light m-0">
-                                <a href="/trade-agreements" class="dropdown-item">Trade Agreements</a>
-                                <a href="#" class="dropdown-item">Standards</a>
-                                <a href="/sps-tbt" class="dropdown-item">SPS/TBT Focal Points</a>
-                                <a href="/training" class="dropdown-item">Tranings</a>
-                            </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Investment</a>
-                          <div class="dropdown-menu bg-light m-0">
-                              <a href="/investment-crops" class="dropdown-item">Priority Crops</a>
-                              <a href="/aquaculture" class="dropdown-item">Aquaculture</a>
-                              <a href="/investment-crops#ruminants-button" class="dropdown-item">Other Products</a>
-                          </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Export Information</a>
-                          <div class="dropdown-menu bg-light m-0">
-                              <a href="/export-plants" class="dropdown-item">Export Plants</a>
-                              <a href="/export-animals" class="dropdown-item">Export Animals</a>
-                          </div>
-                        </div>
-                        <div class="nav-item dropdown">
-                          <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market Intelligence</a>
-                          <div class="dropdown-menu bg-light m-0">
-                              <a href="/market-research" class="dropdown-item">Market Research Tools</a>
-                              <a href="/2025" class="dropdown-item">25% by 2025</a>
-                              <a href="/international-market" class="dropdown-item">International Markets</a>
-                              <a href="/domestic-market" class="dropdown-item">Domestic Markets</a>
-                          </div>
-                        </div>
-                        
+        <!-- Navbar Start -->
+        <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5">
+        <a  href="/landing" class="navbar-brand ps-5 me-0">
+            <img src="{{ url_for('static', filename='moafm-logo.png') }}" width="100" height="70">
+            <!--<h1 class="text-white m-0">MOAFM</h1> moafm-logo.png-->
+        </a>
+        <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <div class="nav-item dropdown">
+                    <a href="/landing" class="nav-item nav-link active">Home</a>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market Access</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="/trade-agreements" class="dropdown-item">Trade Agreements</a>
+                        <a href="#" class="dropdown-item">Standards</a>
+                        <a href="/sps-tbt" class="dropdown-item">SPS/TBT Focal Points</a>
+                        <a href="/training" class="dropdown-item">Tranings</a>
                     </div>
                 </div>
-              </nav>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Investment</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="/investment-crops" class="dropdown-item">Priority Crops</a>
+                        <a href="/aquaculture" class="dropdown-item">Aquaculture</a>
+                        <a href="/investment-crops#ruminants-button" class="dropdown-item">Other Products</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Export Information</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="/export-plants" class="dropdown-item">Export Plants</a>
+                        <a href="/export-animals" class="dropdown-item">Export Animals</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Market Intelligence</a>
+                    <div class="dropdown-menu bg-light m-0">
+                        <a href="/market-research" class="dropdown-item">Market Research Tools</a>
+                        <a href="/2025" class="dropdown-item">25% by 2025</a>
+                        <a href="/international-market" class="dropdown-item">International Markets</a>
+                        <a href="/domestic-market" class="dropdown-item">Domestic Markets</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        </nav>
   <!-- Navbar End -->
         </div>
     </header>
@@ -202,7 +202,6 @@
     <script src="{{ url_for('static', filename='script.js') }}"></script>
      <!-- JavaScript Libraries -->
      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
      <script src="{{ url_for('static', filename='lib/wow/wow.min.js') }}"></script>
      <script src="{{ url_for('static', filename='lib/easing/easing.min.js') }}"></script>
      <script src="{{ url_for('static', filename='lib/waypoints/waypoints.min.js') }}"></script>

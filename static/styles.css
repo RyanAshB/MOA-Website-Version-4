@@ -780,6 +780,8 @@ body {
     height: 703px;
 }
 
+
+
 .export-plants-page .export-plants-third-section .export-plants-steps {
     margin-left: 500px;
     padding-top: 6%;
@@ -1275,6 +1277,13 @@ body {
     background-color: var(--bg-blue) !important;
 }
 
+@media (max-width: 767px) {
+    .international-body .international-second-section .flex-column {
+        display: none !important;
+    }
+
+}
+
 
 /*This is the DOMESTCI SECTION*/
 .domestic-body .domestic-first-section {
@@ -1335,6 +1344,8 @@ body {
 
 .domestic-body .domestic-second-section h6, .domestic-body .domestic-second-section a{
     font-family: var(--helsin);
+    margin-top: 13%;
+    margin-bottom: 3%;
 }
 
 .domestic-body .domestic-second-section .under-img{
@@ -1363,6 +1374,7 @@ body {
 
 .domestic-body .domestic-second-section .product .right-img {
     float: right;
+    margin-bottom: 60px;
 }
 
 .domestic-body .domestic-second-section .flex-column {
@@ -1391,6 +1403,13 @@ body {
         width: 33vw !important;
     }
     
+}
+
+@media (max-width: 767px) {
+    .domestic-body .domestic-second-section .flex-column {
+        display: none !important;
+    }
+
 }
 
 
@@ -1891,9 +1910,35 @@ body {
     font-family: var(--helsin);
 }
 
+@media (max-width: 902px) {
+    .crops-main-body #invest-now {
+        top: 81%;
+        left: 68%;
+    }
+
+    .aquaculture-body #learn-more {
+        top: 81% !important;
+        left: 68% !important;
+    }
+}
+
 @media (max-width: 767px) {
     .crops-body .flex-column {
-        width: 208px;
+        display: none !important;
+    }
+
+    .crops-main-body #invest-now {
+        left: 20%;
+        width: 62%;
+        top: 86%;
+        font-size: 1rem;
+    }
+
+    .aquaculture-body #learn-more {
+        left: 20% !important;
+        width: 62% !important;
+        top: 86% !important;
+        font-size: 1rem !important;
     }
 }
 
@@ -1961,15 +2006,16 @@ body {
 }
 
 .aquaculture-body .aquaparks-section {
-    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-image: url('/static/aquaparks-location.png');
+    background-size: 100vw;
 }
 
 .aquaculture-body .aquaculture-body-second-section .aquaparks-section-text {
     width: 44%;
     margin-left: 10%;
     text-align: center;
-    margin-bottom: 17%;
-    margin-top: -40%;
 }
 
 .aquaculture-body .aquaculture-body-second-section p {
@@ -1978,7 +2024,7 @@ body {
 }
 
 .aquaculture-body .aquaculture-body-second-section h1 {
-    font-size: 70px;
+    font-size: 3rem;
     font-family: var(--helsin);
     font-style: italic;
     color: var(--bg-blue);
@@ -2027,17 +2073,23 @@ body {
     text-align: center;
 }
 
+/* THIS IS WHERE I MADE CHANGES egstesrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrgsergerger*/
+
 .aquaculture-body .seamoss-section {
-    position: relative;
+    background-image: url('/static/seamoss-background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw;
+    background-position: bottom;
+    padding-bottom: 7%;
 }
 
 .aquaculture-body .seamoss-section-text {
-    position: absolute;
-    top: 20%;
     width:80%;
-    left:10%;
     text-align: center;
     background-color: white;
+    margin-left: 10%;
+    margin-top: 5%;
 }
 
 .aquaculture-body .oyster-section {
@@ -2074,7 +2126,7 @@ body {
 .aquaculture-body #learn-more {
     position: fixed;
     top: 85%;
-    left: 77%;
+    left: 73%;
     width: 18%;
     border: 2px solid black;
     box-shadow: 2px 2px 5px black;
@@ -2082,6 +2134,8 @@ body {
     color: white;
     font-size: 1.5rem;
 }
+
+
 
 
 /* THIS IS THE AGREEMENTS SECTION */
@@ -2136,6 +2190,7 @@ body {
     justify-content: center;
     margin-top: 5px;
     margin-bottom: 5px;
+
 }
 
 .agreements-body #agreements-learn-more {
@@ -2364,6 +2419,8 @@ body {
 }
 
 
+
+
 @media (max-width: 1023px) {
     .training-body .export-expansion {
         flex-direction: column;
@@ -2484,9 +2541,17 @@ body {
     .market-research-page .market-research-body #second-image {
         display: none;
     }
+
+    .aquaculture-body .aquaculture-body-second-section .aquaparks-section-text {
+        width: 80%;
+    }
+
+    .aquaculture-body .aquaculture-body-second-section h1 {
+        font-size: 2rem
+    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .market-research-page .market-research-bottom {
         flex-direction: column;
         align-items: center;
@@ -2499,6 +2564,27 @@ body {
     .market-research-page .market-research-body #carouselExample{
         width: 100%;
         margin: 0;
+    }
+
+
+}
+
+@media (max-width: 1023px) {
+    .export-plants-page .export-plants-third-section {
+        background-image: none;
+        height: auto;
+    }
+
+    .export-plants-page .export-plants-third-section .export-plants-steps {
+        margin: 5%;
+    }
+
+    .aquaculture-body .tilapia-section img {
+        display: none;
+    }
+
+    .aquaculture-body .oyster-section img {
+        display: none;
     }
 }
 
