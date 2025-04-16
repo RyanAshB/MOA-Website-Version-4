@@ -28,26 +28,6 @@ body {
     color: black
 }
 
-.text-start {
-    text-align: left !important;
-    display: flex;
-    flex-direction: row;
-}
-
-#logo {
-    width: 10%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-}
-
-#logo-text {
-    text-align: center;
-    margin: 0;
-    padding-top: 2%;
-    padding-left: 2%;
-    color: white;
-}
-
 /* This Is The Nav-Bar Section */
 
 .page-name-bg{
@@ -69,6 +49,8 @@ body {
     padding-left: 40px;
     padding-right: 30px;
 }
+
+
 
 
 
@@ -2582,6 +2564,12 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .market-research-page .row {
+        display: block !important;
+        margin-bottom: 10px;
+    }
+    
 
     .market-research-page .market-research-bottom .card {
         margin-bottom: 5%;

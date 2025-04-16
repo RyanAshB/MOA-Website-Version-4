@@ -2,123 +2,53 @@
 
 {% block main %}
 <div class="agreements-body">
-
-    
-    <!-- Page Header Start -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <h1 class="display-3 text-white animated slideInRight">Free Trade Agreements</h1>
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb animated slideInRight mb-0">
-                    <li class="breadcrumb-item"><a href="/landing">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Market Acess</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Trade Agreements</li>
-                </ol>
-            </nav>
-        </div>
+    <div class="agreements-header">
+        <h1>FREE TRADE AGREEMENTS</h1>
     </div>
-    <!-- Page Header End -->
 
+    <div class="agreements-top">
+        <div class="agreements-top-flex">
+            <div class="agreements-overview">
+                <h1>Overview</h1>
+                <hr>
+                <p id="agreement-content-top">Free Trade Agreements assist Jamaican importers and exporters by providing improved access for goods and/or services in contracting states, and by reducing trade barriers in those markets. Among other things, FTAs:</p>
+                <ul>
+                    <li>Grant preferential tariff rates for originating goods traded among contracting parties;</li>
+                    <li>Establish the rules by which goods can qualify as originating;</li>
+                    <li>Outline Customs procedures for accessing preferential tariff rates;</li>
+                    <li>Sets out the general principles for customs procedures among the contracting parties of an Agreement</li>
+                </ul>
 
-    <!-- Features Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="position-relative me-lg-4">
-                        <img class="img-fluid w-100" src="{{ url_for('static', filename='elevator-img.jpg') }}" alt="">
-                        <span
-                            class="position-absolute top-50 start-100 translate-middle bg-white rounded-circle d-none d-lg-block"
-                            style="width: 120px; height: 120px;"></span>
-                        <button type="button" class="btn-play" data-bs-toggle="modal"
-                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
-                            <span></span>
-                        </button>
+                <p>Practical Guidance to Using FTAs:</p>
+                    <ol>
+                        <li>Determine the proper tariff classificationfor the goods</li>
+                        <li>Consult specific FTA to ascertain if products of that tariff heading are eligible for preferential access</li>
+                        <li>Consult specific FTA to find out the rules of origin relevant to the specific goods to be traded</li>
+                        <li>Ensure that you meet the direct consignment rule</li>
+                        <li>Ensure that you have and maintain correct and complete documentation for the goods</li>
+                    </ol>
+
+                <p>In order to benefit under an FTA:</p>
+                    <ul>
+                        <li>The trader must present a valid, original certificate of origin for the goods seeking preferential access when submitting the relevant import declaration;</li>
+                        <li>The goods must also have been directly consigned from the relevant exporting contracting party to Jamaica.</li>
+                    </ul>
+                
+            </div>
+            <div class="export-elevator-img">
+                <a href="/training">
+                    <img src="{{ url_for('static', filename='elevator-img.jpg') }}" class="img-fluid" id="elevator-img" alt="Responsive image">
+                </a>
+
+                <a href="https://forms.office.com/r/3bdQ3fSNKu" target="_blank">
+                    <div class="agreements-click-here-button" id="agreements-register">
+                        <h3>Click Here To Register</h3>
                     </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <!-- <p class="fw-medium text-uppercase text-primary mb-2">Overview</p> -->
-                    <h1 class="display-5 mb-4">Overview</h1>
-                    <p class="mb-4">
-                        Free Trade Agreements assist Jamaican importers and exporters by providing improved access for goods and/or services in contracting states, and by reducing trade barriers in those markets. Among other things, FTAs:
-                        <ul>
-                            <li>Grant preferential tariff rates for originating goods traded among contracting parties;</li>
-                            <li>Establish the rules by which goods can qualify as originating;</li>
-                            <li>Outline Customs procedures for accessing preferential tariff rates;</li>
-                            <li>Sets out the general principles for customs procedures among the contracting parties of an Agreement</li>
-                        </ul>
-                    </p>
-                    <div class="row gy-4">
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>Practical Guidance to Using FTAs:</h4>
-                                    <span>
-                                        <ol>
-                                            <li>Determine the proper tariff classificationfor the goods</li>
-                                            <li>Consult specific FTA to ascertain if products of that tariff heading are eligible for preferential access</li>
-                                            <li>Consult specific FTA to find out the rules of origin relevant to the specific goods to be traded</li>
-                                            <li>Ensure that you meet the direct consignment rule</li>
-                                            <li>Ensure that you have and maintain correct and complete documentation for the goods</li>
-                                        </ol>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0 btn-lg-square rounded-circle bg-primary">
-                                    <i class="fa fa-check text-white"></i>
-                                </div>
-                                <div class="ms-4">
-                                    <h4>In order to benefit under an FTA:</h4>
-                                    <span>
-                                        <ul>
-                                            <li>The trader must present a valid, original certificate of origin for the goods seeking preferential access when submitting the relevant import declaration;</li>
-                                            <li>The goods must also have been directly consigned from the relevant exporting contracting party to Jamaica.</li>
-                                        </ul>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
         </div>
+
     </div>
-    <!-- Features End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal modal-video fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen
-                            allowscriptaccess="always" allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->   
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i
-            class="bi bi-arrow-up"></i></a>
-
-
-
 
     <hr>
 
@@ -569,15 +499,15 @@
     <div class="agreements-cards">
         <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='usa-flag.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The US Caribbean Basin Initiative (CBI)</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-1">
                                     Agreement
                                 </button>
                             </div>
@@ -585,17 +515,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='costa-rica.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">CARICOM/ Dominican Republic Free Trade Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-2">
                                     Agreement
                                 </button>
                             </div>
@@ -603,17 +533,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
-                            <!-- No image -->
+                            <!-- <img src="{{ url_for('static', filename='costa-rica.png') }}" class="img-fluid rounded-start" alt="..."> -->
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">CARICOM- REVISED TREATY OF CHAGUARAMAS</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-3">
                                     Agreement
                                 </button>
                             </div>
@@ -621,17 +551,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='canada.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The Canada/CARIBCAN Free Trade Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-4">
                                     Agreement
                                 </button>
                             </div>
@@ -639,17 +569,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='united-kingdom.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">CARIFORUM-European Union (EU) & UK Economic Partnership Agreements</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-5">
                                     Agreements
                                 </button>
                             </div>
@@ -657,17 +587,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='venuzuela.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The CARICOM-Venezuela Trade and Investment Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-6">
                                     Agreement
                                 </button>
                             </div>
@@ -675,17 +605,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='colombia.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The CARICOM-Colombia Trade, Economic and Technical Cooperation Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-7">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-7">
                                     Agreement
                                 </button>
                             </div>
@@ -693,17 +623,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='cuba.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The CARICOM-Cuba Free Trade Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-8">
                                     Agreement
                                 </button>
                             </div>
@@ -711,17 +641,17 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="col">
-                <div class="card h-100 d-flex flex-column" style="max-width: 540px;">
-                    <div class="d-flex g-0 flex-grow-1">
+                <div class="card mb-3 h-100" style="max-width: 540px;">
+                    <div class="d-flex g-0">
                         <div class="col-md-4">
                             <img src="{{ url_for('static', filename='costa-rica.png') }}" class="img-fluid rounded-start" alt="...">
                         </div>
                         <div class="col-md-8">
-                            <div class="card-body d-flex flex-column">
+                            <div class="card-body">
                                 <h5 class="card-title">The CARICOM-Costa Rica Free Trade Agreement</h5>
-                                <button type="button" class="btn btn-primary main-button mt-auto" data-bs-toggle="modal" data-bs-target="#exampleModal-9">
+                                <button type="button" class="btn btn-primary main-button" data-bs-toggle="modal" data-bs-target="#exampleModal-9">
                                     Agreement
                                 </button>
                             </div>
@@ -731,14 +661,13 @@
             </div>
         </div>
     </div>
-    <div class="agreements-click-here-button" id="agreements-learn-more">
-        <a class="btn btn-primary" id="agreements-learn-more" href="#" target="_blank" role="button">Click Here To Learn More!</a>
-    </div>
-    <!-- 
+    
+
     <a href="http://www.sice.oas.org/ctyindex/JAM/JAMagreements_e.asp" target="_blank">
         <div class="agreements-click-here-button" id="agreements-learn-more">
             <h3>Click Here<br>To Learn More</h3>
+            <img src="{{ url_for('static', filename='document.png') }}" class="img-fluid" alt="Responsive image">
         </div>
-    </a> -->
+    </a>
 </div>
 {% endblock %}

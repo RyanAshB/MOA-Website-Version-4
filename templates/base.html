@@ -49,9 +49,11 @@
           <div class="container-fluid bg-dark px-0">
             <div class="row g-0 d-none d-lg-flex">
                 <div class="col-lg-6 ps-5 text-start">
+                    <img src="{{ url_for('static', filename='logo.jpg') }}" class="img-fluid product-img" alt="Responsive image" id="logo">
+                    <p id="logo-text">Ministry of Agriculture, Fisheries and Mining</p>
                     <div class="h-100 d-inline-flex align-items-center text-white"> <!--
                         <span><img src="{{ url_for('static', filename='Flag_of_Jamaica.png') }}" width="26" height="16"></span> 
-                      <!-- <span>Follow Us:</span>
+                        <span>Follow Us:</span>
                         <a class="btn btn-link text-light" href=""><i class="fab fa-facebook-f"></i></a>
                         <a class="btn btn-link text-light" href=""><i class="fab fa-twitter"></i></a>
                         <a class="btn btn-link text-light" href=""><i class="fab fa-linkedin-in"></i></a>
@@ -134,7 +136,7 @@
                 {% block main %}{% endblock %}
             </div>
         </div>
-            <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+            
 
     </main>
     <footer>
