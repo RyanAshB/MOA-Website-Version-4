@@ -1,27 +1,13 @@
 from flask import Flask, render_template, request, jsonify
-from flask_mysqldb import MySQL
-import mysql.connector
+
 
 app = Flask(__name__)
 
-db_config = {
-    'user': 'root',
-    'password': 'password123',
-    'host': 'localhost',
-    'database': 'overseas_importers'
 
-}
-
-def get_db_connection():
-    return mysql.connector.connect(**db_config)
 
 @app.route('/')
 def base():
-    return render_template('base.html')
-
-@app.route('/home')
-def home():
-    return render_template('home.html')
+    return render_template('landing.html')
 
 @app.route('/jacra')
 def jacra():
@@ -67,36 +53,6 @@ def aquaculture():
 def resource():
     return render_template('resources.html')
 
-@app.route('/overseas')
-def overseas():
-    connection = get_db_connection()
-    cursor = connection.cursor()
-
-    query = "DESCRIBE overseas_importers;"
-    cursor.execute(query, )
-
-    headings=[]
-    headingdata = cursor.fetchall()
-    for i in headingdata:
-        headings.append(i[0].replace("_", " "))
-
-     
-    query = f"SELECT DISTINCT {headings[0]} FROM overseas_importers"
-    cursor.execute(query, )
-    distinct_commodities = cursor.fetchall()
-
-    main_commodities = []
-    for distinct in distinct_commodities:
-        main_commodities.append(distinct[0])
-    print(main_commodities)
-
-        
-    cursor.close()
-    connection.close()
-    return render_template('overseas.html', main_commodities=main_commodities)
-
-
-
 @app.route('/trade-agreements')
 def trade_agreements():
     return render_template('trade-agreements-v2.html')
@@ -112,45 +68,6 @@ def market_research():
 @app.route('/sps-tbt')
 def sps_tbt():
     return render_template('sps-tbt.html')
-
-@app.route('/overseas_form', methods=['GET', 'POST'])
-def overseas_form():
-    connection = get_db_connection()
-    cursor = connection.cursor()
-
-    query = "DESCRIBE overseas_importers;"
-    cursor.execute(query, )
-
-    headings=[]
-    headingdata = cursor.fetchall()
-    for i in headingdata:
-        headings.append(i[0].replace("_", " "))
-
-     
-    query = f"SELECT DISTINCT {headings[0]} FROM overseas_importers"
-    cursor.execute(query, )
-    distinct_commodities = cursor.fetchall()
-
-    main_commodities = []
-    for distinct in distinct_commodities:
-        main_commodities.append(distinct[0])
-    print(main_commodities)
-
-    fetchdata = []
-    
-    if request.method == 'POST':
-        commodity = request.form['commodity']
-
-
-        query = "SELECT * FROM overseas_importers WHERE Commodity LIKE %s"
-        cursor.execute(query, ('%' + commodity + '%',))
-        fetchdata = cursor.fetchall()
-        
-    cursor.close()
-    connection.close()
-
-    return render_template('overseas-results.html', data=fetchdata, headings=headings, main_commodities=main_commodities)
-
 
 
 

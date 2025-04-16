@@ -24,6 +24,10 @@ body {
     padding: 0 !important;
 }
 
+.text-end span {
+    color: black
+}
+
 /* This Is The Nav-Bar Section */
 
 .page-name-bg{
@@ -46,9 +50,7 @@ body {
     padding-right: 30px;
 }
 
-.my-nav-bar #navbarSupportedContent {
-    /*Use this to create navbar space*/
-}
+
 
 
 
@@ -1435,6 +1437,10 @@ body {
     background-color: rgba(7,19,50,255) !important;
 }
 
+#footer-2 a {
+    color: var(--primary);
+}
+
 .landing-body .landing-first-section {
     position: relative;
 }
@@ -2593,6 +2599,13 @@ body {
         width: 90vw !important;
     }
 }
+
+@media (max-width: 575px) {
+    #footer-container {
+        margin-left: 5%;
+    }
+}
+
 
 
 
