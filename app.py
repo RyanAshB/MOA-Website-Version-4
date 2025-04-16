@@ -1,9 +1,7 @@
 import gunicorn 
 from flask import Flask, render_template, request, jsonify
-
-
+ 
 app = Flask(__name__)
-
 
 @app.route('/')
 def base():
@@ -72,3 +70,6 @@ def sps_tbt():
 
 if __name__ == "__main__":
     app.run(host='127.0.0.1', port=5000, debug=True)
+
+# To run project locally
+# waitress-serve --listen=127.0.0.1:5000 app:app
