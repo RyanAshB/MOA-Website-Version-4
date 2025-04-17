@@ -1,5 +1,5 @@
 # Use an official lightweight Python image
-FROM python:3.10-slim
+FROM python:3.13.3-alpine
 
 # Set the working directory
 WORKDIR /app  
@@ -8,7 +8,7 @@ WORKDIR /app
 COPY  requirements.txt .
 
 # Install dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt  
+RUN pip install --no-cache-dir -r requirements.txt  
 
 # Copy project files into the container
 COPY . .  
@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 5000  
 
 # Command to run the app
-CMD []
+CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]

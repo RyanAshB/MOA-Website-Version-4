@@ -1,4 +1,3 @@
-import gunicorn 
 from flask import Flask, render_template, request, jsonify
  
 app = Flask(__name__)
@@ -69,7 +68,12 @@ def sps_tbt():
 
 
 if __name__ == "__main__":
-    app.run(host='127.0.0.1', port=5000, debug=True)
+    app.run(debug=True)
 
 # To run project locally
 # waitress-serve --listen=127.0.0.1:5000 app:app
+
+# Packages removed
+# Flask-MySQLdb==2.0.0
+# mysql-connector-python==9.2.0
+# mysqlclient==2.2.7
