@@ -77,3 +77,10 @@ if __name__ == "__main__":
 # Flask-MySQLdb==2.0.0
 # mysql-connector-python==9.2.0
 # mysqlclient==2.2.7
+
+
+# Docker to Build Image
+# docker build -t trade-portal:1.0.0 .
+
+# Docker to run container
+# docker run  -p 5000:5000 --name TradePortal trade-portal:1.0.0
